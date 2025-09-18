@@ -21,7 +21,7 @@
     <th>Código</th>
   </tr>
   <tr>
-    <td>Anderson Gonza Morales</td>
+    <td>Anderson Gonza Morales </td>
     <td>U202120836</td>
   </tr>
   <tr>
