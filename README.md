@@ -698,7 +698,7 @@ Los user persona que se muestran a continuación, fueron realizados a partir de 
 <br>
 <br>
 
-<img src= "./assets/tq.png" 
+<img src= "./assets/tq" 
   style="display: block; 
   margin-left:auto; 
   margin-right: auto; 
