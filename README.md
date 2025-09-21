@@ -12,7 +12,7 @@
   <p><strong>Profesor:</strong> Ivan Robles Fernández</p>
   <p><strong>"Informe de Trabajo Final"</strong></p>
   <p><strong>Startup: Vitalia</strong> </p>
-  <p><strong>Producto: </strong> </p>
+  <p><strong>Producto: Vitalia </strong> </p>
 </div>
 
 <table align="center">
@@ -350,7 +350,7 @@
     <td valign="top">
       <p><b>Andrea Cabanillas</b></p>
       <p>
-        Sobre el alumno.
+        Soy estudiante de ingieneria de software y me gusta trabajar en grupo
       </p>
     </td>
   </tr>
