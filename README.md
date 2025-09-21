@@ -303,7 +303,7 @@
                 <p><strong>TB1: me encarge del capitulo 4 y me reuni con mi grupo </strong> .</p>
             </td>
             <td>
-              <p><strong>TB1:</strong> .</p>
+              <p><strong>TB1:Fue fundamental la capacidad del equipo para colaborar de forma eficaz para ejercer un liderazgo compartido. La toma de decisiones conjuntas, comunicación abierta y apoyo mutuo fueron claves para superar desafíos.</strong> .</p>
             </td>
         </tr>
         <tr>
@@ -321,7 +321,7 @@
                 <p><strong>TB1: Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave</strong> .</p>
             </td>
             <td>
-              <p><strong>TB1:</strong> .</p>
+              <p><strong>TB1:Se demostró una fuerte capacidad para crear un entorno de trabajo colaborativo e inclusivo, con roles organizados, objetivos claros y planificación detallada.</strong> .</p>
             </td>
         </tr>
     </tbody>
@@ -359,9 +359,9 @@
     <img src="img/" alt="Foto de perfil de Alumno" width="300px">
     </th>
     <td valign="top">
-      <p><b>Alumno</b></p>
+      <p><b>Joan Fernando Teves Samaniego</b></p>
       <p>
-        Sobre el alumno. 
+     soy estudiante de la carrera de Ingeniería de Software y me considero una persona dispuesta a ayudar en los trabajos de grupos y atento a los detalles.
       </p>
     </td>
   </tr>
@@ -370,8 +370,8 @@
       <img src="img/" alt="Foto de perfil de Alumno" width="300px">
     </th>
     <td valign="top">
-      <p><b>Alumno</b></p>
-      <p> Sobre el alumno.
+      <p><b>Irving Allcca Guerrero</b></p>
+      <p> estudio ingeniería de software, soy una persona sociable y siempre estoy dispuesta a escuchar nuevas ideas.
       </p>
     </td>
   </tr>
@@ -381,9 +381,8 @@
       <img src="img/" alt="Foto de perfil deAlumno" width="300px">
     </th>
     <td valign="top">
-      <p><b>Alumno</b></p>
-      <p>
-        Sobre el alumno.
+      <p><b>Emilio Morales Calderón</b></p>
+      <p>Soy estudiante de ingeniería de software, actualmente en el octavo ciclo y tengo principales conocimientos en backend
       </p>
 
       
