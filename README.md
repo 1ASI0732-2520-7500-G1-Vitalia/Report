@@ -698,6 +698,11 @@ Los user persona que se muestran a continuación, fueron realizados a partir de 
 <br>
 <br>
 
+<img src= "./assets/jp" 
+  style="display: block; 
+  margin-left:auto; 
+  margin-right: auto; 
+  width=50%"/>
 
 <div id='2.3.2.'><h3> 2.3.2. User Task Matrix</h3>
 
