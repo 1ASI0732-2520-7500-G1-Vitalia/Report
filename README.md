@@ -698,7 +698,7 @@ Los user persona que se muestran a continuación, fueron realizados a partir de 
 <br>
 <br>
 
-<img src="img/one.png" alt="Foto de uer " width="300px">
+<img src="img/img/cap 1.jpg" alt="Foto de uer " width="300px">
 
 <div id='2.3.2.'><h3> 2.3.2. User Task Matrix</h3>
 
