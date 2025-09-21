@@ -829,11 +829,11 @@ En esta sección se muestra un gráfico que incluye los business goals del negoc
 <br>
 <div id='4.'><h1><b>4. Capítulo IV: Solution Software Design</b></h1>
 
-<div id='5.1.'><h2><b>4.1. Style Guidelines</b></h2>
+<div id='4.1.'><h2><b>4.1. Style Guidelines</b></h2>
 
 El branding de Llanteros refleja el espíritu innovador y comprometido de una startup tecnológica enfocada en el sector agrícola. Nuestra identidad visual y comunicacional está diseñada para transmitir confianza, eficiencia y conexión con las plantas.
 
-<div id='4.1.1.'><h3><b>5.1.1. General Style Guidelines</b></h3>
+<div id='4.1.1.'><h3><b>4.1.1. General Style Guidelines</b></h3>
 
 A continuación, se mostrará la paleta general de colores para la aplicación, iconos, logo y tipografía que hemos escogido para nuestra aplicación web.
 
@@ -851,7 +851,7 @@ A continuación, se mostrará la paleta general de colores para la aplicación, 
 
 Decidimos que para nuestra aplicación apliquemos una interfaz simple y fácil de entender con colores vivos que capten la atención del usuario.
 
-<div id='5.1.2.'><h3><b>5.1.2. Web, Mobile and IoT Style Guidelines</b></h3>
+<div id='4.1.2.'><h3><b>4.1.2. Web Style Guidelines</b></h3>
 
 <b> Principios generales de diseño </b> 
 
