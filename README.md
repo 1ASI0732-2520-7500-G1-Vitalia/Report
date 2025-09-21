@@ -385,8 +385,6 @@
       <p>Soy estudiante de ingeniería de software, actualmente en el octavo ciclo y tengo principales conocimientos en backend
       </p>
 
-      
-    </td>
   </tr>
 
 
