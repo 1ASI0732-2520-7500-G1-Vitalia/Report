@@ -327,11 +327,63 @@
     </tbody>
 </table>
 
-
-
 ### 1.1.2. Perfiles de integrantes del equipo
 
+<table>
+  <tr>
+    <th>
+      <img src="img/Anderson.png" alt="Foto de perfil de Anderson" width="300px">
+    </th>
+    <td valign="top">
+      <p><b>Anderson Gonza Morales</b></p>
+      <p>
+        Soy estudiante de la carrera de Ingeniería de Software, alguien muy curioso y entuasiasta.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      <img src="img/Andrea.jpg" alt="Foto de perfil de Andrea" width="300px">
+    </th>
+    <td valign="top">
+      <p><b>Andrea Cabanillas</b></p>
+      <p>
+        Soy estudiante de ingieneria de software y me gusta trabajar en grupo
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <th>
+    <img src="img/" alt="Foto de perfil de Alumno" width="300px">
+    </th>
+    <td valign="top">
+      <p><b>Joan Fernando Teves Samaniego</b></p>
+      <p>
+     soy estudiante de la carrera de Ingeniería de Software y me considero una persona dispuesta a ayudar en los trabajos de grupos y atento a los detalles.
+      </p>
+    </td>
+  </tr>
+    <tr>
+    <th>
+      <img src="img/" alt="Foto de perfil de Alumno" width="300px">
+    </th>
+    <td valign="top">
+      <p><b>Irving Allcca Guerrero</b></p>
+      <p> estudio ingeniería de software, soy una persona sociable y siempre estoy dispuesta a escuchar nuevas ideas.
+      </p>
+    </td>
+  </tr>
 
+<tr>
+    <th>
+      <img src="img/" alt="Foto de perfil deAlumno" width="300px">
+    </th>
+    <td valign="top">
+      <p><b>Emilio Morales Calderón</b></p>
+      <p>Soy estudiante de ingeniería de software, actualmente en el octavo ciclo y tengo principales conocimientos en backend
+      </p>
+
+  </tr>
 
 
 ## **1.2 Solution Profile**
