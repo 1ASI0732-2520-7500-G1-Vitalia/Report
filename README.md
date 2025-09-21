@@ -588,3 +588,246 @@ En el mercado al que buscamos ofrecer nuestra solución, identificamos diversos 
 
 
 </table>
+
+<div id='2.1.2.'><h3> 2.1.2. Estrategias y tácticas frente a competidores </h3>
+
+<p>Nos dirigiremos al segmento del sector agrícola que aún no ha incorporado tecnología, ofreciendo una solución accesible y fácil de usar. El objetivo es que incluso quienes no tienen experiencia con herramientas tecnológicas puedan utilizarlas de forma eficaz para optimizar sus recursos.<br>
+<br>
+<b>Estrategia general:</b> Diferenciación<br>
+<br>
+<b>Objetivo principal:</b> Sobresalir frente a la competencia mediante un producto que responda a necesidades específicas de nuestros segmentos de mercado.<br>
+<br>
+<b>Estrategias clave:</b><br>
+<ul>
+  <li><strong>Enfoque en el usuario</strong>: Priorizar mejoras basadas en las necesidades y sugerencias de los clientes.</li>
+  <li><strong>Gestión de usuarios</strong>: La aplicación contará con una red interconectada que permitirá al usuario administrador supervisar y gestionar a los trabajadores bajo su responsabilidad.</li>
+</ul>
+</p>
+ 
+<div id='2.2.'><h2> 2.2. Entrevistas</h2>
+<div id='2.2.1.'><h3> 2.2.1. Diseño de entrevistas</h3>
+<p><strong>Segmento 1:</strong> Aficionados al jardín</p>
+<p><strong>Pregunta general:</strong></p>
+<ul>
+  <li>¿Cuál es tu nombre, cuántos años tienes y a qué te dedicas?</li>
+  <li>¿Cómo consideras que es tu personalidad (extrovertido, introvertido, racional, idealista, etc.)?</li>
+</ul>
+
+<p><strong>Preguntas:</strong></p>
+<ul>
+  <li>¿Qué te motivó a empezar a cuidar plantas?</li>
+  <li>¿Cuáles son los mayores desafíos que enfrentas al cuidar tus plantas?</li>
+  <li>¿Tienes algún problema recurrente con tus plantas? ¿Cómo saber cuándo regarlas o qué cantidad de luz necesitan?</li>
+  <li>¿Actualmente usas alguna aplicación o herramienta para ayudarte a cuidar tus plantas? Si es asi, ¿Cuál es?</li>
+  <li>¿Qué información te gustaría tener más clara o accesible sobre el cuidado de tus plantas?</li>
+  <li>¿Te gustaría recibir notificaciones o recordatorios sobre el cuidado de tus plantas (por ejemplo, cuándo regarlas, cuándo podarlas)?</li>
+  <li>Si pudieras tener una herramienta que te ayude a monitorear el estado de tus plantas, como la húmedad del suelo o la luz que reciben, ¿Te interesaría?</li>
+  <li>¿Qué tan importante es para ti recibir consejos prácticos y fáciles de seguir sobre el cuidado de tus plantas?</li>
+  <li>¿Qué funcionalidades te gustaría que tuviera una aplicación para facilitar el cuidado de tus plantas?</li>
+  <li>¿Te sentirías cómodo utilizando sensores para monitorear las condiciones de tus plantas (por ejemplo, húmedad, temperatura, luz)?</li>
+  <li>¿Qué tipo de apoyo o comunidad te gustaría encontrar dentro de una app para jardineros novatos?</li>
+  <li>¿Qué tan importante es para ti que la aplicación sea fácil de usar y no requiera mucho tiempo para aprender?</li>
+</ul>
+
+<div id='2.2.2.'><h3> 2.2.2. Registro de entrevistas</h3>
+
+### Segmento objetivo - Aficionados al jardín
+
+### Entrevista 1:
+
+### Entrevista 2:
+
+### Entrevista 3:
+
+### Entrevista 4:
+
+### Entrevista 5:
+
+### Entrevista 6:
+
+<div id='2.2.3.'><h3> 2.2.3. Análisis de entrevistas</h3>
+
+**Segmento Objetivo:** Aficionados al jardín
+
+**Características del segmento:**
+
+* **Objetivas**
+
+**1. Uso de tecnología**
+
+- Norma enfatiza que no ha usaso alguna aplicación que la ayude con sus plantas, pero estaría dispuesta a probar alguna.
+- Jorge señala que muchas aplicaciones actuales no están adaptadas para todo el público por la barrera del idioma y lo poco prácticos que son.
+- Están dispuestos a usar sensores o aplicaciones que los ayuden al cuidado de plantas, pero con la condición de que sean accesibles, simples y funcionales.
+
+**2. Necesidad de asistencia**
+
+- Norma menciona que su inexperiencia con el cuidado de plantas ha afecta mucho al crecimiento de las mismas.
+- Jorge enfrentan dificultades para cuidar adecuadamente sus plantas, especialmente en lo relacionado con el riego, enfermedades y condiciones del suelo o luz.
+
+**3. Interés en aprender**
+
+- Jorge menciona la utilidad de una sección para hacer preguntas y compartir experiencias.
+- Norma valoran el aprendizaje continuo, desea el acompañamiento de un experto (como lo es su circulo cercano de amigos y vecinos) o una comunidad.
+- Ambos desean una comunidad de usuarios o red de apoyo dentro de una aplicación para resolver dudas y aprender de otros.
+
+* **Subjetivas**
+
+**1. Experiencias**
+
+- Norma se dedica al cuidado de plantas como una forma de aliviar el estrés y mejorar su bienestar personal.
+- Jorge, aunque empezó por necesidad económica, ha desarrollado afecto al verla a sus plantas.
+- Para los entrevistados, el cuidado vegetal representa algo más que una tarea práctica: es una fuente de satisfacción personal.
+
+**2. Consideraciones**
+
+- Norma ha buscado consejos de amigos, vecinos y cercanos, probando sus comendaciones y esperando que puedan ayudar al crecimiento de sus plantas.
+- Jorge buscar ayuda externa para sentirse algo seguro en la toma de decisiones.
+- No se consideran expertos y expresan dudas o limitaciones en su conocimiento, especialmente en aspectos como enfermedades, plagas o necesidades específicas de cada planta.
+
+**3. Motivaciones**
+
+- Norma pide una app sencilla que no requiera mucho tiempo de aprendizaje.
+- Jorge quiere información clara y sin complicaciones.
+- Los entrevistados desean aprender por sí mismos, pero con orientación práctica y comprensible, sin sentirse abrumados.
+
+**Análisis por medio de herramientas estadísticas:**
+
+
+<div id='2.3.'><h2> 2.3. Needfinding</h2>
+<div id='2.3.1.'><h3> 2.3.1. User Personas</h3>
+
+Los user persona que se muestran a continuación, fueron realizados a partir de la información recopilada de la sección de entrevistas. Estos nos ayudarán a describir de forma general nuestro segmento objetivo.
+<br>
+<br>
+<b>Aficionados al jardín:</b>
+<br>
+<br>
+<img src="assets/UserPersona.PNG">
+
+<div id='2.3.2.'><h3> 2.3.2. User Task Matrix</h3>
+
+| User Task | Frecuencia | Importancia |
+|:---|:---|:---|
+| Monitorear la humedad del suelo | Alta | Alta |
+| Verificar condiciones de luz y temperatura | Alta | Alta |
+| Recibir alertas sobre posibles plagas o enfermedades | Media | Alta |
+| Consultar recomendaciones personalizadas de cuidado | Alta | Alta |
+| Planificar calendario de riego y fertilización | Media | Alta |
+| Revisar la evolución y crecimiento de las plantas | Alta | Alta |
+| Interactuar con la comunidad de usuarios (foros, tips) | Media | Media |
+| Configurar o revisar sensores IoT | Baja | Alta |
+
+<div id='2.3.3.'><h3> 2.3.3. User Journey Mapping</h3>
+
+<br>
+<img src="">
+
+<div id='2.3.4.'><h3> 2.3.4. Empathy Maping</h3>
+<br>
+<img src="">
+<br>
+<div id='2.3.5.'> <h3> 2.3.5. As-is Scenario Mapping</h3>
+
+<img src="">
+
+<div id='3.'><h1><b>3. Capítulo III: Requirements Specification</b></h1>
+
+<div id='3.1.'><h2>3.1 To-Be Scenario Mapping</h2>
+
+En esta sección se presenta el mapeo de los escenarios, realizando una tabla con la situación a mejorar del segmento objetivo, analizando que pasos se realizarán y cómo se siente.
+
+<p><b>Para el segmento de aficionados a la jardinería que buscan mejorar sus habilidades y el éxito de sus plantas.:</b></p>
+
+<img src="">
+
+<div id='3.2.'><h2>3.2 User Stories</h2>
+
+| Epic ID | Título                             | Descripción                                                                 | Criterios de Aceptación | Relacionado con (Epic ID) |
+|--------|-------------------------------------|-----------------------------------------------------------------------------|-------------------------|---------------------------|
+| EP01   | Registro y Configuración de Plantas | Como usuario quiero registrar mis plantas y configurarlas en la app para recibir ayuda personalizada sobre su cuidado. | No corresponde          | No corresponde            |
+| EP02   | Monitoreo de Condiciones Ambientales| Como usuario quiero monitorear la humedad, temperatura y luz para saber si mi planta está en condiciones óptimas. | No corresponde          | No corresponde            |
+| EP03   | Diagnóstico y Prevención de Problemas| Como usuario quiero identificar problemas en mis plantas (hojas, color, plagas) para solucionarlos a tiempo. | No corresponde          | No corresponde            |
+| EP04   | Guías y Recomendaciones de Cuidado  | Como usuario quiero acceder a contenido educativo adaptado a mi tipo de planta para aprender a cuidarla mejor. | No corresponde          | No corresponde            |
+| EP05   | Recordatorios y Notificaciones      | Como usuario quiero recibir recordatorios para regar o fertilizar mis plantas para no olvidarme de su cuidado. | No corresponde          | No corresponde            |
+
+| User Story ID | Título                             | Descripción                                                                                   | Criterios de Aceptación                                           | Epic Relacionado |
+|---------------|-------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------|------------------|
+| US01          | Registro de Planta                 | Como usuario quiero registrar una planta indicando su especie y nombre para seguimiento.      | Buscar especie, asignar nombre, guardar en perfil.                | EP01             |
+| US02          | Edición de Datos de Planta          | Como usuario quiero editar los datos de una planta registrada.                               | Modificar datos y actualizar correctamente.                      | EP01             |
+| US03          | Integración de Sensor de Humedad    | Como usuario quiero conectar un sensor para saber cuándo regar.                              | Conexión vía Bluetooth/WiFi y ver nivel en tiempo real.            | EP02             |
+| US04          | Alertas por Condiciones Críticas    | Como usuario quiero recibir alertas si humedad, luz o temperatura no son adecuadas.           | Notificación y recomendaciones básicas.                          | EP02             |
+| US05          | Escaneo de Hojas                    | Como usuario quiero escanear hojas dañadas para diagnóstico.                                 | Subir foto y recibir diagnóstico preliminar.                     | EP03             |
+| US06          | Historial de Salud de Planta        | Como usuario quiero ver el historial de problemas y tratamientos.                            | Almacena diagnósticos, permite revisión de fechas y acciones.     | EP03             |
+| US07          | Recomendaciones Personalizadas     | Como usuario quiero recibir consejos personalizados.                                         | Generar sugerencias, marcar como leído o hecho.                   | EP04             |
+| US08          | Biblioteca de Guías                 | Como usuario quiero consultar guías de jardinería.                                            | Organizadas por tipo, búsqueda por palabra clave.                 | EP04             |
+| US09          | Recordatorios de Riego              | Como usuario quiero recibir recordatorios de riego según planta y clima.                      | Notificaciones y posibilidad de posponer o marcar como hecho.     | EP05             |
+| US10          | Notificaciones de Fertilización     | Como usuario quiero saber cuándo fertilizar mis plantas.                                      | Notificaciones programadas según fase de crecimiento.             | EP05             |
+| US11          | Sugerencias ante Problemas Comunes  | Como usuario quiero recibir sugerencias para plagas y enfermedades comunes.                   | Identificación de problema y soluciones propuestas.               | EP03             |
+| US12          | Videos Educativos                   | Como usuario quiero ver videos educativos sobre jardinería.                                  | Clasificación por tema y guardar como favoritos.                  | EP04             |
+| US13          | Guardar Plantas Favoritas           | Como usuario quiero guardar especies favoritas.                                               | Añadir a lista personal.                                           | EP04             |
+| US14          | Buscar por Tipos de Planta          | Como usuario quiero buscar información por categorías.                                        | Filtrado por tipo de planta.                                       | EP04             |
+| US15          | Personalización de Notificaciones   | Como usuario quiero ajustar qué notificaciones recibo.                                        | Activar/desactivar notificaciones, ajustar frecuencia.             | EP05             |
+| US16          | Notificaciones por Temporada        | Como usuario quiero recibir tareas según la estación.                                          | Uso de calendario y ubicación.                                     | EP05             |
+| US17          | Modo Sin Conexión                   | Como usuario quiero usar la app sin conexión.                                                  | Guarda datos localmente, sincroniza después.                      | EP06             |
+| US18          | Modo Oscuro                         | Como usuario quiero activar modo oscuro.                                                       | Activable en ajustes, cambio completo de interfaz.                 | EP06             |
+| US19          | Idioma de la App                    | Como usuario quiero elegir el idioma de la app.                                                 | Opción de cambiar idioma.                                          | EP06             |
+| US20          | Soporte por Chat                    | Como usuario quiero chatear con soporte si tengo problemas.                                   | Acceso a chat de ayuda, horarios visibles.                        | EP06             |
+| US21          | Comparar el Estado entre Plantas    | Como usuario quiero comparar la salud de mis plantas.                                          | Comparar humedad, luz y progreso.                                  | EP02             |
+| US22          | Descargar Reportes Mensuales        | Como usuario quiero obtener reportes mensuales de mis plantas.                                 | Generar PDF y opción de compartir.                                 | EP06             |
+| US23          | Reconocimiento Automático de Planta | Como usuario quiero identificar plantas con una foto.                                          | IA que muestra nombre, cuidados y origen.                         | EP01             |
+| US24          | Progreso con Fotos                  | Como usuario quiero subir fotos para ver el progreso de mis plantas.                           | Agrupar fotos por fecha, generar animaciones.                      | EP03             |
+| US25          | Añadir Comentarios por Planta       | Como usuario quiero agregar notas personales a cada planta.                                   | Campo de texto por planta.                                         | EP01             |
+| US26          | Recordatorio de Poda                | Como usuario quiero recordatorios de poda.                                                     | Calendario de fechas por especie.                                  | EP05             |
+| US27          | Calendario de Actividades           | Como usuario quiero ver calendario con mis tareas.                                             | Visualizar tareas, agregar eventos propios.                        | EP05             |
+| US28          | Compatibilidad de Plantas           | Como usuario quiero saber si dos plantas son compatibles.                                      | Comparar necesidades y dar recomendación.                         | EP04             |
+| US29          | Modo Vacaciones                     | Como usuario quiero programar cuidados en vacaciones.                                          | Activar modo vacaciones, alertas y cuidados delegados.             | EP06             |
+| US30          | Sugerencias de Nuevas Plantas       | Como usuario quiero sugerencias de nuevas plantas según mi historial.                         | Mostrar recomendaciones basadas en cuidados exitosos.              | EP04             |
+
+
+
+<div id='3.3.'><h2>3.3 Impact Mapping</h2>
+
+En esta sección se muestra un gráfico que incluye los business goals del negocio así como tiene un impacto en nuestras user personas.
+
+#### Segmeto de aficionados a la jardinería que buscan mejorar sus habilidades y el éxito de sus plantas:
+
+<img src="">
+
+<div id='3.4.'><h2>3.4 Product Backlog</h2>
+
+<p>Para elaborar nuestro Product Backlog hemos utilizado la secuencia de Fibonacci (1,2,3,5,8). Aplicamos esto con el objetivo de evaluar la complejidad de las tareas.
+
+# Product Backlog
+
+| #Orden | User Story ID | Título                                | Descripción                                                                                                                                                      | Story Points |
+|--------|----------------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| 1      | EP01           | Registro y Configuración de Plantas   | Como usuario, quiero un sistema que registre y configure las plantas iniciales para comenzar a gestionar su cuidado y estado.                                  | 8             |
+| 2      | US01           | Registro de Planta                    | Como usuario, quiero poder registrar nuevas plantas en el sistema para realizar un seguimiento adecuado de su cuidado.                                         | 5             |
+| 3      | US23           | Reconocimiento Automático de Planta  | Como usuario, quiero que el sistema identifique automáticamente las plantas mediante fotos para agilizar su registro y seguimiento.                           | 13            |
+| 4      | US02           | Edición de Datos de Planta            | Como usuario, quiero editar los datos de las plantas registradas para mantener la información actualizada.                                                     | 3             |
+| 5      | US25           | Añadir Comentarios por Planta         | Como usuario, quiero agregar comentarios y notas personales en cada planta para hacer un seguimiento detallado de su cuidado.                                 | 2             |
+| 6      | EP02           | Monitoreo de Condiciones Ambientales  | Como usuario, quiero monitorear las condiciones ambientales (humedad, luz, temperatura) de las plantas para asegurarme de que se encuentren en condiciones óptimas. | 8         |
+| 7      | US03           | Integración de Sensor de Humedad      | Como usuario, quiero conectar sensores para medir la humedad de las plantas y recibir alertas si se desvían de los valores recomendados.                      | 8             |
+| 8      | US04           | Alertas por Condiciones Críticas      | Como usuario, quiero recibir alertas cuando las condiciones ambientales sean críticas para poder tomar acción inmediata.                                       | 5             |
+| 9      | US21           | Comparar el Estado entre Plantas      | Como usuario, quiero comparar el estado ambiental entre diferentes plantas para tomar decisiones informadas sobre su cuidado.                                 | 5             |
+| 10     | EP03           | Diagnóstico y Prevención de Problemas | Como usuario, quiero que el sistema diagnostique problemas tempranos en las plantas y sugiera acciones preventivas para mantener su salud.                     | 8             |
+| 11     | US05           | Escaneo de Hojas                      | Como usuario, quiero escanear las hojas de las plantas para identificar daños o plagas y recibir recomendaciones para su tratamiento.                         | 8             |
+| 12     | US11           | Sugerencias ante Problemas Comunes    | Como usuario, quiero recibir sugerencias sobre cómo tratar problemas comunes como plagas o enfermedades en las plantas.                                       | 5             |
+| 13     | US06           | Historial de Salud de Planta          | Como usuario, quiero tener un historial de salud para cada planta, con información sobre su evolución, tratamientos y problemas previos.                      | 5             |
+| 14     | US24           | Progreso con Fotos                    | Como usuario, quiero seguir el progreso de mis plantas mediante fotos para ver su evolución a lo largo del tiempo.                                             | 5             |
+| 15     | EP04           | Guías y Recomendaciones de Cuidado    | Como usuario, quiero acceder a contenido educativo sobre el cuidado de las plantas, adaptado a cada especie, para mejorar su bienestar.                       | 8             |
+| 16     | US07           | Recomendaciones Personalizadas        | Como usuario, quiero recibir recomendaciones personalizadas de cuidado para cada planta según sus necesidades específicas.                                    | 5             |
+| 17     | US31           | Desarrollo de Landing Page            | Como visitante o potencial usuario, quiero ver una landing page atractiva y funcional del sistema para conocer sus beneficios y registrarme fácilmente.       | 5             |
+| 18     | US08           | Biblioteca de Guías                   | Como usuario, quiero una biblioteca con guías categorizadas sobre cuidado de plantas, para acceder fácilmente a la información que necesito.                  | 3             |
+| 19     | US12           | Videos Educativos                     | Como usuario, quiero ver videos educativos sobre jardinería y cuidado de plantas para mejorar mis habilidades.                                                 | 3             |
+| 20     | US13           | Guardar Plantas Favoritas             | Como usuario, quiero guardar mis plantas favoritas en una lista para poder acceder a ellas fácilmente cuando las necesite.                                    | 2             |
+| 21     | US14           | Buscar por Tipos de Planta            | Como usuario, quiero buscar plantas por tipos para encontrar fácilmente las que mejor se adapten a mi espacio o necesidades.                                  | 3             |
+| 22     | US28           | Compatibilidad de Plantas             | Como usuario, quiero recibir recomendaciones de plantas compatibles para poder crear un entorno armonioso.                                                    | 5             |
+| 23     | US30           | Sugerencias de Nuevas Plantas         | Como usuario, quiero que el sistema me sugiera nuevas plantas basadas en mis preferencias y el historial de plantas que he registrado.                        | 5             |
+| 24     | EP05           | Recordatorios y Notificaciones        | Como usuario, quiero recibir recordatorios y notificaciones para cuidar mis plantas de acuerdo a sus necesidades.                                              | 8             |
+| 25     | US09           | Recordatorios de Riego                | Como usuario, quiero recibir recordatorios automáticos de riego para asegurarme de que mis plantas siempre reciban la cantidad de agua adecuada.             | 3             |
+| 26     | US10           | Notificaciones de Fertilización       | Como usuario, quiero recibir alertas cuando sea el momento adecuado para fertilizar mis plantas.                                                              | 3             |
+| 27     | US26           | Recordatorio de Poda                  | Como usuario, quiero recibir recordatorios para realizar tareas de poda a tiempo y mantener mis plantas saludables.                                           | 3             |
+
+<br>
+<div id='4.'><h1><b>4. Capítulo IV: Solution Software Design</b></h1>
