@@ -697,7 +697,7 @@ Los user persona que se muestran a continuación, fueron realizados a partir de 
 <b>Aficionados al jardín:</b>
 <br>
 <br>
-<img src="assets/jp">
+
 
 <div id='2.3.2.'><h3> 2.3.2. User Task Matrix</h3>
 
