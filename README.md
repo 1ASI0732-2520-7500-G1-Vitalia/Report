@@ -828,3 +828,58 @@ En esta sección se muestra un gráfico que incluye los business goals del negoc
 
 <br>
 <div id='4.'><h1><b>4. Capítulo IV: Solution Software Design</b></h1>
+
+<div id='5.1.'><h2><b>4.1. Style Guidelines</b></h2>
+
+El branding de Llanteros refleja el espíritu innovador y comprometido de una startup tecnológica enfocada en el sector agrícola. Nuestra identidad visual y comunicacional está diseñada para transmitir confianza, eficiencia y conexión con las plantas.
+
+<div id='4.1.1.'><h3><b>5.1.1. General Style Guidelines</b></h3>
+
+A continuación, se mostrará la paleta general de colores para la aplicación, iconos, logo y tipografía que hemos escogido para nuestra aplicación web.
+
+### Logo:
+![](assets/logo.png)
+
+### Paleta de colores:
+![](assets/paleta%20color.png)
+
+### Tipografía:
+![](assets/fuente.png)
+
+### Tamaño de fuente:
+![](assets/tamanofuente.png)
+
+Decidimos que para nuestra aplicación apliquemos una interfaz simple y fácil de entender con colores vivos que capten la atención del usuario.
+
+<div id='5.1.2.'><h3><b>5.1.2. Web, Mobile and IoT Style Guidelines</b></h3>
+
+<b> Principios generales de diseño </b> 
+
+Coherencia visual: Se mantiene una identidad visual homogénea en todos los dispositivos mediante el uso de una paleta de colores, tipografía y componentes UI comunes.
+
+Accesibilidad: Se consideran principios de accesibilidad como contraste suficiente, uso de íconos descriptivos, etiquetas claras y compatibilidad con tecnologías de asistencia.
+
+Simplicidad y claridad: La interfaz evita la sobrecarga cognitiva, mostrando información clave de forma clara y evitando elementos decorativos innecesarios
+
+
+<b> Estilo Web </b> 
+
+Diseño responsivo: Compatible con múltiples tamaños de pantalla
+
+Menú de navegación horizontal: Incluye secciones como “Inicio”, “Mis Plantas”, “Diagnóstico”, “Calendario” y “Ajustes”.
+
+Componentes interactivos: Botones grandes, con íconos acompañantes.
+
+Tipografía: Se usa una fuente legible y con buen tamaño 
+
+Colores principales: Verde (para acciones positivas), blanco y gris claro (fondos neutros).
+
+
+<b>  Estilo Mobile </b> 
+
+Navegación inferior: Menú fijo con iconos para acceso rápido a funciones principales.
+
+Notificaciones: Sistema de alertas push para recordatorios de riego, fertilización y monitoreo ambiental.
+
+Modo oscuro: Opcional, con inversión de colores conservando la legibilidad.
+
