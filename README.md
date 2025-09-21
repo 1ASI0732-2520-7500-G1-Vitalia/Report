@@ -628,9 +628,9 @@ En el mercado al que buscamos ofrecer nuestra solución, identificamos diversos 
 
 ### Segmento objetivo - Aficionados al jardín
 
-### Entrevista 1:
+### Entrevista 1: https://drive.google.com/drive/folders/1arzj1cuxP2zOGmwTyb6uJWcws5smoYzF
 
-### Entrevista 2:
+### Entrevista 2:  https://drive.google.com/file/d/16OVTi9H70ehYXRoyM_GTTVy8oNJL0jzy/view
 
 ### Entrevista 3:
 
