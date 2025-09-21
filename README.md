@@ -25,7 +25,7 @@
     <td>U202120836</td>
   </tr>
   <tr>
-    <td>Andrea Cabanillas</td>
+    <td>Andrea Cabanillas Gora</td>
     <td>U202211711</td>
   </tr>
   <tr>
