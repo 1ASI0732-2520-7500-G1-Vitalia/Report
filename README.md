@@ -37,8 +37,8 @@
     <td>U202216263</td>
   </tr>
   <tr>
-    <td>Alumno</td>
-    <td>U</td>
+    <td>Irving Allcca Guerrero</td>
+    <td>u202213241</td>
   </tr>
 </table>
 
@@ -65,8 +65,8 @@
           <li>Andrea Cabanillas Gora</li>
           <li>Anderson Gonza Morales</li>
           <li>Joan Fernando Teves Samaniego</li>
-          <li>Hernán Emilio Morales Calderón</li>
-          <li>Alumno</li>
+          <li>Irving Allcca Guerrero</li>
+          <li>Hernan Emilio Morales Calderón</li>
         </ul>
       </td>
       <td>
@@ -292,15 +292,15 @@
             <td>4.c.1  Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software</td>
             <td>
                 <p><strong>Anderson Gonza Morales</strong></p>
-                <p><strong>TB1: me encarge del capitulo 1 y me reuni con mi grupo </strong> .</p>
+                <p><strong>TB1: me encarge del capitulo 1, me reuni con mi grupo e hice entrevistas </strong> .</p>
                 <p><strong>Andrea Cabanillas</strong></p>
-                <p><strong>TB1:</strong> .</p>
+                <p><strong>TB1: me encarge del capitulo 2 y me reuni con mi grupo </strong> .</p>
                 <p><strong>Joan Fernando Teves Samaniego</strong></p>
-                <p><strong>TB1:</strong> .</p>
+                <p><strong>TB1: me encarge del capitulo 3 y me reuni con mi grupo </strong> .</p>
                 <p><strong>Hernán Emilio Morales Calderón</strong></p>
-                <p><strong>TB1:</strong> .</p>
-                <p><strong>Alumno 5</strong></p>
-                <p><strong>TB1:</strong> .</p>
+                <p><strong>TB1: me encarge del capitulo 5 y me reuni con mi grupo </strong> .</p>
+                <p><strong>Irving Allcca Guerrero</strong></p>
+                <p><strong>TB1: me encarge del capitulo 4 y me reuni con mi grupo </strong> .</p>
             </td>
             <td>
               <p><strong>TB1:</strong> .</p>
@@ -310,15 +310,15 @@
             <td>4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</td>
             <td>
                 <p><strong>Anderson Gonza Morales</strong></p>
-                <p><strong>TB1:</strong> .</p>
+                <p><strong>TB1: Colaboré en el análisis de necesidades del segmento inicial y definición de pain points. Aporté a la integración de ideas para un enfoque sólido.</strong> .</p>
                 <p><strong>Andrea Cabanillas</strong></p>
                 <p><strong>TB1: Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. </strong> .</p>
                 <p><strong>Joan Fernando Teves Samaniego</strong></p>
-                <p><strong>TB1:</strong> .</p>
+                <p><strong>TB1:Lideré la identificación de Domain Message Flows, Bounded Contexts y elaboración de Context Map. Promoví colaboración para entender los modelo</strong> .</p>
                 <p><strong>Hernán Emilio Morales Calderón</strong></p>
-                <p><strong>TB1:</strong> .</p>
+                <p><strong>TB1:Lideré la estructuración del To-Be Scenario Map, organización de épicas y backlog, y el diseño del customer journey estratégico.</strong> .</p>
                 <p><strong>Alumno 5</strong></p>
-                <p><strong>TB1:</strong> .</p>
+                <p><strong>TB1: Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave</strong> .</p>
             </td>
             <td>
               <p><strong>TB1:</strong> .</p>
