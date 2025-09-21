@@ -62,8 +62,8 @@
       <td>21/07/25</td>
       <td>
         <ul>
-          <li>Anderson Gonza Morales</li>
           <li>Andrea Cabanillas Gora</li>
+          <li>Anderson Gonza Morales</li>
           <li>Joan Fernando Teves Samaniego</li>
           <li>Hernán Emilio Morales Calderón</li>
           <li>Alumno</li>
@@ -292,7 +292,7 @@
             <td>4.c.1  Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software</td>
             <td>
                 <p><strong>Anderson Gonza Morales</strong></p>
-                <p><strong>TB1:</strong> .</p>
+                <p><strong>TB1: me encarge del capitulo 1 y me reuni con mi grupo </strong> .</p>
                 <p><strong>Andrea Cabanillas</strong></p>
                 <p><strong>TB1:</strong> .</p>
                 <p><strong>Joan Fernando Teves Samaniego</strong></p>
@@ -312,7 +312,7 @@
                 <p><strong>Anderson Gonza Morales</strong></p>
                 <p><strong>TB1:</strong> .</p>
                 <p><strong>Andrea Cabanillas</strong></p>
-                <p><strong>TB1:</strong> .</p>
+                <p><strong>TB1: Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. </strong> .</p>
                 <p><strong>Joan Fernando Teves Samaniego</strong></p>
                 <p><strong>TB1:</strong> .</p>
                 <p><strong>Hernán Emilio Morales Calderón</strong></p>
