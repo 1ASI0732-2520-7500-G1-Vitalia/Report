@@ -329,7 +329,11 @@
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
+
 ### 1.1.1. Descripción de la Startup
+Vitalia es una startup conformada por estudiantes de la carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas. Juntos, somos un equipo comprometido con las necesidades y problemáticas que enfrentan las personas interesadas en la hidroponia
+, quienes a menudo se ven afectados por la falta de información clara y herramientas eficientes para la gestión del bienestar de sus cultivos. Es así como identificamos una oportunidad para proponer una solución innovadora que mejore la eficiencia y calidad en el cuidado de las estos.
+
 
 
 
