@@ -780,15 +780,7 @@ En esta sección se presenta el mapeo de los escenarios, realizando una tabla co
 
 
 
-<div id='3.3.'><h2>3.3 Impact Mapping</h2>
-
-En esta sección se muestra un gráfico que incluye los business goals del negocio así como tiene un impacto en nuestras user personas.
-
-#### Segmeto de aficionados a la jardinería que buscan mejorar sus habilidades y el éxito de sus plantas:
-
-<img src="">
-
-<div id='3.4.'><h2>3.4 Product Backlog</h2>
+<div id='3.3.'><h2>3.3 Product Backlog</h2>
 
 <p>Para elaborar nuestro Product Backlog hemos utilizado la secuencia de Fibonacci (1,2,3,5,8). Aplicamos esto con el objetivo de evaluar la complejidad de las tareas.
 
@@ -823,6 +815,16 @@ En esta sección se muestra un gráfico que incluye los business goals del negoc
 | 25     | US09           | Recordatorios de Riego                | Como usuario, quiero recibir recordatorios automáticos de riego para asegurarme de que mis plantas siempre reciban la cantidad de agua adecuada.             | 3             |
 | 26     | US10           | Notificaciones de Fertilización       | Como usuario, quiero recibir alertas cuando sea el momento adecuado para fertilizar mis plantas.                                                              | 3             |
 | 27     | US26           | Recordatorio de Poda                  | Como usuario, quiero recibir recordatorios para realizar tareas de poda a tiempo y mantener mis plantas saludables.                                           | 3             |
+
+<div id='3.4.'><h2>3.4 Impact Mapping</h2>
+
+En esta sección se muestra un gráfico que incluye los business goals del negocio así como tiene un impacto en nuestras user personas.
+
+#### Segmeto de aficionados a la jardinería que buscan mejorar sus habilidades y el éxito de sus plantas:
+
+<img src="">
+
+
 
 <br>
 <div id='4.'><h1><b>4. Capítulo IV: Solution Software Design</b></h1>
