@@ -630,9 +630,9 @@ En el mercado al que buscamos ofrecer nuestra solución, identificamos diversos 
 
 ### Entrevista 1: https://drive.google.com/drive/folders/1arzj1cuxP2zOGmwTyb6uJWcws5smoYzF
 
-### Entrevista 2:  https://drive.google.com/file/d/16OVTi9H70ehYXRoyM_GTTVy8oNJL0jzy/view
+### Entrevista 2: https://drive.google.com/file/d/16OVTi9H70ehYXRoyM_GTTVy8oNJL0jzy/view
 
-### Entrevista 3:
+### Entrevista 3:  https://drive.google.com/file/d/1RLscu2elUKj7_NeBrimIg_4-KcbLe1ZL/view
 
 ### Entrevista 4:
 
