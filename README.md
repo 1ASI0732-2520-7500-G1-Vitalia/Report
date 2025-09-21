@@ -698,11 +698,7 @@ Los user persona que se muestran a continuación, fueron realizados a partir de 
 <br>
 <br>
 
-<img src= "./assets/tq" 
-  style="display: block; 
-  margin-left:auto; 
-  margin-right: auto; 
-  width=50%"/>
+ <img src="img/upc.png" alt="tq" width="100%">
 
 <div id='2.3.2.'><h3> 2.3.2. User Task Matrix</h3>
 
