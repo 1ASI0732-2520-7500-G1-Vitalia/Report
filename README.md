@@ -63,7 +63,7 @@
       <td>
         <ul>
           <li>Anderson Gonza Morales</li>
-          <li>Andrea Cabanillas</li>
+          <li>Andrea Cabanillas Gora</li>
           <li>Joan Fernando Teves Samaniego</li>
           <li>Hernán Emilio Morales Calderón</li>
           <li>Alumno</li>
