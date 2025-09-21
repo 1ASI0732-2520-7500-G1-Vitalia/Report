@@ -572,8 +572,6 @@ En el mercado al que buscamos ofrecer nuestra solución, identificamos diversos 
 **¿Por qué realizar este análisis?**
 <p>Es fundamental realizar este análisis para comprender las áreas en las que se enfocan nuestros competidores directos. Esto nos permitirá identificar oportunidades para diferenciarnos y destacar en aspectos que capten el interés de nuestro público objetivo.</p>
 
-|Nombre|Plantita|Agrobit|Efemis|Agri|
-
 | Nombre | Plantita                         | Agrobit                                    | Afemis | Agri |
 |--------|------------------------------|------------------------------------------------|--------|------|
 | Overview   | Software de gestión agrícola centrado en la capacitación del usuario que puede adaptarse a sus necesidades | Software enfocado en la gestión de procesos agrícolas y ganaderos con ayuda de herramientas de alta gama | Software de hispatec que gestiona procesos agrícolas utilizando herramientas de alta gama | Agri es una solución de software latina que permite gestionar campos de cultivo de forma centralizada |
@@ -588,16 +586,5 @@ En el mercado al que buscamos ofrecer nuestra solución, identificamos diversos 
 | Amenazas   | La implementación de herramientas costosas por parte de la competencia | Dado que el proceso de cotización es lento, muchos clientes prefieren buscar otras opciones | Sus ventas se han visto reducidas |La creciente tecnología y el uso de la inteligencia artificial puede desplazar a muchas soluciones de software|
 
 
-## **1.3 Segmentos objetivo** 
 
- * **Aficionados a la jardinería que buscan mejorar sus habilidades y el éxito de sus plantas** Los usuarios utilizarán "Plantita" para acceder a información personalizada, herramientas de monitoreo y una comunidad de apoyo, con el fin de mejorar la salud y el crecimiento de sus plantas.
-
-* **Características Demográficas:** Personas entre 20 y 50 años, que viven en áreas urbanas y suburbanas, con un interés en la jardinería y el cuidado de plantas pero con conocimientos limitados.  Posiblemente con un nivel educativo medio o superior y con acceso a dispositivos móviles y tecnología.
-
-* **Características Geográficas:** Inicialmente enfocado en áreas urbanas y suburbanas en Perú, con potencial de expansión a otras regiones y países con un interés similar en la jardinería doméstica y el cuidado de plantas.
-</div>
-
-  
-
-  
 </table>
