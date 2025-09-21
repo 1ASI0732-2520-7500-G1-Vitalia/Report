@@ -884,3 +884,14 @@ Notificaciones: Sistema de alertas push para recordatorios de riego, fertilizaci
 
 Modo oscuro: Opcional, con inversión de colores conservando la legibilidad.
 
+<div id='4.1.3.'><h3><b>4.1.3. Mobile Style Guidelines.</b></h3>
+
+<div id='4.1.3.1'><h3><b>4.1.3.1. iOS Mobile Style Guidelines.</b></h3>
+
+<div id='4.1.3.2'><h3><b>4.1.3.2. Android Mobile Style Guidelines.</b></h3>
+
+<div id='4.2.'><h3><b>4.2. Information Architecture.</b></h3>
+
+<div id='4.2.1'><h3><b>4.2.1. Organization Systems.</b></h3>
+
+
