@@ -1060,11 +1060,24 @@ En esta sección se mostrára los mock-ups de nuestra web application y para ell
 ### 4.6.4. Web Applications User Flow Diagrams.
 ## 4.7. Web Applications Prototyping.
 <div id='4.8'><h3><b>4.8. Domain-Driven Software Architecture.</b></h3>
-  <div id='4.8.1'><h3><b>4.8.1. Software Architecture Context Diagram.</b></h3>
+<div id='4.8.1'><h3><b>4.8.1. Software Architecture Context Diagram.</b></h3>
+
+[Architecture Context Diagram.](https://imgur.com/RCpt3YF.png)
+
 <div id='4.8.2'><h3><b>4.8.2. Software Architecture Container Diagrams.</b></h3>
+
+[Architecture Context Diagram.](https://imgur.com/cVDCwSh.png)
+
 <div id='4.8.3'><h3><b>4.8.3. Software Architecture Components Diagrams.</b></h3>
+
+[Architecture Context Diagram.](https://imgur.com/iArO5yT.png)
+
 <div id='4.9'><h3><b>4.9. Software Object-Oriented Design</b></h3>
 <div id='4.9.1'><h3><b>4.9.1. Class Diagrams.</b></h3>
+
+
+
+
 
 <div id='4.9.2'><h3><b>4.9.2. Class Dictionary.</b></h3>
 
