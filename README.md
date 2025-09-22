@@ -12,7 +12,7 @@
   <p><strong>Profesor:</strong> Ivan Robles Fernández</p>
   <p><strong>"Informe de Trabajo Final"</strong></p>
   <p><strong>Startup: Vitalia</strong> </p>
-  <p><strong>Producto: Vitalia </strong> </p>
+  <p><strong>Producto: Plantita </strong> </p>
 </div>
 
 <table align="center">
@@ -935,7 +935,8 @@ Las etiquetas están pensadas para usuarios sin conocimientos técnicos de jardi
 
 Se realizaron entrevistas para determinar qué términos son más intuitivos (por ejemplo, “hojas dañadas” en vez de “signos de clorosis”).
 
-5.2.3. SEO Tags and Meta Tags
+<div id='4.2.3'><h3><b> </b>4.2.3. SEO Tags and Meta Tags</b></h3>
+
 Para mejorar la visibilidad de la plataforma “Plantita” en motores de búsqueda, se implementaron etiquetas SEO y meta tags clave:
 
 Título (Meta Title): Plantita
@@ -943,3 +944,15 @@ Título (Meta Title): Plantita
 Descripción (Meta Description): App para cuidar plantas con sensores, recordatorios y guías personalizadas.
 
 Palabras clave (Meta Keywords): jardinería, plantas, sensores, app de plantas, cuidado de plantas
+
+<div id='4.2.4'><h3><b> 4.2.4. Searching Systems</b></h3>
+
+La plataforma “Plantita” incluye un sistema de búsqueda para facilitar el acceso rápido a información relevante.
+
+Botones de búsqueda: Disponible en la parte superior del menu .
+
+Búsqueda por palabras clave: Permite buscar plantas, guías, problemas comunes, y funciones de la app.
+
+Filtros: Se pueden aplicar filtros por tipo de planta (interior, exterior), nivel de cuidado, o categoría (riego, plagas, luz).
+
+Sugerencias automáticas: A medida que el usuario escribe, se muestran resultados sugerid
