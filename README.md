@@ -1062,37 +1062,136 @@ En esta sección se mostrára los mock-ups de nuestra web application y para ell
 
 ### 4.6.4. Web Applications User Flow Diagrams.
 ## 4.7. Web Applications Prototyping.
-
-
 <div id='4.8'><h3><b>4.8. Domain-Driven Software Architecture.</b></h3>
+  <div id='4.8.1'><h3><b>4.8.1. Software Architecture Context Diagram.</b></h3>
+<div id='4.8.2'><h3><b>4.8.2. Software Architecture Container Diagrams.</b></h3>
+<div id='4.8.3'><h3><b>4.8.3. Software Architecture Components Diagrams.</b></h3>
+<div id='4.9'><h3><b>4.9. Software Object-Oriented Design</b></h3>
+<div id='4.9.1'><h3><b>4.9.1. Class Diagrams.</b></h3>
+
+<div id='4.9.2'><h3><b>4.9.2. Class Dictionary.</b></h3>
+
+company: Empresas a las que se les brinda el servicio. -ruc: Código de la empresa -password: Contraseña con la que se accede a la cuenta -companyName: El nombre de una compañía -phone: Teléfono de la empresa -mail: Correo de la empresa -createCompany(): Es el método por el cual se crea las nuevas empresas -updateData(): El método por el cual se actualizan los datos de una empresa
+
+crop: Es el cultivo al cual se le monitorea y administra. -cropCode: Código del cultivo -area: Área del terreno -product: Alimento que produce el cultivo -state: El estado en que se encuentra el alimento -cost: Costo de producir ese cultivo -location: El lugar geográfico donde se encuentra el producto -return: El costo aproximado que se espera ganar por el cultivo -updateStatus(): Actualización del estado -addExpense(): Registra un nuevo gasto para el cultivo -decreaseExpenditure(): Elimina un gasto
+
+worker: Personas que trabajan en las diferentes compañías agrícolas. -dni: Documento de identificación de los trabajadores -name: Nombre del trabajador -lastName: Apellido -post: Cargo dentro de la empresa -salary: Dinero que gana el trabajador -phone: Teléfono de la empresa -age: Edad -estado: Dentro de la empresa -hireEmployee(): Contrata a los empleados -vacations(): Para cuando un empleado salga de vacaciones -updateData(): Permite actualizar los datos de los trabajadores
+
+equipment: Conjunto de Workers encargados de un Crop -equipmentCode: Código del equipo -numberMembers: Dice la cantidad de integrantes de un equipo -canagerCode: Indica quién es el líder del equipo -cropCode: El código del cultivo en que trabaja el equipo -createTeam(): Crea un nuevo equipo -addMember(): Agrega a un nuevo miembro -removeMember(): Quitar a un miembro del equipo
 
 
-
-
-
-4.8.1. Software Architecture Context Diagram.
-4.8.2. Software Architecture Container Diagrams.
-4.8.3. Software Architecture Components Diagrams.
-4.9. Software Object-Oriented Design
-4.9.1. Class Diagrams.
-4.9.2. Class Dictionary.
 4.10. Database Design.
+
 4.10.1. Relational/Non-Relational Database Diagram.
 
 <div id='5.'><h1><b>3. Capítulo V: Requirements Specification</b></h1>
   
-5.1. Software Configuration Management.
-5.1.1. Software Development Environment Configuration.
-5.1.2. Source Code Management.
-5.1.3. Source Code Style Guide & Conventions.
-5.1.4. Software Deployment Configuration.
-5.2. Product Implementation & Deployment.
-5.2.1. Sprint Backlogs.
-5.2.2. Implemented Landing Page Evidence
-5.2.3. Implemented Frontend-Web Application Evidence
-5.2.4. Implemented Native-Mobile Application Evidence
-5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
-5.2.6. RESTful API documentation
-5.2.7. Team Collaboration Insights
-5.3. Video About-the-Product.
+<div id='5.1'><h3><b>5.1. Software Configuration Management.</b></h3>
+
+<div id='5.1.1'><h3><b>5.1.1. Software Development Environment Configuration.</b></h3>
+
+Miro : Es una plataforma en línea que permite la colaboración en tiempo real y la creación de tableros virtuales, diagramar procesos, crear mapas mentales, hacer lluvias de ideas, diseñar wireframes y mucho más. Utilizamos esta herramienta para poder realizar mapas de escenarios As-Is y To-Be.
+
+Figma : Figma es una herramienta de diseño colaborativo basada en la nube que permite a los equipos crear, colaborar y prototipar interfaces de usuario de manera eficiente, Nuestro equipo lo utilizo para el desarrollo Wireframes, Mock-ups y Prototypes.
+
+**Structurizi :**ayuda a dibujar y documentar la arquitectura de tu software. Te permite crear diagramas que muestran cómo funcionan tus sistemas y cómo están conectados entre sí. Nosotros lo utilizamos para la creacion de diagramas c4.
+
+IntelliJ IDEA : Como entorno de desarrollo integrado (IDE) para el desarrollo de aplicaciones de software, especialmente para el desarrollo en Java y otras tecnologías JVM como Kotlin y Groovy. También ofrece soporte para una amplia gama de lenguajes de programación y tecnologías, incluidas las relacionadas con el desarrollo web, como HTML, CSS, JavaScript y frameworks como Spring.
+
+Java : Para el desarrollo del backend de la aplicación.
+
+Uxspresia : Para el desarrollo de los impact, empathy mappings y los user persona https://uxpressia.com
+
+MySQL Como sistema de gestión de bases de datos relacionales para almacenar y manejar los datos de la aplicación.
+
+WebStorm : Como entorno de desarrollo integrado (IDE) para el desarrollo de aplicaciones web, especialmente para el trabajo con tecnologías como JavaScript, HTML, CSS y frameworks como React, Angular y Vue.js.
+
+Git y GitHub: Para el control de versiones y la colaboración en el desarrollo del proyecto.
+
+Angular Un framework de desarrollo web para facilitar el front end
+
+HTML (HyperText Markup Language): Para estructurar el contenido de la página web.
+
+CSS (Cascading Style Sheets): Para diseñar y dar estilo al contenido HTML.
+
+JavaScript: Para agregar interactividad y funcionalidad a la página web.
+
+<div id='5.1.2'><h3><b>5.1.2. Source Code Management.</b></h3>
+
+en el marco de este proyecto, se implementarán tres ramas principales: "master", "develop" y "feature branches".
+
+La primera rama se destinará específicamente para la creación de nuevas funcionalidades, clases u otros elementos que añadirán nuevas capacidades al proyecto. Esta rama servirá como un entorno aislado para el desarrollo de estas características, permitiendo un trabajo paralelo sin afectar la estabilidad del código principal.
+
+La rama 2da rama funcionará como el entorno de integración continua, donde se unificarán y probarán los cambios provenientes de las ramas de características. En este entorno, los cambios deben ser integrados y asegurados para garantizar el funcionamiento cohesivo del proyecto.
+
+Finalmente, la ultima rama  será la rama principal y estable del repositorio. Aquí se fusionarán todos los cambios provenientes de la rama "develop", generando así nuevas versiones del sistema. Esta rama representa el estado más actualizado y confiable del proyecto, adecuado para su despliegue en entornos de producción.
+
+Este enfoque de ramificación permite una gestión eficiente del desarrollo, facilitando la colaboración entre equipos y asegurando la estabilidad y calidad del software en cada etapa del ciclo de vida del proyecto.
+
+
+<div id='5.1.3'><h3><b>5.1.3. Source Code Style Guide & Conventions.</b></h3>
+
+n el proceso de realizar commits, hemos optado por seguir el estándar de "Conventional Commits". Esta práctica nos brinda una estructura definida para nuestros mensajes de commit, lo que facilita la comprensión y la gestión de cambios en el repositorio.
+
+Además, hemos establecido el uso de terminología en inglés para las diferentes declaraciones en nuestras líneas de código en todos los lenguajes de programación empleados en el proyecto. Esta decisión busca promover la coherencia y la claridad en la comunicación del código, facilitando la colaboración entre miembros del equipo y mejorando la legibilidad del código fuente en general.
+  
+<div id='5.1.4'><h3><b>5.1.4. Software Deployment Configuration.</b></h3>
+
+La aplicación deberá cumplir con las guías de estilo oficiales de cada sistema operativo móvil (iOS y Android) con el fin de asegurar consistencia, usabilidad y accesibilidad en ambas plataformas.
+
+Criterios de aceptación:
+
+En iOS, la aplicación deberá implementar componentes nativos y cumplir con las Apple Human Interface Guidelines (HIG).
+
+En Android, la aplicación deberá implementar componentes de Material Design y cumplir con las recomendaciones de Material You para Android 12 o superior.
+
+La aplicación deberá soportar Light Mode y Dark Mode en ambas plataformas.
+
+La tipografía deberá adaptarse al sistema (San Francisco en iOS, Roboto en Android).
+
+Los íconos deberán estar basados en librerías nativas (SF Symbols para iOS, Material Icons para Android).
+
+La aplicación deberá cumplir con las pautas de accesibilidad de cada plataforma (VoiceOver en iOS y TalkBack en Android).
+
+El diseño deberá ser responsive, adaptándose a distintos tamaños y resoluciones de pantalla (smartphones y tablets).
+
+
+<div id='5.2'><h3><b>5.2. Product Implementation & Deployment.</b></h3>
+  
+<div id='5.1.2'><h3><b>5.2.1. Sprint Backlogs.</b></h3>
+
+| Historia de Usuario | Tareas Técnicas                                                                 | Estimación | Estado |
+|----------------------|---------------------------------------------------------------------------------|------------|--------|
+| **US-01:** Registro con email y contraseña | - Diseñar pantalla de registro en Figma<br>- Implementar formulario de registro (frontend)<br>- Validar campos obligatorios<br>- Implementar API de autenticación (backend)<br>- Conectar frontend con backend<br>- Configurar BD para credenciales<br>- Pruebas de flujo de registro | 5 pts | Pendiente |
+| **US-03:** Agregar plantas con nombre, especie y foto | - Diseñar pantalla de “Agregar planta”<br>- Implementar formulario en frontend<br>- Crear servicio API en backend<br>- Configurar BD para datos de plantas<br>- Implementar carga de imágenes (galería/cámara)<br>- Probar flujo de creación y edición | 8 pts | Pendiente |
+
+---
+
+
+<div id='5.1.2'><h3><b>5.2.2. Implemented Landing Page Evidence</b></h3>
+
+  # Implemented Landing Page Evidence
+
+## 1. Overview
+The Landing Page was designed and implemented as the entry point for **LlanterosTech**.  
+It communicates the app’s value proposition, captures user interest, and encourages sign-ups.
+
+---
+
+## 2. Implemented Features
+- Responsive design (desktop, tablet, mobile)  
+- Hero section with app tagline and CTA button  
+- Features section highlighting plant care benefits  
+- Testimonials placeholder for future user feedback  
+- Footer with contact information and social media links  
+
+---
+
+
+<div id='5.1.2'><h3><b>5.2.3. Implemented Frontend-Web Application Evidence</b></h3>
+<div id='5.1.2'><h3><b>5.2.4. Implemented Native-Mobile Application Evidence</b></h3>
+<div id='5.1.2'><h3><b>5.2.5. Implemented RESTful API and/or Serverless Backend Evidence</b></h3>
+<div id='5.1.2'><h3><b>5.2.6. RESTful API documentation</b></h3>
+<div id='5.1.2'><h3><b>5.2.7. Team Collaboration Insights</b></h3>
+<div id='5.1.2'><h3><b>5.3. Video About-the-Product.</b></h3>
 
