@@ -1062,21 +1062,21 @@ En esta sección se mostrára los mock-ups de nuestra web application y para ell
 <div id='4.8'><h3><b>4.8. Domain-Driven Software Architecture.</b></h3>
 <div id='4.8.1'><h3><b>4.8.1. Software Architecture Context Diagram.</b></h3>
 
-[Architecture Context Diagram.](https://imgur.com/RCpt3YF.png)
+![Architecture Context Diagram.](https://imgur.com/RCpt3YF.png)
 
 <div id='4.8.2'><h3><b>4.8.2. Software Architecture Container Diagrams.</b></h3>
 
-[Architecture Context Diagram.](https://imgur.com/cVDCwSh.png)
+![Architecture Context Diagram.](https://imgur.com/cVDCwSh.png)
 
 <div id='4.8.3'><h3><b>4.8.3. Software Architecture Components Diagrams.</b></h3>
 
-[Architecture Context Diagram.](https://imgur.com/iArO5yT.png)
+![Architecture Context Diagram.](https://imgur.com/iArO5yT.png)
 
 <div id='4.9'><h3><b>4.9. Software Object-Oriented Design</b></h3>
 <div id='4.9.1'><h3><b>4.9.1. Class Diagrams.</b></h3>
 
 En esta sección se mostrará el diagrama de clases de nuestra aplicación
-[Class Diagrams](https://imgur.com/5iZAsSH.png)
+![Class Diagrams](https://imgur.com/5iZAsSH.png)
 
 
 
@@ -1094,7 +1094,7 @@ equipment: Conjunto de Workers encargados de un Crop -equipmentCode: Código del
 <div id='4.10.1'><h3><b>4.10.1. Relational/Non-Relational Database Diagram.</b></h3>
 
 En esta sección se mostrará el diagrama de clases de nuestra aplicación
-[database Diagrams](https://imgur.com/O3aXqmF.png)
+![database Diagramsasdsad](https://imgur.com/O3aXqmF.png)
 
 <div id='5.'><h1><b>3. Capítulo V: Requirements Specification</b></h1>
   
