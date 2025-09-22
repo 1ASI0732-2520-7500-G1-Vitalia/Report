@@ -956,3 +956,15 @@ Búsqueda por palabras clave: Permite buscar plantas, guías, problemas comunes,
 Filtros: Se pueden aplicar filtros por tipo de planta (interior, exterior), nivel de cuidado, o categoría (riego, plagas, luz).
 
 Sugerencias automáticas: A medida que el usuario escribe, se muestran resultados sugerid
+
+<div id='4.2.5'><h3><b> 4.2.5. Navigation Systems.</b></h3>
+  
+Menú principal: Incluye secciones como funciones, Registro de plantas, Diagnóstico, Guías, Calendario y Ajustes.
+
+Botones de acción rápida: Como “Agregar planta” o “Escanear hoja”, siempre visibles.
+
+Navegación por tarjetas: Cada planta registrada se muestra como una tarjeta con acceso a detalles y acciones.
+
+<div id='4.3'><h3><b> 4.3. Landing Page UI Design.</b></h3>
+
+En esta parte, damos a conocer nuestra propuesta de diseño para la interfaz de usuario (UI) de la página de inicio. Detallamos cómo nuestras elecciones en cuanto al diseño y la estructura de la información se transforman en una experiencia visual atractiva y funcional. La página de inicio representa la primera impresión de nuestro sitio web, por lo que es fundamental que proyecte nuestra identidad de marca, comunique de manera clara los mensajes principales y oriente a los usuarios hacia las acciones que buscamos. Asimismo, resaltaremos los principios de diseño y los enfoques estratégicos que guiaron la creación de una experiencia de usuario eficaz y memorable
