@@ -1075,7 +1075,8 @@ En esta sección se mostrára los mock-ups de nuestra web application y para ell
 <div id='4.9'><h3><b>4.9. Software Object-Oriented Design</b></h3>
 <div id='4.9.1'><h3><b>4.9.1. Class Diagrams.</b></h3>
 
-
+En esta sección se mostrará el diagrama de clases de nuestra aplicación
+[Class Diagrams](https://imgur.com/5iZAsSH.png)
 
 
 
@@ -1089,10 +1090,11 @@ worker: Personas que trabajan en las diferentes compañías agrícolas. -dni: Do
 
 equipment: Conjunto de Workers encargados de un Crop -equipmentCode: Código del equipo -numberMembers: Dice la cantidad de integrantes de un equipo -canagerCode: Indica quién es el líder del equipo -cropCode: El código del cultivo en que trabaja el equipo -createTeam(): Crea un nuevo equipo -addMember(): Agrega a un nuevo miembro -removeMember(): Quitar a un miembro del equipo
 
+<div id='4.10'><h3><b>4.10. Database Design</b></h3>
+<div id='4.10.1'><h3><b>4.10.1. Relational/Non-Relational Database Diagram.</b></h3>
 
-4.10. Database Design.
-
-4.10.1. Relational/Non-Relational Database Diagram.
+En esta sección se mostrará el diagrama de clases de nuestra aplicación
+[database Diagrams](https://imgur.com/O3aXqmF.png)
 
 <div id='5.'><h1><b>3. Capítulo V: Requirements Specification</b></h1>
   
