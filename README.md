@@ -972,3 +972,33 @@ En esta parte, damos a conocer nuestra propuesta de diseño para la interfaz de 
 <div id='4.3.1'><h3><b> 4.3.1. Landing Page Wireframe</b></h3>
 
 https://www.figma.com/design/43rOS1ADEUThlJXkrNxqQQ/Wireframe-landing-IOT?node-id=0-1&t=YtFMl95aoZ6wJgbk-1
+
+<div id='4.3.2'><h3><b> 4.3.2. Landing Page Mock-up.</b></h3>
+
+https://www.figma.com/design/43rOS1ADEUThlJXkrNxqQQ/Wireframe-landing-IOT?node-id=0-1&t=YtFMl95aoZ6wJgbk-1
+
+<div id='4.4'><h3><b> 4.4. Mobile Applications UX/UI Design</b></h3>
+
+<div id='5.4.1'><h3><b> 5.4.1. Mobile Applications Wireframes </b></h3>
+
+Menú principal: Incluye secciones como funciones, Registro de plantas, Diagnóstico, Guías, Calendario y Ajustes.
+
+Botones de acción rápida: Como “Agregar planta” o “Escanear hoja”, siempre visibles.
+
+Navegación por tarjetas: Cada planta registrada se muestra como una tarjeta con acceso a detalles y accione
+
+https://www.figma.com/design/h4H5bIZ22u1xrqhN0pGTsY/Untitled?node-id=0-1&p=f&t=iodvAit2xepMAZSM-0
+
+<div id='4.4.2'><h3><b> 4.4.2. Mobile Applications Wireflow Diagrams.</b></h3>
+
+https://www.figma.com/design/9P1UhGBP4ANiAl7ScpFSNj/wireflow?node-id=0-1&t=8fEeshhCXpyFgKIP-1
+
+<div id='4.4.3'><h3><b> 4.4.3. Mobile Applications Mock-ups</b></h3>
+
+https://www.figma.com/design/h4H5bIZ22u1xrqhN0pGTsY/Untitled?node-id=0-1&p=f&t=TkmWs9iKVckTPA0v-0
+
+<div id='4.4.4'><h3><b>4.4.4. Mobile Applications User Flow Diagrams. </b></h3>
+
+https://www.figma.com/design/9P1UhGBP4ANiAl7ScpFSNj/wireflow?node-id=0-1&t=8fEeshhCXpyFgKIP-1
+
+
