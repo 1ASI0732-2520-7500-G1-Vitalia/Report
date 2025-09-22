@@ -317,7 +317,7 @@
                 <p><strong>TB1:Lideré la identificación de Domain Message Flows, Bounded Contexts y elaboración de Context Map. Promoví colaboración para entender los modelo</strong> .</p>
                 <p><strong>Hernán Emilio Morales Calderón</strong></p>
                 <p><strong>TB1:Lideré la estructuración del To-Be Scenario Map, organización de épicas y backlog, y el diseño del customer journey estratégico.</strong> .</p>
-                <p><strong>Alumno 5</strong></p>
+                <p><strong>Irving Allcca Guerrero</strong></p>
                 <p><strong>TB1: Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave</strong> .</p>
             </td>
             <td>
@@ -365,11 +365,11 @@
   </tr>
     <tr>
     <th>
-      <img src="img/" alt="Foto de perfil de Alumno" width="300px">
+      <img src="https://imgur.com/ZDr5MfF.png" alt="Foto de perfil de Alumno" width="300px">
     </th>
     <td valign="top">
       <p><b>Irving Allcca Guerrero</b></p>
-      <p> estudio ingeniería de software, soy una persona sociable y siempre estoy dispuesta a escuchar nuevas ideas.
+      <p> Ingeniería de Software – U20213241<br><br>Soy estudiante de Ingeniería de Software de mi carrera en la UPC y tengo 20 años. Soy una persona empática e intuitiva. Me gusta desarrollar los proyectos de manera secuencial y eficiente. En equipo, me esfuerzo por colaborar. Tengo experiencia en programación con C ++, c#, Python, así como en el diseño web con html, CSS y JavaScript.
       </p>
     </td>
   </tr>
