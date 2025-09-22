@@ -698,7 +698,7 @@ Los user persona que se muestran a continuación, fueron realizados a partir de 
 <br>
 <br>
 
-<img src="img/img/cap1.png" alt="Foto de uer " width="300px">
+<img src="img/cap 1.jpg" alt="Foto de uer " width="300px">
 
 <div id='2.3.2.'><h3> 2.3.2. User Task Matrix</h3>
 
@@ -716,15 +716,15 @@ Los user persona que se muestran a continuación, fueron realizados a partir de 
 <div id='2.3.3.'><h3> 2.3.3. User Journey Mapping</h3>
 
 <br>
-<img src="">
+<img src="img/cap 2.jpg">
 
 <div id='2.3.4.'><h3> 2.3.4. Empathy Maping</h3>
 <br>
-<img src="">
+<img src="img/cap 3.jpg">
 <br>
 <div id='2.3.5.'> <h3> 2.3.5. As-is Scenario Mapping</h3>
 
-<img src="">
+<img src="img/cap 4.jpg">
 
 <div id='3.'><h1><b>3. Capítulo III: Requirements Specification</b></h1>
 
@@ -734,7 +734,7 @@ En esta sección se presenta el mapeo de los escenarios, realizando una tabla co
 
 <p><b>Para el segmento de aficionados a la jardinería que buscan mejorar sus habilidades y el éxito de sus plantas.:</b></p>
 
-<img src="">
+<img src="img/cap 5.jpg">
 
 <div id='3.2.'><h2>3.2 User Stories</h2>
 
@@ -823,7 +823,7 @@ En esta sección se muestra un gráfico que incluye los business goals del negoc
 
 #### Segmeto de aficionados a la jardinería que buscan mejorar sus habilidades y el éxito de sus plantas:
 
-<img src="">
+<img src="img/cap 6.jpg">
 
 
 
@@ -838,18 +838,15 @@ El branding de Llanteros refleja el espíritu innovador y comprometido de una st
 
 A continuación, se mostrará la paleta general de colores para la aplicación, iconos, logo y tipografía que hemos escogido para nuestra aplicación web.
 
-### Logo:
-![](assets/logo.png)
 
 ### Paleta de colores:
-![](assets/paleta%20color.png)
+<img src="img/cap 10.png">
 
 ### Tipografía:
-![](assets/fuente.png)
+<img src="img/cap8.png">
 
 ### Tamaño de fuente:
-![](assets/tamanofuente.png)
-
+<img src="img/cap 9.png">
 Decidimos que para nuestra aplicación apliquemos una interfaz simple y fácil de entender con colores vivos que capten la atención del usuario.
 
 <div id='4.1.2.'><h3><b>4.1.2. Web Style Guidelines</b></h3>
