@@ -1029,12 +1029,39 @@ https://www.figma.com/design/FSdzGLrBhZPdrn6TDVch6n/prototipo?node-id=0-1&p=f&t=
 
 4.5.1. Android Mobile Applications Prototyping.
 4.5.2. iOS Mobile Applications Prototyping.
-4.6. Web Applications UX/UI Design.
-4.6.1. Web Applications Wireframes.
-4.6.2. Web Applications Wireflow Diagrams.
-4.6.3. Web Applications Mock-ups.
-4.6.4. Web Applications User Flow Diagrams.
-4.7. Web Applications Prototyping.
+## 4.6. Web Applications UX/UI Design.
+### 4.6.1. Web Applications Wireframes.
+### 4.6.2. Web Applications Wireflow Diagrams.
+### 4.6.3. Web Applications Mock-ups.
+
+En esta sección se mostrára los mock-ups de nuestra web application y para ello se enseñará algunos ejemplos
+
+**Home**
+<img src="https://imgur.com/XEiAxyN.png" alt="Foto de uer " width="300px">
+
+**Cronograma**
+<img src="https://imgur.com/3xCy5dQ.png" alt="Foto de uer " width="300px">
+
+**Registrar planta**
+<img src="https://imgur.com/5aU7l64.png" alt="Foto de uer " width="300px">
+
+**Listado de historial de salud**
+<img src="https://imgur.com/g6t1djj.png" alt="Foto de uer " width="300px">
+
+**Historial de salud de la planta**
+<img src="https://imgur.com/kod40WD.png" alt="Foto de uer " width="300px">
+
+**Videos educativos**
+<img src="https://imgur.com/I32YTPQ.png" alt="Foto de uer " width="300px">
+
+**Progreso de a planta**
+<img src="https://imgur.com/Iud5IRF.png" alt="Foto de uer " width="300px">
+
+**Resultado diagnostico**
+<img src="https://imgur.com/fMYRfhI.png" alt="Foto de uer " width="300px">
+
+### 4.6.4. Web Applications User Flow Diagrams.
+## 4.7. Web Applications Prototyping.
 
 
 <div id='4.8'><h3><b>4.8. Domain-Driven Software Architecture.</b></h3>
