@@ -881,13 +881,20 @@ Notificaciones: Sistema de alertas push para recordatorios de riego, fertilizaci
 
 Modo oscuro: Opcional, con inversión de colores conservando la legibilidad.
 
-<div id='4.1.1.'><h3><b>4.1.1. General Style Guidelines.</b></h3>
-  
+
 <div id='4.1.2.'><h3><b>4.1.2. Web Style Guidelines.</b></h3>
+
+Uno de los aspectos más importantes en el desarrollo web es el usocorrecto del responsive design para que la aplicación se visualiceperfectamente sin importar el tamaño de la pantalla o dispositivo. Por esta razón, se decidió realizar el desarrollo de nuestra solucióntomando en cuenta los siguientes breakpoints para que el responsivedesign se muestre correctamente.
 
 <div id='4.1.3.'><h3><b>4.1.3. Mobile Style Guidelines.</b></h3>
 
+Con respecto a los estándares visuales, se utilizarán los mismoselementos presentados en la sección anterior para lograr uniformidad entodo el uso de nuestra aplicación. Igualmente, las medidas y propiedadespresentadas son escalables, manejables y compatibles con el desarrollode responsive design.
+
 <div id='4.1.3.1'><h3><b>4.1.3.1. iOS Mobile Style Guidelines.</b></h3>
+
+
+
+
 
 <div id='4.1.3.2'><h3><b>4.1.3.2. Android Mobile Style Guidelines.</b></h3>
 
@@ -1018,7 +1025,14 @@ https://www.figma.com/design/FSdzGLrBhZPdrn6TDVch6n/prototipo?node-id=0-1&p=f&t=
 4.6.3. Web Applications Mock-ups.
 4.6.4. Web Applications User Flow Diagrams.
 4.7. Web Applications Prototyping.
-4.8. Domain-Driven Software Architecture.
+
+
+<div id='4.8'><h3><b>4.8. Domain-Driven Software Architecture.</b></h3>
+
+
+
+
+
 4.8.1. Software Architecture Context Diagram.
 4.8.2. Software Architecture Container Diagrams.
 4.8.3. Software Architecture Components Diagrams.
