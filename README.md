@@ -354,7 +354,7 @@
   </tr>
   <tr>
     <th>
-    <img src="img/" alt="Foto de perfil de Alumno" width="300px">
+    <img src="img/Joan.jpeg" alt="Foto de perfil de Alumno" width="300px">
     </th>
     <td valign="top">
       <p><b>Joan Fernando Teves Samaniego</b></p>
