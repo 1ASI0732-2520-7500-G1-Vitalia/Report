@@ -376,7 +376,7 @@
 
 <tr>
     <th>
-      [<img src="[img/](https://github.com/Desarrollo-de-Soluciones-IoT-2510-2942/Informe/raw/main/Resources/Chapter%2001/Team%20Members/Morales-Hernan.png)" alt="Foto de perfil deAlumno" width="300px">](https://github.com/Desarrollo-de-Soluciones-IoT-2510-2942/Informe/raw/main/Resources/Chapter%2001/Team%20Members/Morales-Hernan.png)
+      <img src="https://github.com/Desarrollo-de-Soluciones-IoT-2510-2942/Informe/raw/main/Resources/Chapter%2001/Team%20Members/Morales-Hernan.png" alt="Foto de perfil de Alumno" width="300px">
     </th>
     <td valign="top">
       <p><b>Hernan Emilio Morales Calderón</b></p>
