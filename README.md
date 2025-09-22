@@ -376,10 +376,10 @@
 
 <tr>
     <th>
-      <img src="img/" alt="Foto de perfil deAlumno" width="300px">
+      [<img src="[img/](https://github.com/Desarrollo-de-Soluciones-IoT-2510-2942/Informe/raw/main/Resources/Chapter%2001/Team%20Members/Morales-Hernan.png)" alt="Foto de perfil deAlumno" width="300px">](https://github.com/Desarrollo-de-Soluciones-IoT-2510-2942/Informe/raw/main/Resources/Chapter%2001/Team%20Members/Morales-Hernan.png)
     </th>
     <td valign="top">
-      <p><b>Emilio Morales Calderón</b></p>
+      <p><b>Hernan Emilio Morales Calderón</b></p>
       <p>Soy estudiante de ingeniería de software, actualmente en el octavo ciclo y tengo principales conocimientos en backend
       </p>
 
