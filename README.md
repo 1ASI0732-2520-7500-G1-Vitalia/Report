@@ -359,8 +359,7 @@
     <td valign="top">
       <p><b>Joan Fernando Teves Samaniego</b></p>
       <p>
-     soy estudiante de la carrera de Ingeniería de Software y me considero una persona dispuesta a ayudar en los trabajos de grupos y atento a los detalles.
-      </p>
+     Tengo 22 años estoy estudiando actualmente en la Univeridad Peruana de Ciencias Aplicadas. Tengo interes por el mundo de la cibersegurirdad y el primer         paso es enteder al derecho y al revez las aplicaciones web , se c++ , javascript , html , css , mongodb ,sql , sqlserver , posgresql,python, soy creativo       , responsable , trabajo en equipo , me gusta resolver problemas   me adaptofacilmente y gestiono muy bien mi tiempo.Espero que en este proyecto pueda           incrementar mis habilidades y conocimiento sobre las aplicaciones web y demas 
     </td>
   </tr>
     <tr>
