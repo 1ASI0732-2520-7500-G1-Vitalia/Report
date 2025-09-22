@@ -385,6 +385,16 @@
 
   </tr>
 
+<div id='1.'><h1>1. Capítulo I: Introducción.</h1></div>
+
+
+## **1.1 Startup Profile**
+
+<div id='1.1.1.'><h3> 1.1.1. Descripción de la Startup.</h3></div>
+<div align="justify">
+LlanterosTech es una startup conformada por estudiantes de la carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas. Juntos, somos un equipo comprometido con las necesidades y problemáticas que enfrentan los entusiastas del cuidado de plantas, quienes a menudo se ven afectados por la falta de información clara y herramientas eficientes para la gestión del bienestar de sus plantas. Es así como identificamos una oportunidad para proponer una solución innovadora que mejore la eficiencia y calidad en el cuidado de las plantas.
+</div>
+
 
 ## **1.2 Solution Profile**
 
