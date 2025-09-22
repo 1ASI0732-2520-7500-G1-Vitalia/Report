@@ -1027,8 +1027,6 @@ https://www.figma.com/design/FSdzGLrBhZPdrn6TDVch6n/prototipo?node-id=0-1&p=f&t=
 <div id='4.5.2'><h3><b>4.5.2. iOS Mobile Applications Prototyping.</b></h3>
 
 
-4.5.1. Android Mobile Applications Prototyping.
-4.5.2. iOS Mobile Applications Prototyping.
 ## 4.6. Web Applications UX/UI Design.
 ### 4.6.1. Web Applications Wireframes.
 ### 4.6.2. Web Applications Wireflow Diagrams.
