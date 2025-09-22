@@ -884,6 +884,10 @@ Notificaciones: Sistema de alertas push para recordatorios de riego, fertilizaci
 
 Modo oscuro: Opcional, con inversión de colores conservando la legibilidad.
 
+<div id='4.1.1.'><h3><b>4.1.1. General Style Guidelines.</b></h3>
+  
+<div id='4.1.2.'><h3><b>4.1.2. Web Style Guidelines.</b></h3>
+
 <div id='4.1.3.'><h3><b>4.1.3. Mobile Style Guidelines.</b></h3>
 
 <div id='4.1.3.1'><h3><b>4.1.3.1. iOS Mobile Style Guidelines.</b></h3>
@@ -894,4 +898,51 @@ Modo oscuro: Opcional, con inversión de colores conservando la legibilidad.
 
 <div id='4.2.1'><h3><b>4.2.1. Organization Systems.</b></h3>
 
+En lo referente a la disposición visual del contenido dentro de nuestro proyecto, se implementará el principio de jerarquía visual para estructurar la información en las diferentes secciones de la aplicación. Esto implica que la importancia de cada enunciado se reflejará mediante el tamaño de la fuente: los elementos más relevantes se destacarán con un tamaño de 32px (equivalente a 2rem), mientras que los de menor importancia utilizarán tamaños más reducidos. Asimismo, se adoptará un esquema de organización en forma de matriz ordenada para mostrar las características del producto, lo que permitirá una presentación clara y bien estructurada.
 
+Respecto a la clasificación del contenido, se aplicará una categorización orientada a la audiencia, ya que el proyecto está dirigido a dos tipos de usuarios: clientes y administradores. Cada grupo tendrá acceso a secciones y funcionalidades diseñadas específicamente para sus necesidades. Además, se incorporará una organización cronológica para el manejo de registros, especialmente cuando los usuarios consulten bases de datos con información temporal. En estos casos, se dará prioridad a las entradas más recientes, mostrándolas primero para facilitar su consulta en orden temporal.
+
+<div id='4.2.2'><h3><b>4.2.2. Labeling Systems.</b></h3>
+
+1. Principios de etiquetado
+
+Claridad: Evitar tecnicismos; usar términos comprensibles para el usuario promedio (ej. “Regar” en vez de “Humedad de sustrato”).
+
+Consistencia: Usar el mismo término para la misma función en toda la aplicación (por ejemplo, si se usa “Mi planta” no alternar con “Planta registrada”).
+
+2. Tipos de etiquetas utilizadas
+
+Etiquetas de navegación: “Inicio”, “Mis plantas”, “Diagnóstico”, “Guías”, “Configuración”.
+
+Etiquetas de funciones: “Agregar planta”, “Escanear hoja”, “Ver historial”, “Programar riego”.
+
+Etiquetas informativas: “Humedad actual”, “Nivel de luz”, “Último riego”.
+
+3. Convenciones lingüísticas
+
+Idioma base: Español neutro.
+
+Tono: Amigable y orientado a principiantes.
+
+Verbos en infinitivo o sustantivos simples: “Agregar”, “Escanear”, “Diagnóstico”.
+
+4. Adaptabilidad
+
+Compatibilidad multilingüe (ej. posibilidad de cambiar el idioma de las etiquetas).
+
+Inclusión de íconos junto con etiquetas para facilitar el reconocimiento visual.
+
+5. Justificación de diseño
+
+Las etiquetas están pensadas para usuarios sin conocimientos técnicos de jardinería.
+
+Se realizaron entrevistas para determinar qué términos son más intuitivos (por ejemplo, “hojas dañadas” en vez de “signos de clorosis”).
+
+5.2.3. SEO Tags and Meta Tags
+Para mejorar la visibilidad de la plataforma “Plantita” en motores de búsqueda, se implementaron etiquetas SEO y meta tags clave:
+
+Título (Meta Title): Plantita
+
+Descripción (Meta Description): App para cuidar plantas con sensores, recordatorios y guías personalizadas.
+
+Palabras clave (Meta Keywords): jardinería, plantas, sensores, app de plantas, cuidado de plantas
