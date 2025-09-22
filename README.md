@@ -638,7 +638,7 @@ En el mercado al que buscamos ofrecer nuestra solución, identificamos diversos 
 
 ### Entrevista 5: https://drive.google.com/drive/folders/1arzj1cuxP2zOGmwTyb6uJWcws5smoYzF
 
-### Entrevista 6:
+### Entrevista 6: https://drive.google.com/file/d/1p1jtIo70UHPi4DimgM6_pxEGnAHaXJ3S/view
 
 <div id='2.2.3.'><h3> 2.2.3. Análisis de entrevistas</h3>
 
@@ -1001,4 +1001,47 @@ https://www.figma.com/design/h4H5bIZ22u1xrqhN0pGTsY/Untitled?node-id=0-1&p=f&t=T
 
 https://www.figma.com/design/9P1UhGBP4ANiAl7ScpFSNj/wireflow?node-id=0-1&t=8fEeshhCXpyFgKIP-1
 
+<div id='4.5'><h3><b> 4.5. Mobile Applications Prototyping. </b></h3>
+
+https://www.figma.com/design/FSdzGLrBhZPdrn6TDVch6n/prototipo?node-id=0-1&p=f&t=A680re8dypf6NtQz-0
+
+<div id='4.5.1'><h3><b>4.5.1. Android Mobile Applications Prototyping.</b></h3>
+  
+<div id='4.5.2'><h3><b>4.5.2. iOS Mobile Applications Prototyping.</b></h3>
+
+
+4.5.1. Android Mobile Applications Prototyping.
+4.5.2. iOS Mobile Applications Prototyping.
+4.6. Web Applications UX/UI Design.
+4.6.1. Web Applications Wireframes.
+4.6.2. Web Applications Wireflow Diagrams.
+4.6.3. Web Applications Mock-ups.
+4.6.4. Web Applications User Flow Diagrams.
+4.7. Web Applications Prototyping.
+4.8. Domain-Driven Software Architecture.
+4.8.1. Software Architecture Context Diagram.
+4.8.2. Software Architecture Container Diagrams.
+4.8.3. Software Architecture Components Diagrams.
+4.9. Software Object-Oriented Design
+4.9.1. Class Diagrams.
+4.9.2. Class Dictionary.
+4.10. Database Design.
+4.10.1. Relational/Non-Relational Database Diagram.
+
+<div id='5.'><h1><b>3. Capítulo V: Requirements Specification</b></h1>
+  
+5.1. Software Configuration Management.
+5.1.1. Software Development Environment Configuration.
+5.1.2. Source Code Management.
+5.1.3. Source Code Style Guide & Conventions.
+5.1.4. Software Deployment Configuration.
+5.2. Product Implementation & Deployment.
+5.2.1. Sprint Backlogs.
+5.2.2. Implemented Landing Page Evidence
+5.2.3. Implemented Frontend-Web Application Evidence
+5.2.4. Implemented Native-Mobile Application Evidence
+5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
+5.2.6. RESTful API documentation
+5.2.7. Team Collaboration Insights
+5.3. Video About-the-Product.
 
