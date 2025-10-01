@@ -1208,9 +1208,272 @@ It communicates the app’s value proposition, captures user interest, and encou
 
   
 <div id='5.1.2'><h3><b>5.2.5. Implemented RESTful API and/or Serverless Backend Evidence</b></h3>
+
+
 <div id='5.1.2'><h3><b>5.2.6. RESTful API documentation</b></h3>
 
-  
+
+
 <div id='5.1.2'><h3><b>5.2.7. Team Collaboration Insights</b></h3>
+
+| Integrante                      | Participación en el capítulo                                                                 |
+|---------------------------------|----------------------------------------------------------------------------------------------|
+| Andrea Cabanillas Gora          | Capítulo I: Introducción → 1.1 Startup Profile (Descripción de la Startup y Perfiles del equipo) |
+| Anderson Gonza Morales          | Capítulo I: Introducción → 1.2 Solution Profile (Antecedentes, problemática y Lean UX Process)  |
+| Joan Fernando Teves Samaniego   | Capítulo II: Requirements Elicitation & Analysis (Competidores y Entrevistas)                  |
+| Irving Allcca Guerrero          | Capítulo II: Requirements Elicitation & Analysis (Needfinding y Ubiquitous Language)           |
+| Hernan Emilio Morales Calderón  | Capítulo III: Requirements Specification (To-Be Scenario Mapping, User Stories y Backlog)       |
+
+
 <div id='5.1.2'><h3><b>5.3. Video About-the-Product.</b></h3>
+
+
+<div id='6'><h3><b>Capítulo VI: Product Verification & Validation</b></h3>
+  
+<div id='6.1'><h3><b>6.1. Testing Suites & Validation</b></h3>
+  
+<div id='6.1.1'><h3><b>6.1.1. Core Entities Unit Tests.</b></h3>
+
+Entidades principales a probar:
+
+Usuario
+
+Creación de cuenta y validación de campos obligatorios.
+Manejo de contraseñas y validaciones de seguridad.
+Roles y permisos asignados.
+
+Planta
+
+Registro de nuevas especies.
+Validación de atributos (nombre, tipo, condiciones de luz, humedad, riego).
+Asociación con usuario propietario.
+
+Recordatorio
+
+Creación y actualización de recordatorios de riego/fertilización.
+Validación de fecha, hora y notificaciones.
+
+Historial de Cuidado
+
+Registro automático de acciones realizadas por el usuario.
+Consulta de eventos pasados.
+
+Objetivo de estas pruebas:
+
+Asegurar que cada entidad cumpla sus reglas de negocio.
+Validar la persistencia en base de datos.
+Garantizar que los atributos requeridos sean consistentes y completos.
+
+
+<div id='6.1.2'><h3><b>6.1.2. Core Integration Tests.</b></h3>
+
+Escenarios principales a probar:
+
+Registro de usuario + Planta:
+Verificar que al crear un usuario se puedan asociar correctamente plantas a su perfil.
+
+Recordatorios + Notificaciones:
+Validar que un recordatorio genere notificaciones en el dispositivo del usuario en el momento configurado.
+
+Historial + Acciones del usuario:
+Confirmar que cada acción realizada (riego, fertilización, diagnóstico) se registre automáticamente en el historial asociado a la planta.
+
+Diagnóstico + Base de datos de especies:
+Comprobar que el módulo de diagnóstico interactúe correctamente con la base de datos para identificar problemas comunes y recomendar soluciones.
+
+Objetivo de estas pruebas:
+
+Validar la comunicación entre módulos.
+Detectar errores de integración tempranamente.
+Asegurar que el flujo de usuario (end-to-end) sea consistente y sin interrupciones.
+  
+<div id='6.1.2'><h3><b>6.1.3. Core Behavior-Driven Development</b></h3>
+
+Escenarios principales:
+
+Registro de usuario
+
+Given un visitante accede a la aplicación,
+When completa el formulario de registro con datos válidos,
+Then se debe crear un nuevo usuario con un perfil activo.
+
+Asociación de planta
+
+Given un usuario autenticado,
+When registra una nueva planta en su perfil,
+Then la planta queda vinculada a su cuenta y visible en su dashboard.
+
+Recordatorios automáticos
+
+Given una planta con recordatorio de riego configurado,
+When llega la fecha/hora programada,
+Then el usuario recibe una notificación en su dispositivo.
+
+Diagnóstico de planta
+
+Given un usuario toma una foto de su planta,
+When el sistema procesa la imagen,
+Then se muestra la especie identificada y posibles problemas detectados.
+  
+<div id='6.1.4'><h3><b>6.1.4. Core System Tests.</b></h3>
+
+Áreas de validación:
+
+-Funcionalidad completa: Verificar que todas las funciones (registro, recordatorios, diagnóstico, historial) funcionen de extremo a extremo.
+-Compatibilidad: Asegurar que la aplicación funcione en distintos dispositivos (móviles, tablets, navegadores web).
+-Performance: Medir tiempos de respuesta al registrar usuarios, crear recordatorios o procesar imágenes para diagnóstico.
+-Seguridad: Validar protección de contraseñas, accesos no autorizados y seguridad en el manejo de datos personales.
+-Usabilidad: Comprobar que la interfaz sea intuitiva y accesible para usuarios principiantes en el cuidado de plantas.
+-Recuperación de fallos: Evaluar el sistema ante caídas de red o interrupciones del servidor.
+  
+<div id='6'><h3><b>Capítulo VII: DevOps Practices</b></h3>
+  
+<div id='7.1'><h3><b>7.1. ContinuousIntegration</b></h3>
+
+ Objetivos principales:
+
+Detectar errores rápidamente mediante compilación y pruebas automáticas.
+Reducir riesgos de integración tardía.
+Mantener un producto estable y desplegable en todo momento.
+Facilitar la colaboración entre los diferentes miembros del equipo.
+
+<div id='7.1.1'><h3><b>7.1.1. Tools and Practices.
+
+Herramientas propuestas:
+
+GitHub Actions / GitLab CI / Jenkins → Automatización de pipelines para compilación, ejecución de pruebas y despliegue.
+Docker → Contenerización de la aplicación para garantizar entornos homogéneos.
+SonarQube → Análisis estático de código para mejorar calidad y detectar vulnerabilidades.
+JUnit, Pytest, Jest → Frameworks de testing automatizado para backend y frontend.
+Postman + Newman → Ejecución de pruebas de APIs REST en el pipeline.
+
+Prácticas recomendadas:
+
+Commits frecuentes y pequeños → Facilitan la detección de errores y la trazabilidad.
+Branching model (Git Flow o Trunk Based) → Organización clara de ramas de desarrollo, features y releases.
+Pull Requests con Code Review → Validación colaborativa antes de la integración.
+Ejecución automática de Unit Tests e Integration Tests en cada commit push.
+Pipeline con stages (Build → Test → Deploy → Report) → Garantiza un flujo ordenado y transparente.
+Feedback rápido al equipo mediante notificaciones (Slack, Teams, correo).
+  
+<div id='5.1.2'><h3><b>7.1.2. Build & Test Suite Pipeline Components.</b></h3>
+
+
+  
+<div id='7.2'><h3><b>7.2. Continuous Delivery</b></h3>
+
+La Entrega Continua (CD) extiende la Integración Continua (CI) asegurando que cada cambio validado pueda ser desplegado en producción de manera rápida, segura y confiable. En LlanterosTech, esta práctica permite reducir el tiempo de entrega al usuario final, garantizar la estabilidad del sistema y minimizar riesgos durante los despliegues.
+
+Objetivos principales:
+
+Automatizar el proceso de despliegue desde entornos de prueba hasta producción.
+Reducir la intervención manual para minimizar errores humanos.
+Asegurar que el software esté siempre en un estado desplegable.
+Habilitar entregas frecuentes e incrementales al usuario final.
+  
+<div id='7.2.1'><h3><b>7.2.1. Tools and Practices.</b></h3>
+
+Herramientas propuestas:
+
+GitHub Actions / GitLab CI / Jenkins → Orquestación de pipelines con despliegue automático a entornos de staging y producción.
+Docker + Kubernetes → Contenerización y orquestación de microservicios para despliegues escalables.
+Ansible / Terraform → Automatización de infraestructura como código (IaC).
+ArgoCD / Spinnaker → Despliegue continuo en entornos Kubernetes con control declarativo.
+Monitoring & Logging (Prometheus, Grafana, ELK Stack) → Supervisión en tiempo real del estado de los despliegues.
+
+Prácticas recomendadas:
+
+Deploy automatizado a entornos intermedios (staging/pre-producción) antes de llegar a producción.
+Canary Releases → Despliegues graduales en producción para un porcentaje limitado de usuarios.
+Blue/Green Deployment → Dos entornos paralelos (blue y green) que permiten cambios sin downtime.
+Rollback automático → Reversión rápida en caso de fallos críticos.
+Pruebas automáticas post-deploy (Smoke Tests, Health Checks).
+Feature Flags → Habilitar/deshabilitar funcionalidades sin necesidad de re-desplegar el sistema.
+  
+<div id='7.2.2'><h3><b>7.2.2. Stages Deployment Pipeline Components.</b></h3>
+
+Stages :
+
+Source (Control de versiones)
+
+Código fuente almacenado en repositorio (GitHub/GitLab/Bitbucket).
+Dispara el pipeline al detectar un commit o merge.
+
+Build (Compilación / Empaquetado)
+
+Compilar el código y empaquetar dependencias.
+Generar artefactos listos para prueba (ej. contenedores Docker, archivos .jar/.war, bundles web).
+
+Test (Validación automática)
+
+Unit Tests: verifican entidades y métodos individuales.
+Integration Tests: validan interacción entre módulos.
+BDD Tests: validan escenarios escritos en Gherkin.
+System Tests: prueban el sistema completo en un entorno aislado.
+
+Deploy to Staging (Entrega en entorno intermedio)
+
+Despliegue automático en entorno de staging o pre-producción.
+Ejecución de Smoke Tests y validación manual opcional.
+
+Approval / Gate (Revisión opcional)
+
+Aprobación manual (cuando se requiera en proyectos críticos).
+Validación de métricas de calidad (SonarQube, cobertura de pruebas).
+
+Deploy to Production (Entrega continua)
+
+Despliegue automatizado en producción con prácticas seguras:
+Canary Releases (usuarios limitados).
+Blue/Green Deployment (dos entornos paralelos).
+Rollback automático en caso de fallo.
+
+Monitoring & Feedback (Supervisión)
+
+Monitoreo de rendimiento (Prometheus, Grafana).
+Logging centralizado (ELK Stack).
+
+Pipeline Components:
+Repositorio de código: GitHub/GitLab/Bitbucket.
+Orquestador de CI/CD: GitHub Actions, GitLab CI/CD, Jenkins, CircleCI.
+Build Tools: Maven, Gradle, npm, Webpack, Docker.
+Testing Frameworks: JUnit, Pytest, Jest, Cypress, Postman/Newman.
+Contenerización y Orquestación: Docker, Kubernetes, Helm.
+Infraestructura como código (IaC): Terraform, Ansible.
+Despliegue continuo: ArgoCD, Spinnaker, FluxCD.
+Monitoreo y Logging: Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana).
+Notificaciones: Slack, Microsoft Teams, correo automatizado.
+  
+<div id='7.3'><h3><b>7.3. Continuous deployment</b></h3>
+
+Objetivos principales:
+
+Automatizar completamente el flujo desde commit hasta producción.
+Minimizar tiempos de entrega y ciclos de retroalimentación.
+Mantener el sistema siempre actualizado, seguro y en ejecución.
+Garantizar despliegues confiables y reversibles en caso de error.
+
+<div id='7.3.1'><h3><b>7.3.1. Tools and Practices.</b></h3>
+
+Herramientas propuestas:
+
+GitHub Actions / GitLab CI / Jenkins X → Automatización completa de pipelines con despliegue directo a producción.
+Docker + Kubernetes → Contenerización y orquestación de microservicios con escalabilidad dinámica.
+ArgoCD / FluxCD → Implementación de GitOps para despliegue automático en Kubernetes.
+Helm Charts → Plantillas para desplegar aplicaciones consistentes en distintos entornos.
+Monitoring Tools (Prometheus, Grafana, ELK Stack, Datadog) → Observabilidad y alertas tras cada despliegue.
+Feature Flags (LaunchDarkly, Unleash) → Liberación controlada de funcionalidades en producción.
+
+Prácticas recomendadas:
+
+Commit → Deploy automático: Cada merge en la rama principal genera un despliegue inmediato a producción.
+Canary Deployments: Liberar la actualización a un porcentaje limitado de usuarios antes de expandirla al 100%.
+Blue/Green Deployment: Mantener dos entornos paralelos para alternar sin downtime.
+Rollback automático: Si se detecta una falla crítica, el sistema revierte automáticamente al último estado estable.
+Post-deployment checks: Ejecución de smoke tests y health checks tras cada despliegue.
+Monitoring & Alerting: Supervisión en tiempo real y notificación inmediata al equipo en caso de anomalías.
+  
+<div id='7.3.2'><h3><b>7.3.2. Production Deployment Pipeline Components</b></h3>
+  
+
 
