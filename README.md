@@ -1201,9 +1201,16 @@ It communicates the app’s value proposition, captures user interest, and encou
 
 
 <div id='5.1.2'><h3><b>5.2.3. Implemented Frontend-Web Application Evidence</b></h3>
+
+  
 <div id='5.1.2'><h3><b>5.2.4. Implemented Native-Mobile Application Evidence</b></h3>
+
+
+  
 <div id='5.1.2'><h3><b>5.2.5. Implemented RESTful API and/or Serverless Backend Evidence</b></h3>
 <div id='5.1.2'><h3><b>5.2.6. RESTful API documentation</b></h3>
+
+  
 <div id='5.1.2'><h3><b>5.2.7. Team Collaboration Insights</b></h3>
 <div id='5.1.2'><h3><b>5.3. Video About-the-Product.</b></h3>
 
