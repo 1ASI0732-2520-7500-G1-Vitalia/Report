@@ -1329,7 +1329,7 @@ Then se muestra la especie identificada y posibles problemas detectados.
   
 <div id='6'><h3><b>Capítulo VII: DevOps Practices</b></h3>
   
-<div id='7.1'><h3><b>7.1. ContinuousIntegration</b></h3>
+<div id='7.1'><h3><b>7.1. Continuous Integration</b></h3>
 
  Objetivos principales:
 
@@ -1338,7 +1338,7 @@ Reducir riesgos de integración tardía.
 Mantener un producto estable y desplegable en todo momento.
 Facilitar la colaboración entre los diferentes miembros del equipo.
 
-<div id='7.1.1'><h3><b>7.1.1. Tools and Practices.
+<div id='7.1.1'><h3><b>7.1.1. Tools and Practices.</b></h3>
 
 Herramientas propuestas:
 
