@@ -1060,6 +1060,7 @@ En esta sección se mostrára los mock-ups de nuestra web application y para ell
 <img src="https://imgur.com/fMYRfhI.png" alt="Foto de uer " width="300px">
 
 ### 4.6.4. Web Applications User Flow Diagrams.
+
 ## 4.7. Web Applications Prototyping.
 <div id='4.8'><h3><b>4.8. Domain-Driven Software Architecture.</b></h3>
 <div id='4.8.1'><h3><b>4.8.1. Software Architecture Context Diagram.</b></h3>
@@ -1145,7 +1146,7 @@ Este enfoque de ramificación permite una gestión eficiente del desarrollo, fac
 
 <div id='5.1.3'><h3><b>5.1.3. Source Code Style Guide & Conventions.</b></h3>
 
-n el proceso de realizar commits, hemos optado por seguir el estándar de "Conventional Commits". Esta práctica nos brinda una estructura definida para nuestros mensajes de commit, lo que facilita la comprensión y la gestión de cambios en el repositorio.
+en el proceso de realizar commits, hemos optado por seguir el estándar de "Conventional Commits". Esta práctica nos brinda una estructura definida para nuestros mensajes de commit, lo que facilita la comprensión y la gestión de cambios en el repositorio.
 
 Además, hemos establecido el uso de terminología en inglés para las diferentes declaraciones en nuestras líneas de código en todos los lenguajes de programación empleados en el proyecto. Esta decisión busca promover la coherencia y la claridad en la comunicación del código, facilitando la colaboración entre miembros del equipo y mejorando la legibilidad del código fuente en general.
   
@@ -1184,15 +1185,10 @@ El diseño deberá ser responsive, adaptándose a distintos tamaños y resolucio
 
 <div id='5.1.2'><h3><b>5.2.2. Implemented Landing Page Evidence</b></h3>
 
-  # Implemented Landing Page Evidence
-
-## 1. Overview
-The Landing Page was designed and implemented as the entry point for **LlanterosTech**.  
-It communicates the app’s value proposition, captures user interest, and encourages sign-ups.
 
 ---
 
-## 2. Implemented Features
+## Implemented Features
 - Responsive design (desktop, tablet, mobile)  
 - Hero section with app tagline and CTA button  
 - Features section highlighting plant care benefits  
