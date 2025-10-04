@@ -1200,15 +1200,21 @@ El diseño deberá ser responsive, adaptándose a distintos tamaños y resolucio
 
 <div id='5.1.2'><h3><b>5.2.3. Implemented Frontend-Web Application Evidence</b></h3>
 
-  
+![alt text](img/front1.jpg)
+![alt text](<img/front 2.jpg>)
+
 <div id='5.1.2'><h3><b>5.2.4. Implemented Native-Mobile Application Evidence</b></h3>
 
-
+![alt text](<img/front mobile.jpg>)
+![alt text](<img/front mobile 2.jpg>)
   
 <div id='5.1.2'><h3><b>5.2.5. Implemented RESTful API and/or Serverless Backend Evidence</b></h3>
 
+![alt text](img/api.jpg)
 
 <div id='5.1.2'><h3><b>5.2.6. RESTful API documentation</b></h3>
+
+![alt text](<img/api 2.jpg>)
 
 1 General Information
 2  Endpoints
@@ -1237,6 +1243,9 @@ https://drive.google.com/file/d/1zIzRnSw4ZvaEzJqjAD4uf4PQLtNqEbjh/view?usp=shari
 <div id='6'><h3><b>Capítulo VI: Product Verification & Validation</b></h3>
   
 <div id='6.1'><h3><b>6.1. Testing Suites & Validation</b></h3>
+
+![alt text](img/tet.jpg)
+![alt text](img/tet1.jpg)
   
 <div id='6.1.1'><h3><b>6.1.1. Core Entities Unit Tests.</b></h3>
 
@@ -1364,7 +1373,9 @@ Feedback rápido al equipo mediante notificaciones (Slack, Teams, correo).
   
 <div id='5.1.2'><h3><b>7.1.2. Build & Test Suite Pipeline Components.</b></h3>
 
-
+![alt text](img/test1.jpg)
+![alt text](img/test2.jpg)
+![alt text](img/test3.jpg)
   
 <div id='7.2'><h3><b>7.2. Continuous Delivery</b></h3>
 
