@@ -314,7 +314,7 @@
                 <p><strong>TB1: Colaboré en el análisis de necesidades del segmento inicial y definición de pain points. Aporté a la integración de ideas para un enfoque sólido.</strong> .</p>
                 <p><strong>Andrea Cabanillas</strong></p>
                 <p><strong>TB1: Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. </strong> .</p>
-              <p><strong>TF1: Supervisé la consolidación de documentación técnica de sensores y APIs. Organicé un checklist para el cierre técnico de los módulos web y validación con figma. </strong> .</p>
+              <p><strong>TP1: Supervisé la consolidación de documentación técnica de sensores y APIs. Organicé un checklist para el cierre técnico de los módulos web y validación con figma. </strong> .</p>
                 <p><strong>Joan Fernando Teves Samaniego</strong></p>
                 <p><strong>TB1:Lideré la identificación de Domain Message Flows, Bounded Contexts y elaboración de Context Map. Promoví colaboración para entender los modelo</strong> .</p>
                 <p><strong>Hernán Emilio Morales Calderón</strong></p>
