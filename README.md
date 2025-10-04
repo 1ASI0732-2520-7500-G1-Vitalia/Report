@@ -1212,7 +1212,14 @@ It communicates the app’s value proposition, captures user interest, and encou
 
 <div id='5.1.2'><h3><b>5.2.6. RESTful API documentation</b></h3>
 
-
+1 General Information
+2  Endpoints
+3 Plants
+4 Reminders
+5 Diagnosis
+6 Error Handling
+7 Rate Limiting
+8 Versioning
 
 <div id='5.1.2'><h3><b>5.2.7. Team Collaboration Insights</b></h3>
 
@@ -1476,5 +1483,56 @@ Monitoring & Alerting: Supervisión en tiempo real y notificación inmediata al 
   
 <div id='7.3.2'><h3><b>7.3.2. Production Deployment Pipeline Components</b></h3>
   
+Este componente se centra en la estabilidad, la seguridad y la escalabilidad del sistema en producción.
 
+Objetivos:
 
+-Garantizar despliegues seguros, reproducibles y auditables.
+-Reducir el riesgo de errores en producción mediante pruebas automáticas.
+-Asegurar la mínima interrupción para los usuarios finales.
+-Proveer monitoreo y retroalimentación inmediata después de cada despliegue.
+
+-Stages del Pipeline
+
+-Build & Package
+
+Compilación del código.
+Empaquetado en artefactos (Docker images, contenedores).
+
+-Automated Testing
+
+Ejecución de pruebas unitarias, de integración, contract testing y smoke tests.
+
+-Staging Deployment
+
+Despliegue en entorno staging con datos simulados o enmascarados.
+Validación de performance y pruebas de aceptación.
+
+-Approval Gate
+
+Revisión manual o automática antes de producción.
+Validación de criterios de calidad y seguridad.
+
+-Production Deployment
+
+Estrategias de despliegue: Blue-Green, Canary Releases o Rolling Updates.
+Despliegue progresivo para mitigar riesgos.
+
+-Monitoring & Feedback
+
+Logs centralizados, métricas de rendimiento y alertas.
+Rollback automático en caso de fallo crítico.
+
+Herramientas y Prácticas:
+
+-CI/CD Tools: Jenkins, GitHub Actions, GitLab CI, CircleCI.
+-Containerization: Docker, Kubernetes.
+-Infrastructure as Code (IaC): Terraform, Ansible.
+-Monitoring: Prometheus, Grafana, ELK Stack.
+-Deployment Strategies: Blue-Green, Canary, Rolling updates.
+
+Beneficios:
+
+-Flujo de entrega más rápido y confiable.
+-Mayor visibilidad y trazabilidad en el proceso.
+-Mejor experiencia del usuario final gracias a despliegues estables y controlado
