@@ -551,7 +551,7 @@ Nuestro producto debe ser una interfaz intuitiva y fácil de usar, con visualiza
 
 <div align="justify">
   
-* **Aficionados a la jardinería que buscan mejorar sus habilidades y el éxito de sus plantas** Los usuarios utilizarán "Plantita" para acceder a información personalizada, herramientas de monitoreo y una comunidad de apoyo, con el fin de mejorar la salud y el crecimiento de sus plantas.
+* **Aficionados a la jardinería que buscan mejorar sus habilidades y el éxito de sus plantas (granjero y consultante) ** Los usuarios utilizarán "Plantita" para acceder a información personalizada, herramientas de monitoreo y una comunidad de apoyo, con el fin de mejorar la salud y el crecimiento de sus plantas.
 
 * **Características Demográficas:** Personas entre 20 y 50 años, que viven en áreas urbanas y suburbanas, con un interés en la jardinería y el cuidado de plantas pero con conocimientos limitados.  Posiblemente con un nivel educativo medio o superior y con acceso a dispositivos móviles y tecnología.
 
