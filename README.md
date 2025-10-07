@@ -21,20 +21,8 @@
     <th>Código</th>
   </tr>
   <tr>
-    <td>Anderson Gonza Morales </td>
-    <td>U202120836</td>
-  </tr>
-  <tr>
     <td>Andrea Cabanillas Gora</td>
     <td>U202211711</td>
-  </tr>
-  <tr>
-    <td>Joan Fernando Teves Samaniego</td>
-    <td>U202117303</td>
-  </tr>
-  <tr>
-    <td>Hernán Emilio Morales Calderón</td>
-    <td>U202216263</td>
   </tr>
   <tr>
     <td>Irving Allcca Guerrero</td>
@@ -63,10 +51,7 @@
       <td>
         <ul>
           <li>Andrea Cabanillas Gora</li>
-          <li>Anderson Gonza Morales</li>
-          <li>Joan Fernando Teves Samaniego</li>
           <li>Irving Allcca Guerrero</li>
-          <li>Hernan Emilio Morales Calderón</li>
         </ul>
       </td>
       <td>
@@ -279,89 +264,30 @@
 
 **Criterio:** La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
 
-<table>
-    <thead>
-        <tr>
-            <th><strong>Criterio específico</strong></th>
-            <th><strong>Acciones realizadas</strong></th>
-            <th><strong>Conclusiones</strong></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>4.c.1  Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software</td>
-            <td>
-                <p><strong>Anderson Gonza Morales</strong></p>
-                <p><strong>TB1: me encarge del capitulo 1, me reuni con mi grupo e hice entrevistas </strong> .</p>
-                <p><strong>Andrea Cabanillas</strong></p>
-                <p><strong>TB1: me encarge del capitulo 2 y me reuni con mi grupo </strong> .</p>
-               <p><strong>TP1: me encarge de todos los capítulos  </strong> .</p>
-                <p><strong>Joan Fernando Teves Samaniego</strong></p>
-                <p><strong>TB1: me encarge del capitulo 3 y me reuni con mi grupo </strong> .</p>
-                <p><strong>Hernán Emilio Morales Calderón</strong></p>
-                <p><strong>TB1: me encarge del capitulo 5 y me reuni con mi grupo </strong> .</p>
-                <p><strong>Irving Allcca Guerrero</strong></p>
-                <p><strong>TB1: me encarge del capitulo 4 y me reuni con mi grupo </strong> .</p>
-            </td>
-            <td>
-              <p><strong>TB1:Fue fundamental la capacidad del equipo para colaborar de forma eficaz para ejercer un liderazgo compartido. La toma de decisiones conjuntas, comunicación abierta y apoyo mutuo fueron claves para superar desafíos.</strong> .</p>
-            </td>
-        </tr>
-        <tr>
-            <td>4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</td>
-            <td>
-                <p><strong>Anderson Gonza Morales</strong></p>
-                <p><strong>TB1: Colaboré en el análisis de necesidades del segmento inicial y definición de pain points. Aporté a la integración de ideas para un enfoque sólido.</strong> .</p>
-                <p><strong>Andrea Cabanillas</strong></p>
-                <p><strong>TB1: Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. </strong> .</p>
-              <p><strong>TP1: Supervisé la consolidación de documentación técnica de sensores y APIs. Organicé un checklist para el cierre técnico de los módulos web y validación con figma. </strong> .</p>
-                <p><strong>Joan Fernando Teves Samaniego</strong></p>
-                <p><strong>TB1:Lideré la identificación de Domain Message Flows, Bounded Contexts y elaboración de Context Map. Promoví colaboración para entender los modelo</strong> .</p>
-                <p><strong>Hernán Emilio Morales Calderón</strong></p>
-                <p><strong>TB1:Lideré la estructuración del To-Be Scenario Map, organización de épicas y backlog, y el diseño del customer journey estratégico.</strong> .</p>
-                <p><strong>Irving Allcca Guerrero</strong></p>
-                <p><strong>TB1: Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave</strong> .</p>
-            </td>
-            <td>
-              <p><strong>TB1:Se demostró una fuerte capacidad para crear un entorno de trabajo colaborativo e inclusivo, con roles organizados, objetivos claros y planificación detallada.</strong> .</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
+| **Criterio específico** | **Acciones realizadas** | **Conclusiones** |
+|--------------------------|--------------------------|------------------|
+| **4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software** | **Andrea Cabanillas**  <br> **TB1:** Me encargué de elaborar el diagrama principal del sistema y participar en la validación de los requerimientos con el equipo, asegurando la coherencia entre el diseño y los objetivos del proyecto. <br> **TP1:** Lideré la redacción de todos los capítulos del documento técnico, garantizando la consistencia y el cumplimiento de las normas éticas y profesionales del desarrollo. <br><br> **Irving Allcca Guerrero**  <br> **TB1:** Me encargué de diseñar los wireframes y definir la estructura visual de la aplicación siguiendo buenas prácticas de usabilidad y accesibilidad. <br> **TP1:** Integré el backend con el frontend de la aplicación, cuidando la seguridad de los datos y la eficiencia del código. | **TB1:** Fue fundamental la capacidad del equipo para colaborar de forma eficaz y ejercer un liderazgo compartido. La toma de decisiones conjuntas, la comunicación abierta y el apoyo mutuo fueron claves para superar desafíos y mantener la responsabilidad profesional. |
+| **4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **Andrea Cabanillas**  <br> **TB1:** Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. <br> **TP1:** Supervisé la consolidación de documentación técnica de sensores y APIs. Organicé un checklist para el cierre técnico de los módulos web y validación con Figma. <br><br> **Irving Allcca Guerrero**  <br> **TB1:** Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. | **TB1:** Se demostró una fuerte capacidad para crear un entorno de trabajo colaborativo e inclusivo, con roles organizados, objetivos claros y planificación detallada. |
+
+
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
 <table>
-  <tr>
-    <th>
-      <img src="img/Anderson.png" alt="Foto de perfil de Anderson" width="300px">
-    </th>
-    <td valign="top">
-      <p><b>Anderson Gonza Morales</b></p>
-      <p>
-        Soy estudiante de la carrera de Ingeniería de Software, alguien muy curioso y entuasiasta.
-      </p>
-    </td>
-  </tr>
-  <tr>
+  <tr></tr>
     <th>
       <img src="img/Andrea.jpg" alt="Foto de perfil de Andrea" width="300px">
     </th>
     <td valign="top">
       <p><b>Andrea Cabanillas</b></p>
       <p>
-        Soy estudiante de ingieneria de software y me gusta trabajar en grupo
+       Ingeniería de Software – u202211711<br><br> Soy estudiante de ingieneria de software y me gusta trabajar en grupo
       </p>
     </td>
   </tr>
   <tr>
-    <th>
-    <img src="img/Joan.jpeg" alt="Foto de perfil de Alumno" width="300px">
-    </th>
     <td valign="top">
-      <p><b>Joan Fernando Teves Samaniego</b></p>
       <p>
-     Tengo 22 años estoy estudiando actualmente en la Univeridad Peruana de Ciencias Aplicadas. Tengo interes por el mundo de la cibersegurirdad y el primer         paso es enteder al derecho y al revez las aplicaciones web , se c++ , javascript , html , css , mongodb ,sql , sqlserver , posgresql,python, soy creativo       , responsable , trabajo en equipo , me gusta resolver problemas   me adaptofacilmente y gestiono muy bien mi tiempo.Espero que en este proyecto pueda           incrementar mis habilidades y conocimiento sobre las aplicaciones web y demas 
     </td>
   </tr>
     <tr>
@@ -376,15 +302,19 @@
   </tr>
 
 <tr>
-    <th>
-      <img src="https://github.com/Desarrollo-de-Soluciones-IoT-2510-2942/Informe/raw/main/Resources/Chapter%2001/Team%20Members/Morales-Hernan.png" alt="Foto de perfil de Alumno" width="300px">
-    </th>
-    <td valign="top">
-      <p><b>Hernan Emilio Morales Calderón</b></p>
-      <p>Soy estudiante de ingeniería de software, actualmente en el octavo ciclo y tengo principales conocimientos en backend
-      </p>
-
   </tr>
+
+  
+| **Integrante** | **Descripción** |
+|----------------|-----------------|
+| **Andrea Cabanillas** | Estudiante de Ingeniería de Software con interés en el trabajo colaborativo y en el desarrollo de soluciones digitales. Destaca por su compromiso, capacidad de organización y disposición para contribuir al logro de los objetivos del equipo. |
+| **Irving Allcca Guerrero** | Estudiante de Ingeniería de Software (UPC) con habilidades en programación (C++, C#, Python) y diseño web (HTML, CSS, JavaScript). Se caracteriza por su empatía, intuición y enfoque en el trabajo estructurado y eficiente, aportando tanto en la parte técnica como en la colaboración grupal. |
+
+
+
+<div id='1.'><h1>1. Capítulo I: Introducción.</h1></div>
+
+
 
 <div id='1.'><h1>1. Capítulo I: Introducción.</h1></div>
 
