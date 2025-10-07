@@ -35,39 +35,11 @@
 
 # Registro de versiones
 
-<table>
-  <thead>
-    <tr>
-        <th>Versión</th>
-        <th>Fecha</th>
-        <th>Autor</th>
-        <th>Descripción de modificación</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-      <td><strong>TB1</strong></td>
-      <td>21/07/25</td>
-      <td>
-        <ul>
-          <li>Andrea Cabanillas Gora</li>
-          <li>Irving Allcca Guerrero</li>
-        </ul>
-      </td>
-      <td>
-        Se realizaron los siguientes puntos:
-        <ul>
-          <li>Capítulo I: Introducción</li>
-          <li>Capítulo II: Requirements Elicitation & Analysis</li>
-          <li>Capítulo III: Requirements Specification</li>
-          <li>Capítulo IV: Product Design</li>
-          <li>Capítulo V: Product Implementation</li>
-        </ul>
-      </td>
-  </tr>
-  </tbody>
-</table>
 
+| **Versión** | **Fecha** | **Autor** | **Descripción de modificación** |
+|--------------|------------|------------|----------------------------------|
+| **TB1** | 21/09/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero | Se realizaron los siguientes puntos: <br> - Capítulo I: Introducción <br> - Capítulo II: Requirements Elicitation & Analysis <br> - Capítulo III: Requirements Specification <br> - Capítulo IV: Product Design <br> - Capítulo V: Product Implementation |
+| **TP1** | 7/10/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero | Se añadió el siguiente punto: <br> - Capítulo VI Y app |
 
 # Project Report Collaboration Insights
 
