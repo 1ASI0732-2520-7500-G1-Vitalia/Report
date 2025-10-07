@@ -1447,3 +1447,14 @@ Beneficios:
 -Flujo de entrega más rápido y confiable.
 -Mayor visibilidad y trazabilidad en el proceso.
 -Mejor experiencia del usuario final gracias a despliegues estables y controlado
+
+
+
+## **Conclusiones**
+
+-El desarrollo del proyecto **Vitalia** permitió identificar una problemática real y relevante dentro del ámbito del cuidado de plantas, especialmente en el segmento de aficionados y principiantes que carecen de conocimientos técnicos o herramientas adecuadas para mantener sus cultivos saludables. A través del análisis de antecedentes y la aplicación del enfoque **Lean UX**, el equipo logró definir con claridad las necesidades de los usuarios y los objetivos de negocio, sentando las bases para una solución innovadora, práctica y sostenible.  
+
+-La aplicación propuesta busca integrar sensores y una plataforma digital que centralice la información sobre el estado de las plantas, permitiendo a los usuarios monitorear variables clave como humedad, temperatura y posibles plagas. Esto no solo contribuye a mejorar la **eficiencia operativa** y la **calidad del cuidado de las plantas**, sino que también promueve un **uso responsable de los recursos** y una experiencia de usuario más satisfactoria.  
+
+-Asimismo, el proceso de ideación y validación mediante Lean UX permitió formular hipótesis verificables que guiarán las siguientes etapas de desarrollo, asegurando que las decisiones de diseño se basen en datos y en el comportamiento real de los usuarios.  
+
