@@ -36,7 +36,11 @@
     <td>Hernan Emilio Morales Calderón</td>
     <td>u202216263</td>
   </tr>
-
+  <tr>
+    <td>Joan Fernando Teves Samaniego</td>
+    <td>u202117303</td>
+  </tr>
+  
 </table>
 
 <p align="center"><b>Septiembre 2025</b></p>
