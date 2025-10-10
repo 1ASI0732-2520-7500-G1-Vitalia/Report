@@ -51,8 +51,8 @@
 
 | **Versión** | **Fecha** | **Autor** | **Descripción de modificación** |
 |--------------|------------|------------|----------------------------------|
-| **TB1** | 21/09/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br>- Hernan Emilio Morales Calderón| Se realizaron los siguientes puntos: <br> - Capítulo I: Introducción <br> - Capítulo II: Requirements Elicitation & Analysis <br> - Capítulo III: Requirements Specification <br> - Capítulo IV: Product Design <br> - Capítulo V: Product Implementation |
-| **TP1** | 7/10/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br>- Hernan Emilio Morales Calderón| Se añadió el siguiente punto: <br> - Capítulo VI Y app |
+| **TB1** | 21/09/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br>- Hernan Emilio Morales Calderón  <br>- Joan Fernando Teves Samaniego| Se realizaron los siguientes puntos: <br> - Capítulo I: Introducción <br> - Capítulo II: Requirements Elicitation & Analysis <br> - Capítulo III: Requirements Specification <br> - Capítulo IV: Product Design <br> - Capítulo V: Product Implementation |
+| **TP1** | 7/10/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br>- Hernan Emilio Morales Calderón <br>- Joan Fernando Teves Samaniego| Se añadió el siguiente punto: <br> - Capítulo VI Y app |
 
 # Project Report Collaboration Insights
 
