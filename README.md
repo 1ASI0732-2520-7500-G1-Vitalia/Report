@@ -322,7 +322,7 @@
   </tr>
     <tr>
     <th>
-      <img src="img/Teves-Joan.png" alt="Foto de perfil de Joan" width="300px">
+      <img src="img/Teves-Joan.jpg" alt="Foto de perfil de Joan" width="300px">
     </th>
     <td valign="top">
       <p><b>Joan Fernando Teves Samaniego</b></p>
