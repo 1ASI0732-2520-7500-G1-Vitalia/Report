@@ -1196,6 +1196,8 @@ El diseño deberá ser responsive, adaptándose a distintos tamaños y resolucio
 ![alt text](img/front1.jpg)
 ![alt text](<img/front 2.jpg>)
 
+**Link Deploy:** https://plantita-web.netlify.app/
+
 <div id='5.1.2'><h3><b>5.2.4. Implemented Native-Mobile Application Evidence</b></h3>
 
 ![alt text](<img/front mobile.jpg>)
