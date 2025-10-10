@@ -315,7 +315,21 @@
       </p>
     </td>
   </tr>
-
+  <tr>
+    <td valign="top">
+      <p>
+    </td>
+  </tr>
+    <tr>
+    <th>
+      <img src="img/Teves-Joan.png" alt="Foto de perfil de Joan" width="300px">
+    </th>
+    <td valign="top">
+      <p><b>Joan Fernando Teves Samaniego</b></p>
+      <p> Ingeniería de Software – Universidad Peruana de Ciencias Aplicadas<br><br>Tengo 22 años y actualmente estudio en la Universidad Peruana de Ciencias Aplicadas. Me interesa el mundo de la ciberseguridad y considero que el primer paso es entender las aplicaciones web a fondo. Conozco C++, JavaScript, HTML, CSS, MongoDB, SQL, SQL Server, PostgreSQL y Python. Soy creativo, responsable, trabajo en equipo, me adapto fácilmente y gestiono bien mi tiempo. Espero que en este proyecto pueda incrementar mis habilidades y conocimientos sobre las aplicaciones web y más.
+      </p>
+    </td>
+  </tr>
 <tr>
   </tr>
 
