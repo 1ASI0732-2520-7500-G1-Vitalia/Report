@@ -32,6 +32,11 @@
     <td>Anderson Gonza Morales</td>
     <td>u202120836</td>
   </tr>
+  <tr>
+    <td>Hernan Emilio Morales Calderón</td>
+    <td>u202216263</td>
+  </tr>
+
 </table>
 
 <p align="center"><b>Septiembre 2025</b></p>
@@ -42,8 +47,8 @@
 
 | **Versión** | **Fecha** | **Autor** | **Descripción de modificación** |
 |--------------|------------|------------|----------------------------------|
-| **TB1** | 21/09/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales | Se realizaron los siguientes puntos: <br> - Capítulo I: Introducción <br> - Capítulo II: Requirements Elicitation & Analysis <br> - Capítulo III: Requirements Specification <br> - Capítulo IV: Product Design <br> - Capítulo V: Product Implementation |
-| **TP1** | 7/10/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales | Se añadió el siguiente punto: <br> - Capítulo VI Y app |
+| **TB1** | 21/09/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br>- Hernan Emilio Morales Calderón| Se realizaron los siguientes puntos: <br> - Capítulo I: Introducción <br> - Capítulo II: Requirements Elicitation & Analysis <br> - Capítulo III: Requirements Specification <br> - Capítulo IV: Product Design <br> - Capítulo V: Product Implementation |
+| **TP1** | 7/10/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br>- Hernan Emilio Morales Calderón| Se añadió el siguiente punto: <br> - Capítulo VI Y app |
 
 # Project Report Collaboration Insights
 
@@ -291,6 +296,21 @@
       </p>
     </td>
   </tr>
+  <tr>
+    <td valign="top">
+      <p>
+    </td>
+  </tr>
+    <tr>
+    <th>
+      <img src="img/Morales-Hernan.png" alt="Foto de perfil de Anderson" width="300px">
+    </th>
+    <td valign="top">
+      <p><b>Hernan Morales Calderón</b></p>
+      <p> Ingeniería de Software – u202216263<br><br>Soy estudiante de Ingeniería de Software en la UPC, cursando el séptimo ciclo. Me apasiona el desarrollo web y me especializo en frontend y backend, con sólidos conocimientos en PHP y Python. 
+      </p>
+    </td>
+  </tr>
 
 <tr>
   </tr>
@@ -301,6 +321,7 @@
 | **Andrea Cabanillas** | Estudiante de Ingeniería de Software con interés en el trabajo colaborativo y en el desarrollo de soluciones digitales. Destaca por su compromiso, capacidad de organización y disposición para contribuir al logro de los objetivos del equipo. |
 | **Irving Allcca Guerrero** | Estudiante de Ingeniería de Software (UPC) con habilidades en programación (C++, C#, Python) y diseño web (HTML, CSS, JavaScript). Se caracteriza por su empatía, intuición y enfoque en el trabajo estructurado y eficiente, aportando tanto en la parte técnica como en la colaboración grupal. |
 | **Anderson Gonza Morales** | Estudiante de Ingeniería de Software (UPC) con conocimientos en python, java, SQL y mainframe. Se caracteriza por ser una muy curioso, entusiasta, empatico y adaptable. |
+| **Hernan Morales Calderón** | Estudiante de Ingeniería de Software (UPC) con sólidos conocimientos en PHP, Laravel, Angular, Vue.js, Python y C#. Destaca por su dominio en diseño y desarrollo web, integrando tanto la parte visual como la funcional para crear soluciones modernas y eficientes. |
 
 
 
@@ -626,10 +647,10 @@ En el mercado al que buscamos ofrecer nuestra solución, identificamos diversos 
 
 Los user persona que se muestran a continuación, fueron realizados a partir de la información recopilada de la sección de entrevistas. Estos nos ayudarán a describir de forma general nuestro segmento objetivo.
 <br>
-<br>
+
 <b>Aficionados al jardín:</b>
 <br>
-<br>
+
 
 <img src="img/cap 1.jpg" alt="Foto de uer " width="300px">
 
