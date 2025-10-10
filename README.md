@@ -950,9 +950,19 @@ En esta parte, damos a conocer nuestra propuesta de diseño para la interfaz de 
 
 <div id='4.3.1'><h3><b> 4.3.1. Landing Page Wireframe</b></h3>
 
+<img src="img/landing-wireframe1.png">
+<img src="img/landing-wireframe2.png">
+
+
 https://www.figma.com/design/43rOS1ADEUThlJXkrNxqQQ/Wireframe-landing-IOT?node-id=0-1&t=YtFMl95aoZ6wJgbk-1
 
 <div id='4.3.2'><h3><b> 4.3.2. Landing Page Mock-up.</b></h3>
+
+<img src="img/mockuplanding.png">
+<img src="img/mockuplanding2.png">
+<img src="img/mockuplanding3.png">
+
+
 
 https://www.figma.com/design/43rOS1ADEUThlJXkrNxqQQ/Wireframe-landing-IOT?node-id=0-1&t=YtFMl95aoZ6wJgbk-1
 
@@ -966,21 +976,43 @@ Botones de acción rápida: Como “Agregar planta” o “Escanear hoja”, sie
 
 Navegación por tarjetas: Cada planta registrada se muestra como una tarjeta con acceso a detalles y accione
 
+<img src="img/wire.png">
+
 https://www.figma.com/design/h4H5bIZ22u1xrqhN0pGTsY/Untitled?node-id=0-1&p=f&t=iodvAit2xepMAZSM-0
 
 <div id='4.4.2'><h3><b> 4.4.2. Mobile Applications Wireflow Diagrams.</b></h3>
+
+
+<img src="img/Frame 1.png">
 
 https://www.figma.com/design/9P1UhGBP4ANiAl7ScpFSNj/wireflow?node-id=0-1&t=8fEeshhCXpyFgKIP-1
 
 <div id='4.4.3'><h3><b> 4.4.3. Mobile Applications Mock-ups</b></h3>
 
+<img src="img/mock.png">
+
 https://www.figma.com/design/h4H5bIZ22u1xrqhN0pGTsY/Untitled?node-id=0-1&p=f&t=TkmWs9iKVckTPA0v-0
 
 <div id='4.4.4'><h3><b>4.4.4. Mobile Applications User Flow Diagrams. </b></h3>
 
+<img src="img/Frame 2.png">
+
 https://www.figma.com/design/9P1UhGBP4ANiAl7ScpFSNj/wireflow?node-id=0-1&t=8fEeshhCXpyFgKIP-1
 
 <div id='4.5'><h3><b> 4.5. Mobile Applications Prototyping. </b></h3>
+
+<img src="img/proto.png">
+<img src="img/tipo.png">
+<img src="img/pro.png">
+<img src="img/pt.png">
+
+<br>
+
+**Prototipo Completo**
+
+<img src="img/prototipo.png">
+
+
 
 https://www.figma.com/design/FSdzGLrBhZPdrn6TDVch6n/prototipo?node-id=0-1&p=f&t=A680re8dypf6NtQz-0
 
