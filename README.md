@@ -28,6 +28,10 @@
     <td>Irving Allcca Guerrero</td>
     <td>u202213241</td>
   </tr>
+  <tr>
+    <td>Anderson Gonza Morales</td>
+    <td>u202120836</td>
+  </tr>
 </table>
 
 <p align="center"><b>Septiembre 2025</b></p>
@@ -38,8 +42,8 @@
 
 | **Versión** | **Fecha** | **Autor** | **Descripción de modificación** |
 |--------------|------------|------------|----------------------------------|
-| **TB1** | 21/09/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero | Se realizaron los siguientes puntos: <br> - Capítulo I: Introducción <br> - Capítulo II: Requirements Elicitation & Analysis <br> - Capítulo III: Requirements Specification <br> - Capítulo IV: Product Design <br> - Capítulo V: Product Implementation |
-| **TP1** | 7/10/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero | Se añadió el siguiente punto: <br> - Capítulo VI Y app |
+| **TB1** | 21/09/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales | Se realizaron los siguientes puntos: <br> - Capítulo I: Introducción <br> - Capítulo II: Requirements Elicitation & Analysis <br> - Capítulo III: Requirements Specification <br> - Capítulo IV: Product Design <br> - Capítulo V: Product Implementation |
+| **TP1** | 7/10/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales | Se añadió el siguiente punto: <br> - Capítulo VI Y app |
 
 # Project Report Collaboration Insights
 
@@ -238,8 +242,8 @@
 
 | **Criterio específico** | **Acciones realizadas** | **Conclusiones** |
 |--------------------------|--------------------------|------------------|
-| **4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software** | **Andrea Cabanillas**  <br> **TB1:** Me encargué de elaborar el diagrama principal del sistema y participar en la validación de los requerimientos con el equipo, asegurando la coherencia entre el diseño y los objetivos del proyecto. <br> **TP1:** Lideré la redacción de todos los capítulos del documento técnico, garantizando la consistencia y el cumplimiento de las normas éticas y profesionales del desarrollo. <br><br> **Irving Allcca Guerrero**  <br> **TB1:** Me encargué de diseñar los wireframes y definir la estructura visual de la aplicación siguiendo buenas prácticas de usabilidad y accesibilidad. <br> **TP1:** Integré el backend con el frontend de la aplicación, cuidando la seguridad de los datos y la eficiencia del código. | **TB1:** Fue fundamental la capacidad del equipo para colaborar de forma eficaz y ejercer un liderazgo compartido. La toma de decisiones conjuntas, la comunicación abierta y el apoyo mutuo fueron claves para superar desafíos y mantener la responsabilidad profesional. |
-| **4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **Andrea Cabanillas**  <br> **TB1:** Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. <br> **TP1:** Supervisé la consolidación de documentación técnica de sensores y APIs. Organicé un checklist para el cierre técnico de los módulos web y validación con Figma. <br><br> **Irving Allcca Guerrero**  <br> **TB1:** Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. | **TB1:** Se demostró una fuerte capacidad para crear un entorno de trabajo colaborativo e inclusivo, con roles organizados, objetivos claros y planificación detallada. |
+| **4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software** | **Andrea Cabanillas**  <br> **TB1:** Me encargué de elaborar el diagrama principal del sistema y participar en la validación de los requerimientos con el equipo, asegurando la coherencia entre el diseño y los objetivos del proyecto. <br> **TP1:** Lideré la redacción de todos los capítulos del documento técnico, garantizando la consistencia y el cumplimiento de las normas éticas y profesionales del desarrollo. <br><br> **Irving Allcca Guerrero**  <br> **TB1:** Me encargué de diseñar los wireframes y definir la estructura visual de la aplicación siguiendo buenas prácticas de usabilidad y accesibilidad. <br> **TP1:** Integré el backend con el frontend de la aplicación, cuidando la seguridad de los datos y la eficiencia del código. <br><br> **Anderson Gonza Morales** <br> **TB1:** Me encargué de diseñar el diagrama de clases, ademas de la verificacion de la organizacion del repositorio e imagenes <br> **TP1:** Mejore el diagrama de clases, verificacion del cumplimiento del repositorio y el buen orden del flujo del trabajo. | **TB1:** Fue fundamental la capacidad del equipo para colaborar de forma eficaz y ejercer un liderazgo compartido. La toma de decisiones conjuntas, la comunicación abierta y el apoyo mutuo fueron claves para superar desafíos y mantener la responsabilidad profesional. |
+| **4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **Andrea Cabanillas**  <br> **TB1:** Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. <br> **TP1:** Supervisé la consolidación de documentación técnica de sensores y APIs. Organicé un checklist para el cierre técnico de los módulos web y validación con Figma. <br><br> **Irving Allcca Guerrero**  <br> **TB1:** Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. <br><br>  **Anderson Gonza Morales**  <br> **TB1:** Busque comprender la problemática del objetivo del proyecto. Realicé la documentacion respectiva para la recoleccion de datos. <br> **TP1:** Realize mejoras a los diagramas y verificacion de la relacion que tendran los usuarios.| **TB1:** Se demostró una fuerte capacidad para crear un entorno de trabajo colaborativo e inclusivo, con roles organizados, objetivos claros y planificación detallada.  |
 
 
 
@@ -272,6 +276,21 @@
       </p>
     </td>
   </tr>
+  <tr>
+    <td valign="top">
+      <p>
+    </td>
+  </tr>
+    <tr>
+    <th>
+      <img src="https://i.imgur.com/JbNnPbU.png" alt="Foto de perfil de Anderson" width="300px">
+    </th>
+    <td valign="top">
+      <p><b>Anderson Gonza Morales</b></p>
+      <p> Ingeniería de Software – U202120836<br><br>Soy estudiante de Ingeniería de Software en la UPC, soy muy curioso y entusiasta.
+      </p>
+    </td>
+  </tr>
 
 <tr>
   </tr>
@@ -281,6 +300,7 @@
 |----------------|-----------------|
 | **Andrea Cabanillas** | Estudiante de Ingeniería de Software con interés en el trabajo colaborativo y en el desarrollo de soluciones digitales. Destaca por su compromiso, capacidad de organización y disposición para contribuir al logro de los objetivos del equipo. |
 | **Irving Allcca Guerrero** | Estudiante de Ingeniería de Software (UPC) con habilidades en programación (C++, C#, Python) y diseño web (HTML, CSS, JavaScript). Se caracteriza por su empatía, intuición y enfoque en el trabajo estructurado y eficiente, aportando tanto en la parte técnica como en la colaboración grupal. |
+| **Anderson Gonza Morales** | Estudiante de Ingeniería de Software (UPC) con conocimientos en python, java, SQL y mainframe. Se caracteriza por ser una muy curioso, entusiasta, empatico y adaptable. |
 
 
 
@@ -981,7 +1001,7 @@ En esta sección se mostrára los mock-ups de nuestra web application y para ell
 <div id='4.9.1'><h3><b>4.9.1. Class Diagrams.</b></h3>
 
 En esta sección se mostrará el diagrama de clases de nuestra aplicación
-![Class Diagrams](https://imgur.com/5iZAsSH.png)
+![Class Diagrams](https://i.imgur.com/z1ZMm1v.png)
 
 
 
