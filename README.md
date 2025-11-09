@@ -1485,7 +1485,7 @@ Rollback automático: Si se detecta una falla crítica, el sistema revierte auto
 Post-deployment checks: Ejecución de smoke tests y health checks tras cada despliegue.
 Monitoring & Alerting: Supervisión en tiempo real y notificación inmediata al equipo en caso de anomalías.
   
-<div id='7.3.2'><h3><b>7.3.2. Production Deployment Pipeline Components</b></h3>
+<div id='7.1.2'><h3><b>7.3.2. Production Deployment Pipeline Components</b></h3>
   
 Este componente se centra en la estabilidad, la seguridad y la escalabilidad del sistema en producción.
 
@@ -1540,6 +1540,58 @@ Beneficios:
 -Flujo de entrega más rápido y confiable.
 -Mayor visibilidad y trazabilidad en el proceso.
 -Mejor experiencia del usuario final gracias a despliegues estables y controlado
+
+
+<div id='7.4'><h3><b>7.4. Continuous Monitoring</b></h3>
+
+<div id='7.4.1'><h3><b>7.4.1. Tools and Practices</b></h3>
+
+<div id='7.4.2'><h3><b>7.4.2. Monitoring Pipeline Components</b></h3>
+
+<div id='7.4.3'><h3><b>7.4.3. Alerting Pipeline Components</b></h3>
+
+<div id='7.4.4'><h3><b>7.4.4. Notification Pipeline Components. Capítulo VIII: Experiment-Driven Development</b></h3>
+
+<div id='8.1'><h3><b>8.1. Experiment Planning</b></h3>
+
+<div id='8.1.1'><h3><b>8.1.1. As-Is Summary.</b></h3>
+
+<div id='8.1.2'><h3><b>8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims.</b></h3>
+
+<div id='8.1.3'><h3><b>8.1.3. Experiment-Ready Questions.</b></h3>
+
+<div id='8.1.4'><h3><b>8.1.4. Question Backlog.</b></h3>
+
+<div id='8.1.5'><h3><b>8.1.5. Experiment Cards.</b></h3>
+
+<div id='8.2'><h3><b>8.2. Experiment Design</b></h3>
+
+<div id='8.2.1'><h3><b>8.2.1. Hypotheses.</b></h3>
+
+<div id='8.2.2'><h3><b>8.2.2. Measures.</b></h3>
+
+<div id='8.2.3'><h3><b>8.2.3. Conditions.</b></h3>
+
+<div id='8.2.4'><h3><b>8.2.4. Scale Calculations and Decisions.</b></h3>
+
+<div id='8.2.5'><h3><b>8.2.5. Methods Selection.</b></h3>
+
+<div id='8.2.6'><h3><b>8.2.6. Data Analytics: Goals, KPIs and Metrics Selection.</b></h3>
+
+<div id='8.2.7'><h3><b>8.2.7. Web and Mobile Tracking Plan.</b></h3>
+
+<div id='8.3'><h3><b>8.3. Experimentation</b></h3>
+
+<div id='8.3.1'><h3><b>8.3.1. To-Be User Stories.</b></h3>
+
+<div id='8.3.2'><h3><b>8.3.2. To-Be Product Backlog</b></h3>
+
+
+
+
+
+
+
 
 
 
