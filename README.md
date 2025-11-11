@@ -1578,15 +1578,265 @@ Beneficios:
 
 <div id='8.2.1'><h3><b>8.2.1. Hypotheses.</b></h3>
 
+– Los usuarios necesitan monitorear sus cultivos en tiempo real.
+Si la plataforma ofrece datos actualizados sobre nutrientes, pH, temperatura, humedad y estado general del cultivo, los usuarios podrán tomar mejores decisiones y mejorar la productividad.
+
+ – La integración de pagos dentro de la plataforma facilitará la adquisición de insumos.
+Si los usuarios pueden comprar nutrientes, equipos y repuestos directamente desde la aplicación, se reducirá el tiempo de reposición y aumentará la satisfacción.
+
+– La automatización de alertas reducirá pérdidas en los cultivos.
+Si el sistema notifica tempranamente sobre cambios críticos en los parámetros, los usuarios responderán más rápido, evitando daños.
+ – Los usuarios con cultivos medianos y grandes requieren un sistema centralizado.
+Si la aplicación integra monitoreo, control, historial, compras y servicios técnicos, se optimizará la gestión general y aumentará la eficiencia operativa.
+
+ – Una experiencia intuitiva incrementará la adopción de la plataforma.
+Si la interfaz es clara, sencilla y accesible, tanto expertos como principiantes podrán usar la solución sin barreras técnicas.
+
 <div id='8.2.2'><h3><b>8.2.2. Measures.</b></h3>
+
+-Reducción de problemas detectados tardíamente
+
+Nº de alertas generadas por condiciones críticas (pH, humedad, temperatura).
+
+% de problemas detectados antes de afectar el crecimiento.
+
+– Mejora en la salud y crecimiento del cultivo
+
+Tasa de crecimiento promedio por periodo.
+
+Variación en la vitalidad general medida por sensores.
+
+Consumo optimizado de agua y nutrientes.
+
+– Uso y adopción de la funcionalidad de monitoreo
+
+Nº de sesiones activas por día.
+
+Tiempo promedio de uso por usuario.
+
+Nº de parámetros consultados por sesión.
+
+– Eficiencia en procesos de compra dentro de la plataforma
+
+Nº de compras realizadas desde la app.
+
+Tiempo promedio para completar un proceso de pago.
+
+Frecuencia de compras por usuario.
+
+
+– Satisfacción del usuario
+
+Calificación promedio (NPS, CSAT).
+
+Nº de usuarios que completan una tarea sin ayuda.
+
+Feedback positivo/negativo por funcionalidad.
+
+– Estabilidad y desempeño del sistema
+
+Tiempo de respuesta del sistema de monitoreo.
+
+Disponibilidad del servicio (% uptime).
+
+Fallos reportados por mes.
+
 
 <div id='8.2.3'><h3><b>8.2.3. Conditions.</b></h3>
 
+Acceso a sensores funcionales y datos en tiempo real
+Los usuarios deben contar con sensores instalados y operativos para que la plataforma pueda recopilar datos precisos sobre el cultivo.
+
+Conectividad estable
+El sistema requiere conexión a internet para sincronizar datos, enviar alertas y permitir compras dentro de la plataforma.
+
+Usuarios con interés en monitoreo continuo
+Los cuidadores deben estar dispuestos a revisar la información y actuar según las alertas generadas por la aplicación.
+
+Disponibilidad de insumos y proveedores integrados
+Para que el sistema de compras funcione, se necesita una red de proveedores confiables que ofrezcan insumos compatibles con hidroponía.
+
+Permisos y roles configurados correctamente
+En cultivos grandes, el administrador debe asignar roles y accesos a los trabajadores para que el monitoreo y las tareas se gestionen eficientemente.
+
+Ambiente de cultivo controlado
+Las condiciones del sistema hidropónico (luz, agua, nutrientes) deben mantenerse dentro de rangos razonables para que las mediciones sean útiles y consistentes.
+
+
+
 <div id='8.2.4'><h3><b>8.2.4. Scale Calculations and Decisions.</b></h3>
+
+Cálculo de escala del experimento
+Para validar las hipótesis de monitoreo y uso de la plataforma, se considerará un número mínimo de usuarios y dispositivos que permita observar variaciones reales en el comportamiento.
+
+Nº mínimo de usuarios iniciales: 10–15 cuidadores con cultivos en operación.
+
+Nº de sensores por usuario: 3–5 sensores esenciales (pH, humedad, temperatura, nivel).
+
+Nº de ciclos de medición: 2–3 semanas para obtener tendencias significativas.
+
+Escala en términos de complejidad del cultivo
+Las pruebas se realizarán en cultivos de mediana escala para asegurar que el sistema responda adecuadamente en entornos con múltiples plantas y condiciones variables.
+
+Rango de plantas monitoreadas: 20–50 plantas por usuario.
+
+Frecuencia de medición: cada 15–30 minutos según el sensor.
+
+Supervisión de alertas: tiempo máximo de respuesta del usuario < 12 horas.
+
+Escalabilidad del sistema técnico
+Se evaluará la capacidad de la plataforma para soportar un mayor volumen de datos y usuarios sin comprometer el desempeño.
+
+Almacenamiento inicial estimado: 5–10 MB por usuario/día en datos de sensores.
+
+Capacidad mínima del backend: soporte de 1000–2000 solicitudes/min cuando se escale.
+
+Criterio de estabilidad: uptime mínimo de 99% durante el experimento.
+
+Decisiones basadas en resultados
+Los datos recopilados se utilizarán para determinar si el sistema está listo para escalar a una versión piloto más amplia.
+
+Si las alertas son útiles y precisas → se ampliará la red de sensores compatibles.
+
+Si los usuarios adoptan la función de compras → se integrarán más proveedores e inventarios.
+
+Si el sistema muestra estabilidad → se planificará el despliegue para 100+ usuarios.
+
+Si se detectan fallas críticas → se aplicarán mejoras antes de pasar a una siguiente fase.
+
+Criterio de decisión final
+Se considerará que el experimento ha tenido éxito si:
+
+Las métricas de uso superan el 60% de adopción activa.
+
+Las alertas generan acciones correctivas en más del 50% de los casos.
+
+Al menos el 30% de los usuarios realiza una compra dentro de la plataforma.
+
+El sistema mantiene un rendimiento aceptable bajo carga.
+
 
 <div id='8.2.5'><h3><b>8.2.5. Methods Selection.</b></h3>
 
+Para validar las hipótesis y medir el impacto de la solución propuesta, se seleccionarán métodos analíticos y metodológicos que permitan obtener datos confiables y accionables. La combinación de enfoques cuantitativos y cualitativos permitirá un análisis integral del comportamiento del sistema y de los usuarios.
+
+Método de Observación Directa
+Se observará cómo los usuarios interactúan con el sistema, evaluando tiempos de respuesta, uso de funciones clave y dificultades encontradas.
+
+Análisis Cuantitativo de Datos de Sensores
+Se recopilarán métricas de pH, temperatura, humedad, EC y otras variables relevantes generadas por los sensores instalados en el cultivo.
+Esto permitirá identificar patrones, anomalías y niveles óptimos para el crecimiento.
+
+Pruebas A/B en Funcionalidades de la Plataforma
+Se evaluarán diferentes versiones de la interfaz, notificaciones, flujos de compra y alertas para determinar cuáles generan mayor adopción y satisfacción.
+
+Encuestas y Retroalimentación del Usuario
+Se aplicarán cuestionarios estructurados para recopilar información sobre la experiencia del usuario, usabilidad y percepción de valor de la solución.
+
+Analítica de Comportamiento (Clickstream)
+Se analizarán rutas de navegación, frecuencia de uso y eventos clave para identificar puntos de fricción y oportunidades de mejora.
+
+Testing de Usabilidad
+Se realizarán sesiones guiadas con usuarios reales para evaluar claridad del diseño, accesibilidad y facilidad de uso de la plataforma.
+
+Monitoreo de Logs y Rendimiento del Sistema
+Se analizarán logs generados por el backend para medir estabilidad, latencia, errores y capacidad de respuesta bajo distintas cargas.
+
+Revisión Comparativa (Benchmarking)
+Se compararán métricas clave con soluciones de la competencia o con referencias del sector para evaluar nivel de desempeño y competitividad.
+
+
 <div id='8.2.6'><h3><b>8.2.6. Data Analytics: Goals, KPIs and Metrics Selection.</b></h3>
+
+Goals (Objetivos Analíticos)
+
+Optimizar el cuidado del cultivo hidropónico
+Asegurar que los usuarios puedan tomar decisiones basadas en datos para mejorar el crecimiento y la salud de sus plantas.
+
+Monitorear el comportamiento del usuario dentro de la plataforma
+Identificar patrones de uso, funciones más utilizadas y puntos de fricción.
+
+Incrementar la adopción de funcionalidades clave
+Favorecer el uso continuo de monitoreo, alertas y compras dentro de la app.
+
+Evaluar la eficiencia operativa del sistema
+Medir estabilidad, velocidad y precisión del sistema en distintas cargas.
+
+Impulsar la conversión y retención
+Ver cómo el comportamiento del usuario impacta ciclos de compra y uso recurrente.
+
+2. KPIs (Indicadores Clave de Desempeño)
+KPIs de Monitoreo del Cultivo
+
+Nivel de precisión de las mediciones (error ≤ 5%)
+
+Nº de alertas generadas vs. atendidas
+
+Tasa de detección temprana de problemas (%)
+
+Tiempo promedio para que el usuario responda a una alerta
+
+KPIs de Uso de la Plataforma
+
+Usuarios activos diarios (DAU)
+
+Usuarios activos mensuales (MAU)
+
+Retención semanal (% de usuarios que regresan)
+
+Tiempo promedio por sesión
+
+KPIs de Compras / E-commerce integrado
+
+Tasa de conversión (vista → compra)
+
+Nº de transacciones completadas
+
+Abandono de carrito (%)
+
+Ticket promedio por usuario
+
+KPIs de Sistema y Estabilidad
+
+Uptime del sistema (objetivo 99%)
+
+Latencia promedio (ms)
+
+Errores por minuto (EPM)
+
+Tiempos de respuesta del backend
+
+3. Metrics Selection (Métricas Seleccionadas)
+Métricas Técnicas
+
+GB/MB de datos procesados por día
+
+Frecuencia de envío de datos por sensor
+
+Procesos fallidos vs. exitosos
+
+Consumo de CPU/RAM en backend
+
+Métricas de Comportamiento de Usuario
+
+Rutas de navegación más frecuentes (clickstream)
+
+Funciones más usadas (top 5)
+
+Nivel de interacción con cada feature
+
+Nº de usuarios que completan tareas clave (onboarding, monitoreo, compra)
+
+Métricas de Valor
+
+Ahorro de recursos (agua/nutrientes)
+
+Reducción de pérdidas de cultivo (%)
+
+Incremento de productividad (%)
+
+Satisfacción del usuario (NPS, CSAT)
+
 
 <div id='8.2.7'><h3><b>8.2.7. Web and Mobile Tracking Plan.</b></h3>
 
