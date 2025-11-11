@@ -375,7 +375,6 @@ El mundo de la hidroponía presenta actualmente desafíos que requieren solucion
 
 Además, quienes gestionan cultivos hidropónicos se enfrentan a la constante necesidad de monitorear y optimizar el crecimiento de sus plantas, garantizando que los sistemas funcionen correctamente y que los factores ambientales se mantengan estables. A esto se suma la importancia de prevenir y detectar tempranamente plagas y enfermedades, que pueden propagarse rápidamente en instalaciones de gran escala.
 
-Estos factores combinados resaltan la necesidad de soluciones tecnológicas especializadas que permitan controlar, medir y analizar el estado del cultivo en tiempo real. Desarrollar conocimientos, metodologías y herramientas eficientes es clave para asegurar un crecimiento óptimo y sostenible en sistemas hidropónicos de gran demanda y complejidad.
 ---
 
 ### **Problemática (5Ws y 2Hs)**
