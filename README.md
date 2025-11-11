@@ -351,10 +351,17 @@
 <div id='1.1.1.'><h3> 1.1.1. Descripción de la Startup.</h3></div>
 <div align="justify">
 Vitalia es una startup conformada por estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas, comprometidos con atender las necesidades de quienes gestionan cultivos de mediana y gran escala.
-
 Entendemos que muchos cuidadores y productores enfrentan desafíos importantes debido a la falta de información clara, herramientas eficientes y soluciones tecnológicas que permitan monitorear de manera adecuada el estado de sus cultivos. Problemas como la gestión del riego, el control de humedad, el diagnóstico de enfermedades y el seguimiento del crecimiento pueden volverse complejos cuando el área de cultivo es extensa.
-
 Gracias a esta realidad, identificamos una oportunidad para desarrollar una solución innovadora que ayude a optimizar los procesos, mejorar la productividad y garantizar el bienestar de las plantas a gran escala. A través de tecnología inteligente, sensores especializados y una plataforma intuitiva, buscamos transformar la experiencia de manejo y monitoreo de cultivos, ofreciendo información precisa y acciones preventivas en tiempo real.
+Tambien habra Servicios adicionales de pago como:
+
+Asesorías técnicas especializadas
+
+Mantenimiento de sistemas hidropónicos
+
+Instalación de equipos
+
+Actualizaciones o upgrades de hardware
 
 </div>
 
