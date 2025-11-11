@@ -346,10 +346,6 @@
 <div id='1.'><h1>1. Capítulo I: Introducción.</h1></div>
 
 
-
-<div id='1.'><h1>1. Capítulo I: Introducción.</h1></div>
-
-
 ## **1.1 Startup Profile**
 
 <div id='1.1.1.'><h3> 1.1.1. Descripción de la Startup.</h3></div>
