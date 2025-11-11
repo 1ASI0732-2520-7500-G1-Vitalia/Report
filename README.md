@@ -354,7 +354,12 @@
 
 <div id='1.1.1.'><h3> 1.1.1. Descripción de la Startup.</h3></div>
 <div align="justify">
-Vitalia es una startup conformada por estudiantes de la carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas. Juntos, somos un equipo comprometido con las necesidades y problemáticas que enfrentan los entusiastas del cuidado de plantas, quienes a menudo se ven afectados por la falta de información clara y herramientas eficientes para la gestión del bienestar de sus plantas. Es así como identificamos una oportunidad para proponer una solución innovadora que mejore la eficiencia y calidad en el cuidado de las plantas.
+Vitalia es una startup conformada por estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas, comprometidos con atender las necesidades de quienes gestionan cultivos de mediana y gran escala.
+
+Entendemos que muchos cuidadores y productores enfrentan desafíos importantes debido a la falta de información clara, herramientas eficientes y soluciones tecnológicas que permitan monitorear de manera adecuada el estado de sus cultivos. Problemas como la gestión del riego, el control de humedad, el diagnóstico de enfermedades y el seguimiento del crecimiento pueden volverse complejos cuando el área de cultivo es extensa.
+
+Gracias a esta realidad, identificamos una oportunidad para desarrollar una solución innovadora que ayude a optimizar los procesos, mejorar la productividad y garantizar el bienestar de las plantas a gran escala. A través de tecnología inteligente, sensores especializados y una plataforma intuitiva, buscamos transformar la experiencia de manejo y monitoreo de cultivos, ofreciendo información precisa y acciones preventivas en tiempo real.
+
 </div>
 
 
@@ -366,9 +371,11 @@ En esta sección se describe el problema que el proyecto tiene como objetivo res
 
 <h5><b>Antecedentes:</b></h5>
 <div align="justify">
-El mundo de la hidroponia presenta actualmente desafíos que requieren soluciones creativas. Uno de los principales retos es la creciente popularidad de tener plantas en casa, impulsada por el deseo de conectar con la naturaleza y mejorar nuestros espacios. Esta tendencia exige que aprendamos más sobre cómo cultivar y mantener nuestras plantas saludables, lo que a su vez nos enfrenta a desafíos como entender sus necesidades específicas y adaptarnos a diferentes entornos. Además, quienes cuidan plantas a menudo se encuentran con la dificultad de monitorear y optimizar el crecimiento de sus plantas, así como la necesidad de asegurar que estén libres de plagas y enfermedades. Estos factores combinados resaltan la importancia de desarrollar conocimientos y métodos que nos ayuden a cuidar nuestras plantas de manera eficiente y exitosa.
-</div>
+El mundo de la hidroponía presenta actualmente desafíos que requieren soluciones creativas y eficientes. Uno de los principales retos radica en la creciente adopción de sistemas hidropónicos para cultivos de mayor escala, impulsada por la búsqueda de métodos más sostenibles, productivos y controlados. Esta tendencia exige comprender mejor las necesidades específicas de cada tipo de cultivo y adaptarse a condiciones altamente variables, desde el manejo de nutrientes hasta el control del pH y la calidad del agua.
 
+Además, quienes gestionan cultivos hidropónicos se enfrentan a la constante necesidad de monitorear y optimizar el crecimiento de sus plantas, garantizando que los sistemas funcionen correctamente y que los factores ambientales se mantengan estables. A esto se suma la importancia de prevenir y detectar tempranamente plagas y enfermedades, que pueden propagarse rápidamente en instalaciones de gran escala.
+
+Estos factores combinados resaltan la necesidad de soluciones tecnológicas especializadas que permitan controlar, medir y analizar el estado del cultivo en tiempo real. Desarrollar conocimientos, metodologías y herramientas eficientes es clave para asegurar un crecimiento óptimo y sostenible en sistemas hidropónicos de gran demanda y complejidad.
 ---
 
 ### **Problemática (5Ws y 2Hs)**
