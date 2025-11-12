@@ -1909,11 +1909,58 @@ Satisfacción del usuario (NPS, CSAT)
 
 <div id='8.2.7'><h3><b>8.2.7. Web and Mobile Tracking Plan.</b></h3>
 
+**Objetivo del Tracking Plan**
+Monitorear el comportamiento de los usuarios dentro de la aplicación, identificar patrones de uso, puntos de abandono y evaluar el impacto de los recordatorios y alertas en la mejora del cuidado de plantas.
+
+**Herramientas y Tecnologías**
+- **Google Analytics:** seguimiento de eventos web y móvil.  
+- **Firebase Analytics:** métricas de interacción movil y retención de usuarios.  
+- **Mixpanel (opcional):** análisis de cohortes y flujo de eventos detallado.  
+- **Backend Logging (Node.js/Express):** registro interno de eventos clave y métricas personalizadas.  
+
+**Eventos a rastrear (Web & Mobile)**
+
+| **Categoria** | **Evento** | **Descripción** | **Metrica asociada** | **Objetivo** |
+|----------------|-------------|-----------------|----------------------|---------------|
+| Onboarding | `signup_success` | Usuario completa el registro | Tasa de conversión de registro | Medir la facilidad de ingreso |
+| Onboarding | `first_plant_added` | Usuario registra su primera planta | % de usuarios activos que completan la acción | Verificar adopción inicial |
+| Interacción | `view_plant_dashboard` | Usuario ingresa al panel de su planta | Frecuencia de sesiones diarias | Analizar retención |
+| Notificaciones | `notification_clicked` | Usuario abre notificación de riego o alerta | CTR de notificaciones | Validar efectividad de recordatorios |
+| Riego | `watering_logged` | Usuario marca una planta como regada | Cantidad promedio de riegos semanales | Evaluar hábito de riego |
+| Sensores | `sensor_data_viewed` | Usuario consulta lecturas de humedad/luz | % de usuarios que revisan datos IoT | Validar uso de funciones avanzadas |
+| Comunidad | `community_post_created` | Usuario publica o comenta en la comunidad | Nº de publicaciones activas | Medir participación social |
+| Sesión | `session_duration` | Duración promedio por sesión | Tiempo promedio de uso (minutos) | Determinar nivel de engagement |
+
+
+**Frecuencia de monitoreo**
+- **Recolección continua de datos:** diaria (Firebase / GA4).  
+- **Revisión de métricas:** semanal.  
+- **Reporte analítico:** cada 2 semanas.  
+
+
 <div id='8.3'><h3><b>8.3. Experimentation</b></h3>
 
 <div id='8.3.1'><h3><b>8.3.1. To-Be User Stories.</b></h3>
 
+
+| **Story ID** | **Epic** | **Title** | **Description** | **Criterios de aceptación** |
+|---------------|----------|-----------|------------------|-----------------------------------|
+| US-E-01 | Recordatorios inteligentes | Implementación de recordatorios de riego automáticos | Como usuario, quiero recibir recordatorios personalizados según el tipo de planta para no olvidarme de regarlas. | **Given** que el usuario tiene una planta registrada,<br>**When** se cumpla la fecha de riego,<br>**Then** la app debe enviar una notificación con el recordatorio. |
+| US-E-02 | Monitoreo IoT | Visualización de datos de sensores en tiempo real | Como usuario, quiero ver la humedad y temperatura de mis plantas para tomar mejores decisiones. | **Given** que el sensor esté conectado,<br>**When** el usuario abra el panel de planta,<br>**Then** debe visualizar los valores actualizados de humedad y temperatura. |
+| US-E-03 | Experiencia de usuario | Mejora del diseño y flujo de navegación | Como usuario, quiero una interfaz más intuitiva para encontrar fácilmente mis plantas y sus datos. | **Given** que el usuario acceda a la app,<br>**When** busque una planta,<br>**Then** podrá acceder a su panel con máximo 2 clics. |
+| US-E-04 | Comunidad | Espacio para compartir experiencias | Como usuario, quiero publicar consejos y fotos para aprender de otros cuidadores. | **Given** que el usuario esté logueado,<br>**When** ingrese al módulo de comunidad,<br>**Then** podrá crear, comentar o reaccionar a publicaciones. |
+
+
 <div id='8.3.2'><h3><b>8.3.2. To-Be Product Backlog</b></h3>
+
+
+| **Prioridad** | **User Story** | **Descripción / Tarea principal** | **Story Points** |
+|----------------|----------------|----------------------------------|-------------------------------|
+| Alta | US-E-01 | Implementar sistema de notificaciones automáticas y personalizables. | 5 |
+| Alta | US-E-02 | Conectar sensores de humedad y temperatura al backend con actualización cada 30s. | 8 |
+| Media | US-E-03 | Rediseñar dashboard principal con iconografía y accesos rápidos. | 3 |
+| Media | US-E-04 | Crear modulo social básico (crear post, comentar, reaccionar). | 5 |
+
 
 
 
