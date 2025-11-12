@@ -1566,13 +1566,82 @@ Beneficios:
 
 <div id='8.1.1'><h3><b>8.1.1. As-Is Summary.</b></h3>
 
+Actualmente, la aplicación Plantita, desarrollada por la startup Vitalia, se encuentra en una fase funcional con versiones web y móvil implementadas. El sistema permite a los usuarios registrar sus plantas, recibir recordatorios de riego y acceder a guías de cuidado.  
+Sin embargo, hasta el momento no se ha validado empíricamente el impacto de las funciones principales sobre el comportamiento y satisfacción de los usuarios.
+
+El producto dispone de una arquitectura estable (frontend, backend y API) y una interfaz intuitiva construida con base en el enfoque Lean UX. Aun así, el equipo ha identificado la necesidad de diseñar y ejecutar experimentos que permitan comprobar las hipótesis de valor, entre ellas:
+
+- Si los usuarios utilizan de forma constante las funciones de recordatorio y monitoreo.  
+- Si dichas funciones reducen los errores comunes en el cuidado de plantas.  
+- Si la experiencia de uso mejora la percepción de control y confianza de los usuarios novatos.
+
 <div id='8.1.2'><h3><b>8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims.</b></h3>
+
+**Assumptions (Suposiciones)**
+- Los usuarios principiantes en jardinería desean una aplicación simple y visual que los guíe paso a paso.  
+- Los recordatorios automáticos y notificaciones visuales mejoran la constancia en el cuidado de las plantas.  
+- El monitoreo mediante sensores (humedad, luz, temperatura) contribuye a mantener las plantas saludables.  
+- Los usuarios están dispuestos a usar sensores físicos siempre que la instalación sea sencilla.  
+
+**Knowledge Gaps (Brechas practicas)**
+- Se desconoce la frecuencia de uso real de la app después de la primera semana.  
+- No hay evidencia sobre el impacto directo de las alertas en la mejora de los hábitos de riego.  
+- Falta comprobar si el nivel de satisfacción y compromiso del usuario mejora al usar las funciones IoT.  
+
+**Ideas**
+- Implementar un sistema de gamificación que premie la constancia en el cuidado de las plantas.  
+- Crear una comunidad en la app donde los usuarios puedan compartir consejos o fotos.  
+- Explorar un modelo freemium con funciones premium (diagnóstico automático o análisis avanzado).  
+
+**Claims (Afirmaciones)**
+- Plantita ayuda a reducir las muertes de plantas por descuido.  
+- Plantita mejora la satisfacción de los cuidadores novatos al ofrecer acompañamiento y datos en tiempo real.  
+- Plantita fomenta habitos sostenibles y responsables en el cuidado doméstico de plantas.  
 
 <div id='8.1.3'><h3><b>8.1.3. Experiment-Ready Questions.</b></h3>
 
+1. ¿El uso de recordatorios automáticos mejora la frecuencia de riego y la salud de las plantas?  
+2. ¿Los usuarios principiantes comprenden fácilmente la interfaz y funciones sin necesidad de asistencia?  
+3. ¿Las notificaciones y alertas aumentan la percepción de control y satisfacción del usuario?  
+4. ¿Los datos obtenidos por los sensores son consultados con frecuencia por los usuarios?  
+5. ¿Que funcionalidades son percibidas como más valiosas?  
+6. ¿Los usuarios mantienen el uso de la app más allá de la primera semana? 
+
 <div id='8.1.4'><h3><b>8.1.4. Question Backlog.</b></h3>
 
+| **Prioridad** | **Pregunta** | **Métrica asociada** | **Estado** |
+|----------------|---------------|------------------------|-------------|
+| Alta | ¿Los recordatorios mejoran la constancia en el cuidado? | Prueba A/B con y sin notificaciones | Pendiente |
+| Alta | ¿Los usuarios comprenden facilmente la interfaz? | Prueba de usabilidad con 5 participantes | Pendiente |
+| Media | ¿El monitoreo con sensores motiva el uso frecuente? | Seguimiento de métricas (sesiones diarias) | Pendiente |
+| Media | ¿Las alertas tempranas reducen perdidas de plantas? | Test controlado con grupos A/B | Pendiente |
+| Baja | ¿La app genera interés en la comunidad? | Encuesta post-uso | Pendiente |
+| Baja | ¿Que factores influyen en la retención semanal? | Analisis de comportamiento de uso | Pendiente |
+
 <div id='8.1.5'><h3><b>8.1.5. Experiment Cards.</b></h3>
+
+**Experiment Card 1 — “Recordatorios y hábito de riego”**
+- **Hipotesis:** Creemos que al enviar recordatorios personalizados, los usuarios aumentarán su constancia en el riego.  
+- **Metrica de exito:** Incremento del 25% en la tasa de cumplimiento de riego semanal.  
+- **Metodo:** A/B Testing (grupo con recordatorios vs. grupo sin recordatorios).  
+- **Duración:** 2 semanas.  
+- **Criterio de validación:** Los usuarios con recordatorios muestran mayor constancia y menor abandono.  
+---
+**Experiment Card 2 — “Usabilidad e intuición del diseño”**
+- **Hipotesis:** Creemos que una interfaz basada en íconos y lenguaje amigable reducirá la curva de aprendizaje.  
+- **Metrica de exito:** 80% de los usuarios completan las tareas principales sin ayuda.  
+- **Metodo:** Prueba de usabilidad moderada (5 usuarios representativos).  
+- **Duración:** 3 días.  
+- **Criterio de validación:** 4 de 5 usuarios logran completar las tareas sin asistencia.  
+---
+**Experiment Card 3 — “Monitoreo y satisfacción del usuario”**
+- **Hipotesis:** Creemos que el monitoreo con sensores aumentará la satisfacción y la frecuencia de uso.  
+- **Metrica de exito:** NPS ≥ 8 y aumento del 20% en la frecuencia de sesiones activas.  
+- **Metodo:** Encuesta posterior + análisis de datos de uso.  
+- **Duración:** 2 semanas.  
+- **Criterio de validación:** Se observa mejora en la satisfacción y retención de usuarios.  
+
+
 
 <div id='8.2'><h3><b>8.2. Experiment Design</b></h3>
 
