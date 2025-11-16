@@ -1556,12 +1556,76 @@ Beneficios:
 
 <div id='7.4.1'><h3><b>7.4.1. Tools and Practices</b></h3>
 
+**Monitoreo de rendimiento y experiencia del usuario**
+
+* Spring Boot Actuator + Micrometer → Prometheus & Grafana
+Permiten exponer métricas de JVM (heap, GC), latencia por endpoint, errores 5xx y 2xx, y transacciones.
+Los datos son recolectados por Prometheus y visualizados en Grafana mediante dashboards de rendimiento y consumo de recursos del backend.
+
+* Firebase Performance Monitoring + Sentry Performance
+En la app Flutter (Android/iOS) y en la PWA Angular, se integran SDKs para capturar tiempos de carga, FPS promedio, errores JavaScript y excepciones nativas, además de los flujos de navegación de los usuarios.
+
+* Google Analytics 4 / Matomo Analytics
+Recopilan datos sobre el comportamiento de los usuarios, duración de sesión, rebote y rutas de navegación para mejorar la interfaz UI y UX.
+
+**Pruebas de carga y estrés**
+
+* JMeter / Gatling
+Se diseñan escenarios que simulan decenas o cientos de solicitudes concurrentes hacia los endpoints REST del backend (Spring Boot): autenticación, registro de plantas y sincronización de sensores.
+Los resultados permiten identificar tiempos de respuesta, throughput y uso de CPU/memoria en el servidor y servicios IoT.
+
+**Logging y trazas distribuidas**
+
+* ELK Stack (Elasticsearch + Logstash + Kibana)
+Centraliza los logs JSON del backend y los errores de Angular/Flutter para búsquedas por correlación de peticiones.
+
+* Zipkin / Jaeger
+Permiten trazar solicitudes desde la app móvil hacia el backend y los microservicios, detectando demoras en llamadas a la API IoT.
 
 <div id='7.4.2'><h3><b>7.4.2. Monitoring Pipeline Components</b></h3>
 
+El pipeline de monitoreo de Plantita se organiza en cuatro etapas:
+
+**1. Recolección de métricas:**
+Actuator y Micrometer envían datos de rendimiento a Prometheus, mientras Sentry y Firebase Performance monitorean errores de usuario final.
+
+**2. Almacenamiento centralizado:**
+Los logs se envían a Logstash para su indexación en Elasticsearch, asegurando consultas rápidas por fecha o servicio.
+
+**3. Análisis automático:**
+Dashboards de Grafana procesan las métricas de Prometheus y las muestran en tiempo real al equipo de DevOps.
+
+**4. Visualización e insights:**
+Se emplean paneles de rendimiento web (Google Lighthouse) y análisis de interacción (Matomo o GA4) para detectar problemas de rendimiento en el frontend Angular y la app Flutter.
+
 <div id='7.4.3'><h3><b>7.4.3. Alerting Pipeline Components</b></h3>
 
-<div id='7.4.4'><h3><b>7.4.4. Notification Pipeline Components. Capítulo VIII: Experiment-Driven Development</b></h3>
+El sistema de alertas permite una respuesta inmediata ante eventos críticos:
+
+* **Prometheus Alertmanager + Grafana Alerts**
+Dispara notificaciones por latencias > 500 ms, uso de CPU > 85 % o errores 5xx en los endpoints del API.
+
+* **Sentry & Firebase Crashlytics**
+Generan alertas instantáneas en Slack y correo cuando se detectan errores JavaScript, excepciones no controladas o crashes de la app móvil.
+
+* **Postman Monitors**
+Ejecutan colecciones de prueba cada 6 horas para verificar flujos clave (login, registro de sensor, actualización de datos) y notifican si alguna falla es detectada.
+
+<div id='7.4.4'><h3><b>7.4.4. Notification Pipeline Components.</b></h3>
+
+Las notificaciones mantienen informados a usuarios y administradores en tiempo real:
+
+* **Firebase Cloud Messaging (FCM)**
+Envía push notifications cuando un sensor detecta baja humedad, una planta requiere riego o se detecta una anomalía en el sistema.
+
+* **Slack / Email Integrations (Jenkins + Grafana Alerts)**
+Notifican a los desarrolladores ante fallas de pipeline, caídas del servidor o problemas de sincronización entre backend y IoT.
+
+* **App Notifications in-App**
+Los usuarios reciben alertas personalizadas dentro de la app según sus preferencias: riego, fertilización y problemas ambientales detectados.
+
+
+ <div id='8'><h3><b>Capítulo VIII: Experiment-Driven Development</b></h3>
 
 <div id='8.1'><h3><b>8.1. Experiment Planning</b></h3>
 
