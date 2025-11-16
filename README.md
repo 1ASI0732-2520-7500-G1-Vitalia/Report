@@ -1556,6 +1556,7 @@ Beneficios:
 
 <div id='7.4.1'><h3><b>7.4.1. Tools and Practices</b></h3>
 
+
 <div id='7.4.2'><h3><b>7.4.2. Monitoring Pipeline Components</b></h3>
 
 <div id='7.4.3'><h3><b>7.4.3. Alerting Pipeline Components</b></h3>
