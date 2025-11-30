@@ -1100,7 +1100,7 @@ equipment: Conjunto de Workers encargados de un Crop -equipmentCode: Código del
 <div id='4.10.1'><h3><b>4.10.1. Relational/Non-Relational Database Diagram.</b></h3>
 
 En esta sección se mostrará el diagrama de clases de nuestra aplicación
-![database Diagramsasdsad](https://imgur.com/O3aXqmF.png)
+<img src="img/Diagram_DB.jpeg">
 
 <div id='5.'><h1><b>3. Capítulo V: Requirements Specification</b></h1>
   
