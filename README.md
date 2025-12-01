@@ -46,11 +46,15 @@
 
 # Registro de versiones
 
-
 | **Versión** | **Fecha** | **Autor** | **Descripción de modificación** |
 |--------------|------------|------------|----------------------------------|
-| **TB1** | 21/09/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br>- Hernan Emilio Morales Calderón  <br>- Joan Fernando Teves Samaniego| Se realizaron los siguientes puntos: <br> - Capítulo I: Introducción <br> - Capítulo II: Requirements Elicitation & Analysis <br> - Capítulo III: Requirements Specification <br> - Capítulo IV: Product Design <br> - Capítulo V: Product Implementation |
-| **TP1** | 7/10/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br>- Hernan Emilio Morales Calderón <br>- Joan Fernando Teves Samaniego| Se añadió el siguiente punto: <br> - Capítulo VI Y app |
+| **TB1** | 21/09/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br> - Hernan Emilio Morales Calderón | Se realizaron los siguientes puntos: <br> - Capítulo I: Introducción <br> - Capítulo II: Requirements Elicitation & Analysis <br> - Capítulo III: Requirements Specification <br> - Capítulo IV: Product Design <br> - Capítulo V: Product Implementation |
+| **TP1** | 07/10/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br> - Hernan Emilio Morales Calderón | Se añadió el siguiente punto: <br> - Capítulo VI y desarrollo de la aplicación (app) |
+| **TB2** | 15/10/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br> - Hernan Emilio Morales Calderón | Se realizó lo siguiente: <br> - Revisión de estándares éticos, usabilidad y accesibilidad <br> - Ajustes en diagramas y mockups <br> - Validación del repositorio, estructura del proyecto y trazabilidad <br> - Refinamiento del diseño de la arquitectura y casos de uso |
+| **TB3** | 28/10/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br> - Hernan Emilio Morales Calderón | Se completaron los avances: <br> - Evaluación de viabilidad técnica y económica del sistema <br> - Revisión de flujos, modelos, arquitectura y consistencia técnica <br> - Verificación de sostenibilidad, escalabilidad y claridad del diseño <br> - Documentación y control de versiones del proyecto |
+| **TB4** | 10/11/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br> - Hernan Emilio Morales Calderón | Se desarrollaron las siguientes actividades: <br> - Validación final de arquitectura, diagramas y casos de uso <br> - Revisión de la interfaz asegurando accesibilidad, ética y usabilidad <br> - Evaluación del impacto social, global y ambiental de la solución <br> - Ajustes finales en diseño, flujo y documentación del sistema |
+| **TF** | 25/11/2025 | - Andrea Cabanillas Gora <br> - Irving Allcca Guerrero <br> - Anderson Gonza Morales <br> - Hernan Emilio Morales Calderón | Se consolidó el producto final: <br> - Ensamblaje completo del documento final <br> - Validación final del funcionamiento de la aplicación <br> - Aseguramiento de calidad, ética y sostenibilidad en toda la solución <br> - Preparación final para entrega y presentación |
+
 
 # Project Report Collaboration Insights
 
@@ -249,8 +253,9 @@
 
 | **Criterio específico** | **Acciones realizadas** | **Conclusiones** |
 |--------------------------|--------------------------|------------------|
-| **4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software** | **Andrea Cabanillas**  <br> **TB1:** Me encargué de elaborar el diagrama principal del sistema y participar en la validación de los requerimientos con el equipo, asegurando la coherencia entre el diseño y los objetivos del proyecto. <br> **TP1:** Lideré la redacción de todos los capítulos del documento técnico, garantizando la consistencia y el cumplimiento de las normas éticas y profesionales del desarrollo. <br><br> **Irving Allcca Guerrero**  <br> **TB1:** Me encargué de diseñar los wireframes y definir la estructura visual de la aplicación siguiendo buenas prácticas de usabilidad y accesibilidad. <br> **TP1:** Integré el backend con el frontend de la aplicación, cuidando la seguridad de los datos y la eficiencia del código. <br><br> **Anderson Gonza Morales** <br> **TB1:** Me encargué de diseñar el diagrama de clases, ademas de la verificacion de la organizacion del repositorio e imagenes <br> **TP1:** Mejore el diagrama de clases, verificacion del cumplimiento del repositorio y el buen orden del flujo del trabajo. <br><br> **Hernan Morales Calderón** <br> **TB1:** Implementé los mockups de la landing page y la aplicación móvil, asegurando la coherencia visual y funcional con los objetivos del proyecto. <br> **TP:** Desarrollé los diagramas C4 y colaboré en la elaboración del informe técnico, garantizando la correcta documentación de la arquitectura y la consistencia con los principios éticos del desarrollo.| **TB1:** Fue fundamental la capacidad del equipo para colaborar de forma eficaz y ejercer un liderazgo compartido. La toma de decisiones conjuntas, la comunicación abierta y el apoyo mutuo fueron claves para superar desafíos y mantener la responsabilidad profesional. <br><br> **TP:** Se evidenció el compromiso del equipo con la ética profesional, la precisión técnica y la transparencia en la documentación. Cada integrante asumió su rol con responsabilidad, fortaleciendo la calidad y confiabilidad del proyecto final.| 
-| **4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **Andrea Cabanillas**  <br> **TB1:** Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. <br> **TP1:** Supervisé la consolidación de documentación técnica de sensores y APIs. Organicé un checklist para el cierre técnico de los módulos web y validación con Figma. <br><br> **Irving Allcca Guerrero**  <br> **TB1:** Me enfoqué en comprender la problemática del cuidado de plantas y los segmentos de usuarios. Realicé investigación sobre sus necesidades y colaboré en la definición de funcionalidades clave. <br><br>  **Anderson Gonza Morales**  <br> **TB1:** Busque comprender la problemática del objetivo del proyecto. Realicé la documentacion respectiva para la recoleccion de datos. <br> **TP1:** Realize mejoras a los diagramas y verificacion de la relacion que tendran los usuarios. <br><br> **Hernan Morales Calderón** <br> **TB1:** Analicé las necesidades de los usuarios y propuse mejoras en la estructura visual de los mockups para optimizar la experiencia y accesibilidad. <br> **TP:** Contribuí al análisis del impacto del sistema, desarrollando diagramas C4 que reflejan la escalabilidad y sostenibilidad de la solución propuesta.| **TB1:** Se demostró una fuerte capacidad para crear un entorno de trabajo colaborativo e inclusivo, con roles organizados, objetivos claros y planificación detallada. <br><br> **TP:** El equipo logró reflexionar sobre los impactos sociales y ambientales de la solución, priorizando el diseño responsable, la eficiencia tecnológica y la sostenibilidad del sistema en contextos reales. |
+| **4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software** | **Andrea Cabanillas**  <br> **TB1:** Elaboré el diagrama principal del sistema y participé en la validación de requerimientos. <br> **TB2:** Revisé estándares éticos y buenas prácticas para decisiones responsables. <br> **TB3:** Supervisé la trazabilidad y transparencia del repositorio. <br> **TB4:** Validé casos de uso alineados con privacidad y ética. <br> **TP1:** Lideré la redacción técnica asegurando coherencia ética. <br> **TF:** Verifiqué que la documentación final refleje responsabilidad profesional. <br><br> **Irving Allcca Guerrero**  <br> **TB1:** Diseñé wireframes con criterios éticos de accesibilidad. <br> **TB2:** Verifiqué estándares inclusivos en el diseño. <br> **TB3:** Validé consistencia del flujo y claridad visual. <br> **TB4:** Revisé integración visual y funcional según buenas prácticas. <br> **TP1:** Integré backend–frontend con enfoque en seguridad. <br> **TF:** Aseguré ética en la versión final del sistema. <br><br> **Anderson Gonza Morales** <br> **TB1:** Diseñé el diagrama de clases y verifiqué orden del repositorio. <br> **TB2:** Validé buenas prácticas estructurales del código. <br> **TB3:** Revisé consistencia técnica de modelos. <br> **TB4:** Aseguré cumplimiento ético en la estructura del sistema. <br> **TP1:** Mejoré diagramas y verifiqué el flujo del trabajo. <br> **TF:** Revisé documentación final garantizando responsabilidad profesional. <br><br> **Hernan Morales Calderón** <br> **TB1:** Implementé mockups garantizando ética de diseño. <br> **TB2:** Validé accesibilidad e inclusión visual. <br> **TB3:** Ajusté elementos visuales bajo estándares éticos. <br> **TB4:** Revisé interacciones transparentes para el usuario. <br> **TP:** Desarrollé diagramas C4 y colaboré en la documentación ética. <br> **TF:** Validé la arquitectura final cumpliendo principios profesionales. | **TB1:** La comunicación, transparencia y liderazgo compartido fortalecieron la responsabilidad ética del equipo. <br><br> **TB3:** El control de versiones y la trazabilidad permitieron mantener orden, claridad y profesionalismo en todas las entregas. <br><br> **TB4:** Las validaciones finales aseguraron que los flujos, interfaces y decisiones técnicas cumplieran criterios éticos y profesionales. <br><br> **TP:** La documentación y desarrollo técnico evidenciaron compromiso con la ética, la calidad y la rigurosidad profesional. <br><br> **TF:** El proyecto culminó con un entregable sólido, ético y bien fundamentado técnicamente. |
+| **4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **Andrea Cabanillas**  <br> **TB1:** Analicé la problemática y necesidades de los usuarios. <br> **TB2:** Evalué impacto social y ambiental de la solución. <br> **TB3:** Analicé viabilidad económica y sostenibilidad del sistema. <br> **TB4:** Validé decisiones arquitectónicas considerando eficiencia e impacto ambiental. <br> **TP1:** Supervisé documentación técnica y checklist de cierre. <br> **TF:** Analicé impacto global y sostenibilidad del sistema. <br><br> **Irving Allcca Guerrero**  <br> **TB1:** Analicé necesidades y funcionalidades claves. <br> **TB2:** Evalué accesibilidad e inclusión social del diseño. <br> **TB3:** Revisé eficiencia del diseño para diversos contextos económicos. <br> **TB4:** Ajusté prototipo considerando impacto global y accesibilidad. <br> **TP1:** Validé experiencia de usuario y su impacto social. <br> **TF:** Evalué impacto del prototipo final en términos de sostenibilidad. <br><br> **Anderson Gonza Morales**  <br> **TB1:** Analicé la problemática y documenté recolección de datos. <br> **TB2:** Evalué impacto social y perfiles de usuario. <br> **TB3:** Verifiqué sostenibilidad técnica y relaciones del sistema. <br> **TB4:** Mejoré diagramas evaluando impacto global. <br> **TP1:** Validé el flujo de usuarios según adopción tecnológica. <br> **TF:** Revisé impacto del sistema en su versión final. <br><br> **Hernan Morales Calderón** <br> **TB1:** Analicé necesidades y propuse mejoras accesibles. <br> **TB2:** Evalué impacto social de cada elemento visual. <br> **TB3:** Ajusté diseño pensando en diversidad cultural y económica. <br> **TB4:** Optimicé interfaz priorizando sostenibilidad. <br> **TP:** Desarrollé diagramas C4 resaltando escalabilidad. <br> **TF:** Revisé impacto final del sistema en diferentes contextos. | **TB1:** El equipo logró comprender necesidades reales y formular soluciones con conciencia social y ambiental. <br><br> **TB3:** Se evaluó la viabilidad económica, el costo técnico y la sostenibilidad, permitiendo decisiones más responsables e informadas. <br><br> **TB4:** Las revisiones finales aseguraron que la arquitectura, diseño y funcionalidades generen bajo impacto ambiental y alta accesibilidad global. <br><br> **TP:** Se analizó el impacto del sistema en escenarios reales, priorizando eficiencia, sostenibilidad y responsabilidad social. <br><br> **TF:** El proyecto final refleja decisiones informadas, sostenibles y adecuadas a contextos diversos. |
+
 
 
 
@@ -316,16 +321,6 @@
   <tr>
     <td valign="top">
       <p>
-    </td>
-  </tr>
-    <tr>
-    <th>
-      <img src="img/Teves-Joan.jpg" alt="Foto de perfil de Joan" width="300px">
-    </th>
-    <td valign="top">
-      <p><b>Joan Fernando Teves Samaniego</b></p>
-      <p> Ingeniería de Software – Universidad Peruana de Ciencias Aplicadas<br><br>Tengo 22 años y actualmente estudio en la Universidad Peruana de Ciencias Aplicadas. Me interesa el mundo de la ciberseguridad y considero que el primer paso es entender las aplicaciones web a fondo. Conozco C++, JavaScript, HTML, CSS, MongoDB, SQL, SQL Server, PostgreSQL y Python. Soy creativo, responsable, trabajo en equipo, me adapto fácilmente y gestiono bien mi tiempo. Espero que en este proyecto pueda incrementar mis habilidades y conocimientos sobre las aplicaciones web y más.
-      </p>
     </td>
   </tr>
 <tr>
@@ -1343,6 +1338,112 @@ Then se muestra la especie identificada y posibles problemas detectados.
 -Seguridad: Validar protección de contraseñas, accesos no autorizados y seguridad en el manejo de datos personales.
 -Usabilidad: Comprobar que la interfaz sea intuitiva y accesible para usuarios principiantes en el cuidado de plantas.
 -Recuperación de fallos: Evaluar el sistema ante caídas de red o interrupciones del servidor.
+
+<div id="6.2">
+  <h2><b>6.2. Static Testing & Verification</b></h2>
+</div>
+
+<div id="6.2.1">
+  <h3><b>6.2.1. Static Code Analysis</b></h3>
+</div>
+
+<div id="6.2.1.1">
+  <h4><b>6.2.1.1. Coding Standard & Code Conventions</b></h4>
+</div>
+
+<div id="6.2.1.2">
+  <h4><b>6.2.1.2. Code Quality & Code Security</b></h4>
+</div>
+
+<div id="6.2.2">
+  <h3><b>6.2.2. Reviews</b></h3>
+</div>
+
+<!-- ============================ -->
+<!--        6.3 Validation        -->
+<!-- ============================ -->
+
+<div id="6.3">
+  <h2><b>6.3. Validation Interviews</b></h2>
+</div>
+
+<div id="6.3.1">
+  <h3><b>6.3.1. Diseño de Entrevistas</b></h3>
+</div>
+
+<div id="6.3.2">
+  <h3><b>6.3.2. Registro de Entrevistas</b></h3>
+</div>
+
+<div id="6.3.3">
+  <h3><b>6.3.3. Evaluaciones según heurísticas</b></h3>
+</div>
+
+<!-- ============================ -->
+<!--        6.4 Auditorías        -->
+<!-- ============================ -->
+
+<div id="6.4">
+  <h2><b>6.4. Auditoría de Experiencias de Usuario</b></h2>
+</div>
+
+<div id="6.4.1">
+  <h3><b>6.4.1. Auditoría realizada</b></h3>
+</div>
+
+<div id="6.4.1.1">
+  <h4><b>6.4.1.1. Información del grupo auditado</b></h4>
+</div>
+
+<div id="6.4.1.2">
+  <h4><b>6.4.1.2. Cronograma de auditoría realizada</b></h4>
+</div>
+
+<div id="6.4.1.3">
+  <h4><b>6.4.1.3. Contenido de auditoría realizada</b></h4>
+</div>
+
+<div id="6.4.2">
+  <h3><b>6.4.2. Auditoría recibida</b></h3>
+</div>
+
+<div id="6.4.2.1">
+  <h4><b>6.4.2.1. Información del grupo auditor</b></h4>
+</div>
+
+<div id="6.4.2.2">
+  <h4><b>6.4.2.2. Cronograma de auditoría recibida</b></h4>
+</div>
+
+<div id="6.4.2.3">
+  <h4><b>6.4.2.3. Contenido de auditoría recibida</b></h4>
+</div>
+
+<div id="6.4.2.4">
+  <h4><b>6.4.2.4. Resumen de modificaciones para subsanar hallazgos</b></h4>
+</div>
+
+<!-- ============================ -->
+<!--     Requested Extra Block    -->
+<!-- ============================ -->
+
+<div id="7.4.3">
+  <h3><b>7.4.3. Alerting Pipeline Components</b></h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 <div id='6'><h3><b>Capítulo VII: DevOps Practices</b></h3>
   
@@ -1374,7 +1475,7 @@ Ejecución automática de Unit Tests e Integration Tests en cada commit push.
 Pipeline con stages (Build → Test → Deploy → Report) → Garantiza un flujo ordenado y transparente.
 Feedback rápido al equipo mediante notificaciones (Slack, Teams, correo).
   
-<div id='5.1.2'><h3><b>7.1.2. Build & Test Suite Pipeline Components.</b></h3>
+<div id='7.1.2'><h3><b>7.1.2. Build & Test Suite Pipeline Components.</b></h3>
 
 ![alt text](img/test1.jpg)
 ![alt text](img/test2.jpg)
