@@ -605,17 +605,44 @@ En el mercado al que buscamos ofrecer nuestra solución, identificamos diversos 
 
 ### Entrevista 1: https://drive.google.com/drive/folders/1arzj1cuxP2zOGmwTyb6uJWcws5smoYzF
 
+Resumen:
+El usuario considera que brindar información más precisa dentro de una aplicación para el cuidado de plantas es fundamental, especialmente cuando se desea diagnosticar problemas en los cultivos. Señala que sería útil contar con un espacio o foro donde pueda subir fotos de sus plantas para recibir ayuda de otras personas con experiencia o que hayan pasado por situaciones similares. Además, destaca la importancia de que la aplicación sea intuitiva y visual, ya que colocar correctamente fotos complicadas puede resultar difícil. Finalmente, menciona que GeneXus es importante porque ayudaría en el desarrollo de interfaces y funcionalidades que faciliten la subida y análisis de imágenes dentro de la app.
+
+
 ### Entrevista 2: https://drive.google.com/file/d/16OVTi9H70ehYXRoyM_GTTVy8oNJL0jzy/view
+
+Resumen:
+El usuario valora la posibilidad de intercambiar información con otros cuidadores de plantas, especialmente sobre especies que desconoce, ya que esto facilitaría mejorar su mantenimiento. Considera muy importante que la aplicación sea fácil de usar y rápida de entender debido a sus múltiples actividades diarias. Si la app fuera complicada o demandara demasiado tiempo, sería probable que dejara de usarla, lo que afectaría tanto su rutina como el cuidado de sus plantas. En resumen, necesita una aplicación intuitiva, simple y eficiente para poder atender sus plantas sin afectar sus responsabilidades diarias.
 
 ### Entrevista 3:  https://drive.google.com/file/d/1RLscu2elUKj7_NeBrimIg_4-KcbLe1ZL/view
 
+Resumen:
+El usuario desea que, desde el momento en que ingrese a la aplicación, pueda recibir sugerencias personalizadas basadas en los problemas específicos que reporte sobre sus plantas. Considera valioso que los usuarios puedan publicar los problemas más comunes que enfrentan, de manera que la aplicación pueda ofrecer recomendaciones adaptadas a cada caso. Además, destaca que la facilidad de uso es extremadamente importante, ya que al adoptar una nueva herramienta es esencial que esta sea intuitiva y permita una rápida adaptación.
+
+
 ### Entrevista 4: https://drive.google.com/file/d/1-8lUwNBGObQRfc3t49UJP0Raytdzk0gt/view
+
+Resumen:
+El usuario desea recordatorios automáticos y reconocimiento de plantas mediante fotos. Busca recibir recomendaciones inmediatas sobre el estado de sus plantas. Considera esencial que la aplicación sea simple y rápida de usar debido al limitado tiempo que puede dedicarle diariamente.
+
 
 ### Entrevista 5: https://drive.google.com/drive/folders/1arzj1cuxP2zOGmwTyb6uJWcws5smoYzF
 
+Resumen:
+El usuario busca recursos educativos rápidos (tips o videos) y herramientas que ayuden a identificar problemas visuales como hojas amarillas. Requiere que la app sea directa, sin pasos innecesarios, ya que perder tiempo navegando lo desmotiva.
+
+---
+
 ### Entrevista 6: https://drive.google.com/file/d/1p1jtIo70UHPi4DimgM6_pxEGnAHaXJ3S/view
 
+Resumen:
+
+El usuario quiere una aplicación que le brinde sugerencias personalizadas desde que ingresa, permitiéndole reportar problemas específicos de sus plantas y recibir recomendaciones claras y útiles. También desea que otros usuarios puedan publicar los problemas más comunes para así intercambiar información y aprender juntos. Para él es fundamental que la aplicación sea muy fácil de usar y que no requiera mucho tiempo para adaptarse, ya que una interfaz complicada lo desmotivaría y podría hacer que deje de utilizarla.
+
+
 <div id='2.2.3.'><h3> 2.2.3. Análisis de entrevistas</h3>
+
+Resumen general: 
 
 **Segmento Objetivo:** Aficionados al jardín
 
@@ -1357,8 +1384,119 @@ Then se muestra la especie identificada y posibles problemas detectados.
 
 <div id="6.2.2">
   <h3><b>6.2.2. Reviews</b></h3>
-</div>
 
+Tipos de Revisiones
+Revisión por Pares
+
+Cada cambio implementado en el sistema es sometido a una revisión por un miembro del equipo, verificando:
+
+Correcta alineación con la arquitectura definida.
+
+Cumplimiento de principios SOLID y buenas prácticas.
+
+Coherencia con la estructura de diseño planteada en sprint planning.
+
+Adecuado uso de patrones de diseño y nomenclatura.
+
+Estas revisiones permiten detectar inconsistencias de forma temprana, reduciendo retrabajos y fortaleciendo la calidad del código.
+
+Revisión Formal
+
+Al culminar cada sprint, el equipo realiza una sesión de revisión grupal basada en checklists formales.
+Los aspectos evaluados incluyen:
+
+Nomenclatura correcta en clases, métodos y variables.
+
+Organización del proyecto (paquetes, componentes, módulos).
+
+Inyección adecuada de dependencias según la arquitectura.
+
+Uso apropiado de controladores, servicios y repositorios.
+
+Cumplimiento del diseño documentado en diagramas C4, UML y especificaciones.
+
+Esto asegura consistencia técnica y mantenimiento de estándares a lo largo del proyecto.
+
+ Proceso de Revisión
+ 
+Pull Requests (PR)
+
+Todos los cambios deben pasar por un Pull Request que incluya:
+
+Descripción clara y detallada del cambio realizado.
+
+Evidencia visual (capturas, fragmentos de código o enlaces).
+
+Pruebas asociadas (unitarias, integradas o funcionales).
+
+Documentación actualizada si aplica.
+
+Ejemplo de convención:
+feat(backend): add plant reminders module
+
+Checklist de Validación
+
+Antes de aprobar un PR, se valida:
+
+Cumplimiento de las convenciones de código (camelCase, PascalCase, nombres descriptivos).
+
+Pruebas unitarias actualizadas y funcionando correctamente.
+
+Revisión de seguridad (validación de inputs, sanitización, manejo de errores).
+
+Cobertura mínima requerida.
+
+Estilo de código conforme al estándar definido para el proyecto.
+
+Aprobación
+
+Un PR solo puede fusionarse cuando:
+
+Ha sido revisado por al menos un integrante del equipo.
+
+No presenta errores críticos.
+
+Cumple con las reglas del flujo CI/CD.
+
+Supera todos los checks automáticos (linting, pruebas, build).
+
+Criterios de Aceptación
+
+Código limpio y sin errores críticos.
+
+Cobertura mínima:
+
+≥ 80% backend
+
+≥ 75% frontend
+
+Seguridad:
+
+Sin vulnerabilidades detectadas en dependencias.
+
+Validación correcta de inputs y manejo de tokens.
+
+Performance adecuada:
+
+Eficiencia en consultas, componentes optimizados.
+
+Frecuencia de Revisiones
+
+Revisiones diarias para PRs pequeños o cambios incrementales.
+
+Revisión semanal de módulos grandes.
+
+Retrospectivas al finalizar cada sprint, evaluando:
+
+Consistencia del código.
+
+Propuestas de mejora de estándares.
+
+Ajustes en procesos de revisión y documentación.
+
+  
+
+</div>
 <!-- ============================ -->
 <!--        6.3 Validation        -->
 <!-- ============================ -->
@@ -1370,6 +1508,11 @@ Then se muestra la especie identificada y posibles problemas detectados.
 <div id="6.3.1">
   <h3><b>6.3.1. Diseño de Entrevistas</b></h3>
 </div>
+
+
+
+
+
 
 <div id="6.3.2">
   <h3><b>6.3.2. Registro de Entrevistas</b></h3>
@@ -2126,7 +2269,93 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
 | Media | US-E-04 | Crear modulo social básico (crear post, comentar, reaccionar). | 5 |
 
 
+<!-- ============================ -->
+<!--   8.3.3 Pipeline-supported   -->
+<!-- ============================ -->
 
+<div id="8.3.3">
+  <h2><b>8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle</b></h2>
+</div>
+
+<div id="8.3.3.1">
+  <h3><b>8.3.3.1. To-Be Sprint Backlogs</b></h3>
+</div>
+
+<div id="8.3.3.2">
+  <h3><b>8.3.3.2. Implemented To-Be Landing Page Evidence</b></h3>
+</div>
+
+<div id="8.3.3.3">
+  <h3><b>8.3.3.3. Implemented To-Be Frontend-Web Application Evidence</b></h3>
+</div>
+
+<div id="8.3.3.4">
+  <h3><b>8.3.3.4. Implemented To-Be Native-Mobile Application Evidence</b></h3>
+</div>
+
+<div id="8.3.3.5">
+  <h3><b>8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence</b></h3>
+</div>
+
+<div id="8.3.3.6">
+  <h3><b>8.3.3.6. Team Collaboration Insights</b></h3>
+</div>
+
+<!-- ============================ -->
+<!--      8.3.4 Interviews        -->
+<!-- ============================ -->
+
+<div id="8.3.4">
+  <h2><b>8.3.4. To-Be Validation Interviews</b></h2>
+</div>
+
+<div id="8.3.4.1">
+  <h3><b>8.3.4.1. Diseño de Entrevistas</b></h3>
+</div>
+
+<div id="8.3.4.2">
+  <h3><b>8.3.4.2. Registro de Entrevistas</b></h3>
+</div>
+
+<!-- ============================ -->
+<!--     8.4 Experiment Aftermath -->
+<!-- ============================ -->
+
+<div id="8.4">
+  <h2><b>8.4. Experiment Aftermath & Analysis</b></h2>
+</div>
+
+<div id="8.4.1">
+  <h3><b>8.4.1. Analysis and Interpretation of Results</b></h3>
+</div>
+
+<div id="8.4.2">
+  <h3><b>8.4.2. Re-scored and Re-prioritized Question Backlog</b></h3>
+</div>
+
+<!-- ============================ -->
+<!--     8.5 Continuous Learning  -->
+<!-- ============================ -->
+
+<div id="8.5">
+  <h2><b>8.5. Continuous Learning</b></h2>
+</div>
+
+<div id="8.5.1">
+  <h3><b>8.5.1. Shareback Session Artifacts: Learning Workflow</b></h3>
+</div>
+
+<!-- ============================ -->
+<!--     8.6 Pre-launch           -->
+<!-- ============================ -->
+
+<div id="8.6">
+  <h2><b>8.6. To-Be Software Platform Pre-launch</b></h2>
+</div>
+
+<div id="8.6.1">
+  <h3><b>8.6.1. About-the-Product Intro Video</b></h3>
+</div>
 
 
 
