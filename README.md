@@ -3267,19 +3267,18 @@ El producto dispone de una arquitectura estable (frontend, backend y API) y una 
 
 <div id='8.2.1'><h3><b>8.2.1. Hypotheses.</b></h3>
 
+H₀: La disponibilidad de datos en tiempo real sobre nutrientes, pH, temperatura, humedad y estado del cultivo no tiene efecto en la toma de decisiones ni en la productividad de los usuarios.
+
+Integración de pagos:
+
+H₀: La integración de pagos dentro de la plataforma no afecta el tiempo de reposición de insumos ni la satisfacción de los usuarios.
+
+Automatización de alertas:
+
+H₀: La notificación temprana de cambios críticos en los parámetros del cultivo no reduce las pérdidas ni mejora la capacidad de respuesta de los usuarios.
 – Los usuarios necesitan monitorear sus cultivos en tiempo real.
 Si la plataforma ofrece datos actualizados sobre nutrientes, pH, temperatura, humedad y estado general del cultivo, los usuarios podrán tomar mejores decisiones y mejorar la productividad.
 
- – La integración de pagos dentro de la plataforma facilitará la adquisición de insumos.
-Si los usuarios pueden comprar nutrientes, equipos y repuestos directamente desde la aplicación, se reducirá el tiempo de reposición y aumentará la satisfacción.
-
-– La automatización de alertas reducirá pérdidas en los cultivos.
-Si el sistema notifica tempranamente sobre cambios críticos en los parámetros, los usuarios responderán más rápido, evitando daños.
- – Los usuarios con cultivos medianos y grandes requieren un sistema centralizado.
-Si la aplicación integra monitoreo, control, historial, compras y servicios técnicos, se optimizará la gestión general y aumentará la eficiencia operativa.
-
- – Una experiencia intuitiva incrementará la adopción de la plataforma.
-Si la interfaz es clara, sencilla y accesible, tanto expertos como principiantes podrán usar la solución sin barreras técnicas.
 
 <div id='8.2.2'><h3><b>8.2.2. Measures.</b></h3>
 
