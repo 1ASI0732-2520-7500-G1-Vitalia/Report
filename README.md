@@ -1385,114 +1385,43 @@ Then se muestra la especie identificada y posibles problemas detectados.
 <div id="6.2.2">
   <h3><b>6.2.2. Reviews</b></h3>
 
-Tipos de Revisiones
-Revisión por Pares
+# Tipos de Revisiones
 
-Cada cambio implementado en el sistema es sometido a una revisión por un miembro del equipo, verificando:
+ 1. Revisión por Pares
+Cada Pull Request (PR) es revisado por al menos un miembro del equipo para asegurar:
 
-Correcta alineación con la arquitectura definida.
+- Alineación con la arquitectura definida.  
+- Cumplimiento de principios SOLID.  
+- Respeto por los patrones de diseño establecidos.  
+- Coherencia con las tareas del sprint.  
+- Uso correcto de nomenclatura y convenciones internas.
 
-Cumplimiento de principios SOLID y buenas prácticas.
+Este proceso ayuda a detectar errores de forma temprana y a mantener uniformidad técnica.
 
-Coherencia con la estructura de diseño planteada en sprint planning.
+---
 
-Adecuado uso de patrones de diseño y nomenclatura.
+ 2. Revisión Formal
+Al finalizar cada sprint se realiza una revisión grupal utilizando un checklist basado en el Style Guide interno.  
+Se evalúa:
 
-Estas revisiones permiten detectar inconsistencias de forma temprana, reduciendo retrabajos y fortaleciendo la calidad del código.
+- Nomenclatura correcta de clases, métodos y variables.  
+- Organización adecuada de paquetes, módulos y componentes.  
+- Inyección de dependencias según la arquitectura.  
+- Coherencia con diagramas UML, C4 y documentación técnica.  
+- Cumplimiento de buenas prácticas establecidas.
 
-Revisión Formal
+---
 
-Al culminar cada sprint, el equipo realiza una sesión de revisión grupal basada en checklists formales.
-Los aspectos evaluados incluyen:
+Proceso de Revisión
 
-Nomenclatura correcta en clases, métodos y variables.
+ Pull Requests (PR)
+Todo cambio debe realizarse mediante un PR que incluya:
 
-Organización del proyecto (paquetes, componentes, módulos).
+- Descripción clara del cambio realizado.  
+- Evidencias como capturas, fragmentos de código o enlaces.  
+- Pruebas unitarias o integradas necesarias.  
+- Documentación actualizada si aplica.
 
-Inyección adecuada de dependencias según la arquitectura.
-
-Uso apropiado de controladores, servicios y repositorios.
-
-Cumplimiento del diseño documentado en diagramas C4, UML y especificaciones.
-
-Esto asegura consistencia técnica y mantenimiento de estándares a lo largo del proyecto.
-
- Proceso de Revisión
- 
-Pull Requests (PR)
-
-Todos los cambios deben pasar por un Pull Request que incluya:
-
-Descripción clara y detallada del cambio realizado.
-
-Evidencia visual (capturas, fragmentos de código o enlaces).
-
-Pruebas asociadas (unitarias, integradas o funcionales).
-
-Documentación actualizada si aplica.
-
-Ejemplo de convención:
-feat(backend): add plant reminders module
-
-Checklist de Validación
-
-Antes de aprobar un PR, se valida:
-
-Cumplimiento de las convenciones de código (camelCase, PascalCase, nombres descriptivos).
-
-Pruebas unitarias actualizadas y funcionando correctamente.
-
-Revisión de seguridad (validación de inputs, sanitización, manejo de errores).
-
-Cobertura mínima requerida.
-
-Estilo de código conforme al estándar definido para el proyecto.
-
-Aprobación
-
-Un PR solo puede fusionarse cuando:
-
-Ha sido revisado por al menos un integrante del equipo.
-
-No presenta errores críticos.
-
-Cumple con las reglas del flujo CI/CD.
-
-Supera todos los checks automáticos (linting, pruebas, build).
-
-Criterios de Aceptación
-
-Código limpio y sin errores críticos.
-
-Cobertura mínima:
-
-≥ 80% backend
-
-≥ 75% frontend
-
-Seguridad:
-
-Sin vulnerabilidades detectadas en dependencias.
-
-Validación correcta de inputs y manejo de tokens.
-
-Performance adecuada:
-
-Eficiencia en consultas, componentes optimizados.
-
-Frecuencia de Revisiones
-
-Revisiones diarias para PRs pequeños o cambios incrementales.
-
-Revisión semanal de módulos grandes.
-
-Retrospectivas al finalizar cada sprint, evaluando:
-
-Consistencia del código.
-
-Propuestas de mejora de estándares.
-
-Ajustes en procesos de revisión y documentación.
 
   
 
@@ -1509,8 +1438,16 @@ Ajustes en procesos de revisión y documentación.
   <h3><b>6.3.1. Diseño de Entrevistas</b></h3>
 </div>
 
+## Preguntas para Validar la App de Cuidado de Plantas
 
-
+1. ¿La interfaz inicial de la aplicación te resultó clara y fácil de entender?
+2. ¿Pudiste registrar una planta sin dificultad? Si no, ¿qué parte te confundió?
+3. ¿La información mostrada por los sensores (humedad, luz, temperatura) te pareció útil y comprensible?
+4. ¿Las alertas y recordatorios sobre el cuidado de las plantas fueron claras y oportunas?
+5. ¿Las recomendaciones o diagnósticos que ofrece la app te parecieron útiles y aplicables?
+6. ¿Consideras que la navegación entre pantallas es intuitiva y fácil de usar?
+7. ¿Qué mejorarías del diseño visual o la distribución de los elementos?
+8. ¿Recomendarías esta aplicación a otras personas que cuidan plantas? ¿Por qué?
 
 
 
@@ -1521,6 +1458,48 @@ Ajustes en procesos de revisión y documentación.
 <div id="6.3.3">
   <h3><b>6.3.3. Evaluaciones según heurísticas</b></h3>
 </div>
+
+## TAREAS A EVALUAR
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas dentro de la aplicación:
+
+1. Registro de un usuario nuevo.
+2. Registro de una planta (nombre, tipo, ubicación, foto).
+3. Visualización del estado de la planta (humedad, temperatura, luz).
+4. Revisión del tablero de sensores en tiempo real.
+5. Recepción y comprensión de alertas o notificaciones (riego, luz, fertilización).
+6. Acceso a recomendaciones de cuidado generadas por la app.
+7. Edición o eliminación de una planta registrada.
+8. Navegación entre las pestañas principales (Inicio, Plantas, Sensores, Perfil).
+
+---
+
+## TAREAS NO INCLUIDAS EN ESTA VERSIÓN DE LA EVALUACIÓN
+Las siguientes tareas no forman parte del alcance de esta iteración de evaluación:
+
+1. Integración con dispositivos IoT externos no homologados.
+2. Compartir información de plantas con otros usuarios.
+3. Sincronización con servicios de terceros (Google Home, Alexa, etc.).
+4. Configuración avanzada de automatizaciones de riego.
+5. Exportar datos históricos de sensores.
+6. Modo comunitario (foro, consejos entre usuarios).
+7. Visualización de estadísticas avanzadas de crecimiento.
+
+## **Tabla de Problemas Identificados – Evaluación Heurística**
+
+| #  | Problema identificado                                                                 | Severidad (0–4) | Heurística violada                     |
+|----|----------------------------------------------------------------------------------------|------------------|-----------------------------------------|
+| 1  | Campos de registro de espacio no indican claramente si son obligatorios.              | 3                | Prevención de errores                   |
+| 2  | En el mapa, algunos pines se confunden con el fondo, dificultando la visibilidad.     | 2                | Visibilidad del estado del sistema      |
+| 3  | Al reservar un espacio, no hay feedback claro de éxito.                               | 3                | Visibilidad del estado del sistema      |
+| 4  | La opción "Regresar" no es consistente en todas las vistas.                           | 2                | Consistencia y estándares               |
+| 5  | Formularios complejos (precios, reglas) carecen de ejemplos o ayuda contextual.       | 2                | Ayuda y documentación                   |
+| 6  | Actualización real-time vía IoT no muestra indicador de conexión estable.             | 3                | Visibilidad del estado del sistema      |
+| 7  | Jerarquía visual débil en textos y secciones del flujo del propietario.               | 2                | Estética y diseño minimalista           |
+| 8  | Algunos formularios permiten enviarse incompletos, mostrando mensajes genéricos.      | 3                | Prevención de errores                   |
+| 9  | Contraste en ciertos botones (azul sobre gris claro) podría afectar la accesibilidad. | 2                | Estándares y accesibilidad              |
+| 10 | Navegación entre “Espacios”, “Reservas” y “Perfil” no es totalmente intuitiva.        | 2                | Control y libertad del usuario          |
+
+
 
 <!-- ============================ -->
 <!--        6.4 Auditorías        -->
@@ -1538,29 +1517,112 @@ Ajustes en procesos de revisión y documentación.
   <h4><b>6.4.1.1. Información del grupo auditado</b></h4>
 </div>
 
+**Nombre del responsable de la auditoría:** PCC Team  
+**Especialización del equipo:**  
+Diseño de interfaces, experiencia de usuario (UX), accesibilidad digital, pruebas de usabilidad, evaluación heurística de prototipos y validación de flujos para aplicaciones de monitoreo inteligente.
+
+**Fecha de realización de la auditoría:** 28/11/2025  
+
+**Herramientas utilizadas:**  
+- Navegador web (Google Chrome)  
+- Capturas de pantalla del prototipo funcional  
+- Prototipos navegables (Figma / Frontend desplegado)  
+- Documentación funcional del proyecto  
+- Checklists de heurísticas de Nielsen aplicadas a Bliss App
+
+
 <div id="6.4.1.2">
   <h4><b>6.4.1.2. Cronograma de auditoría realizada</b></h4>
 </div>
+
+## **6.4.1.2 Cronograma de Auditoría Realizada**
+
+La auditoría realizada por el equipo PCC Team se desarrolló de acuerdo al siguiente cronograma:
+
+| Fecha       | Actividad                                                                                                  | Responsable      |
+|-------------|--------------------------------------------------------------------------------------------------------------|------------------|
+| 11/06/2025  | Revisión de vistas principales: tablero de plantas, detalles de cada planta, estado de sensores y alertas. | Beth Oneglio     |
+| 12/06/2025  | Evaluación heurística y análisis de flujos críticos (registro de planta, monitoreo, notificaciones).        | Leonardo         |
+| 13/06/2025  | Elaboración del informe de hallazgos y recomendaciones de mejora.                                            | Leonardo         |
+
+
 
 <div id="6.4.1.3">
   <h4><b>6.4.1.3. Contenido de auditoría realizada</b></h4>
 </div>
 
+
+## **Tabla de Problemas Identificados – Evaluación Heurística (Bliss App)**
+
+| #  | Problema identificado                                                                                      | Severidad | Heurística violada                                              |
+|----|-------------------------------------------------------------------------------------------------------------|-----------|------------------------------------------------------------------|
+| 1  | El tablero inicial muestra múltiples plantas con estados superpuestos sin agrupación visual clara.         | 3         | Estética y diseño minimalista, Visibilidad del estado del sistema |
+| 2  | En la vista de detalle de la planta no se muestran fotos reales, reduciendo la confianza del usuario.      | 2         | Reconocer antes que recordar                                     |
+| 3  | El texto de los valores de sensores (humedad, luz, temperatura) es muy pequeño en dispositivos móviles.    | 3         | Accesibilidad                                                    |
+| 4  | El botón “Actualizar estado” no muestra indicadores previos (p. ej., último registro o valor esperado).    | 3         | Visibilidad del estado del sistema                               |
+| 5  | En el registro de plantas no hay ejemplos o placeholders claros para nombre, tipo o ubicación.            | 2         | Ayuda y documentación                                            |
+| 6  | Al seleccionar una planta, no existe retroalimentación visual clara (resaltado o cambio de estado).        | 2         | Visibilidad del estado del sistema                               |
+| 7  | No hay mensajes claros de éxito o error al actualizar datos provenientes del sensor IoT.                   | 3         | Prevención de errores                                            |
+| 8  | No se explica cómo funciona la integración IoT (sensor de humedad y temperatura).                          | 2         | Coincidencia entre el sistema y el mundo real                    |
+| 9  | No existe una sección de ayuda para interpretar los niveles óptimos de cada planta.                        | 1         | Ayuda y documentación                                            |
+| 10 | El panel principal agrupa demasiados botones y opciones, dificultando la navegación del usuario.           | 3         | Estética y diseño minimalista, Consistencia y estándares         |
+
+
 <div id="6.4.2">
   <h3><b>6.4.2. Auditoría recibida</b></h3>
 </div>
+
 
 <div id="6.4.2.1">
   <h4><b>6.4.2.1. Información del grupo auditor</b></h4>
 </div>
 
+**Nombre del equipo auditor:** PCC Team  
+
+**Especialización del equipo:**  
+Diseño UX/UI, pruebas de rendimiento, accesibilidad web, arquitectura de información, pruebas de usabilidad y análisis heurístico aplicado a aplicaciones IoT de monitoreo de plantas.
+
+**Fecha de la auditoría:** 29/11/2025  
+
+**Herramientas utilizadas:**  
+- Navegador web (Google Chrome)  
+- Grabaciones de navegación del prototipo funcional  
+- Documento de flujos del proyecto Bliss App  
+- Prototipos navegables en Figma y frontend para evaluación  
+
+
 <div id="6.4.2.2">
   <h4><b>6.4.2.2. Cronograma de auditoría recibida</b></h4>
 </div>
 
+## **6.4.2.2 Cronograma de Auditoría Recibida**
+
+| Fecha       | Actividad                                                                                                         | Responsable         |
+|-------------|---------------------------------------------------------------------------------------------------------------------|----------------------|
+| 10/06/2025  | Revisión de vistas internas de Bliss App (registro de planta, monitoreo, alertas, historial de sensores).          | Andrea Cabanillas    |
+| 11/06/2025  | Evaluación heurística del flujo completo: registro → detalle de planta → monitoreo → alertas.                       | Irving Allcca        |
+| 12/06/2025  | Elaboración del informe final con observaciones y recomendaciones para mejoras de usabilidad y accesibilidad.       | Anderson Gonza       |
+
+
+
 <div id="6.4.2.3">
   <h4><b>6.4.2.3. Contenido de auditoría recibida</b></h4>
 </div>
+
+| #  | Problema identificado                                                                                                 | Severidad | Heurística violada                     |
+|----|------------------------------------------------------------------------------------------------------------------------|-----------|-----------------------------------------|
+| 1  | El botón "Cancelar" tiene un color muy similar al botón principal ("Guardar"), lo que puede generar errores.          | 3         | Prevención de errores                   |
+| 2  | No se explica claramente qué indicadores incluye cada tarjeta de estado (humedad, luz, temperatura).                  | 2         | Ayuda y documentación                   |
+| 3  | No hay validación visible para los campos obligatorios al registrar o editar una planta.                              | 3         | Prevención de errores                   |
+| 4  | Existen textos con errores gramaticales en pop-ups, como “Valores se actualizados”.                                   | 1         | Consistencia y estándares               |
+| 5  | Falta retroalimentación visual luego de actualizar o eliminar una planta del listado.                                 | 3         | Visibilidad del estado del sistema      |
+| 6  | El botón “Ver detalle” no anticipa qué información adicional del sensor se mostrará al usuario.                       | 2         | Reconocer antes que recordar            |
+| 7  | Al eliminar una planta no aparece un mensaje de confirmación final, pudiendo causar eliminación accidental.           | 3         | Visibilidad del estado del sistema      |
+| 8  | El botón “Cancelar alerta” es ambiguo y no explica si cancela solo la notificación o toda la programación.            | 2         | Control y libertad del usuario          |
+| 9  | Algunos textos relacionados a los sensores presentan bajo contraste con el fondo.                                      | 3         | Accesibilidad                           |
+| 10 | El botón "Buscar planta" no indica si hay filtros activos (tipo, nivel, ubicación).                                   | 2         | Visibilidad del estado del sistema      |
+
+
 
 <div id="6.4.2.4">
   <h4><b>6.4.2.4. Resumen de modificaciones para subsanar hallazgos</b></h4>
@@ -1570,21 +1632,35 @@ Ajustes en procesos de revisión y documentación.
 <!--     Requested Extra Block    -->
 <!-- ============================ -->
 
-<div id="7.4.3">
-  <h3><b>7.4.3. Alerting Pipeline Components</b></h3>
-</div>
+**Diferenciación de botones críticos (Cancelar / Guardar):**  
+   Se ajustaron los colores y estilos para evitar confusiones, aplicando contrastes claros y consistentes con las guías de diseño.
 
+2. **Mejora de la documentación visual en tarjetas de estado:**  
+   Se añadieron descripciones breves, iconografía clara y tooltips que explican los indicadores de sensores (humedad, luz y temperatura).
 
+3. **Validación reforzada en registro y edición de plantas:**  
+   Ahora los campos obligatorios muestran mensajes de validación en tiempo real, evitando formularios enviados de manera incompleta.
 
+4. **Corrección de textos y mensajes emergentes:**  
+   Se revisó y corrigió la gramática en pop-ups y mensajes del sistema para garantizar consistencia y claridad comunicativa.
 
+5. **Retroalimentación visual al actualizar o eliminar plantas:**  
+   Se incorporaron animaciones, feedback inmediato y banners temporales indicando “Cambios guardados” o “Planta eliminada correctamente”.
 
+6. **Claridad en botones de navegación como “Ver detalle”:**  
+   Se añadieron descripciones anticipatorias (previews) y una UI más informativa sobre el contenido del detalle de sensores.
 
+7. **Confirmación obligatoria para acciones destructivas:**  
+   El proceso de eliminación de plantas ahora incluye un mensaje de confirmación para evitar acciones accidentales.
 
+8. **Clarificación en acciones como “Cancelar alerta”:**  
+   Se reetiquetaron botones y se agregó una explicación que indica si se cancela la alerta individual o la configuración completa.
 
+9. **Mejora del contraste en textos y elementos visuales del sensor:**  
+   Se ajustó la paleta de colores siguiendo estándares WCAG AA para asegurar accesibilidad en todas las vistas.
 
-
-
-
+10. **Indicador de filtros activos en la pantalla de búsqueda:**  
+   El botón “Buscar planta” ahora muestra estados visuales cuando hay filtros aplicados, mejorando la visibilidad del contexto.
 
 
   
@@ -1716,6 +1792,7 @@ Automatizar completamente el flujo desde commit hasta producción.
 Minimizar tiempos de entrega y ciclos de retroalimentación.
 Mantener el sistema siempre actualizado, seguro y en ejecución.
 Garantizar despliegues confiables y reversibles en caso de error.
+
 
 <div id='7.3.1'><h3><b>7.3.1. Tools and Practices.</b></h3>
 
@@ -2280,6 +2357,21 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
 <div id="8.3.3.1">
   <h3><b>8.3.3.1. To-Be Sprint Backlogs</b></h3>
 </div>
+
+## **User Stories – Bliss App (Tabla Completa)**
+
+| Story ID | User      | Priority | Epic | Title                                                        | Description                                                                                                                                                   | Acceptance Criteria                                                                                                                                                                                         |
+|----------|-----------|----------|------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| TBUS01   | Visitante | Media    | EP01 | Ver cómo funciona la app                                    | Como visitante quiero ver un video demostrativo del funcionamiento de la app para entender sus beneficios y motivarme a registrarme.                         | **Given** que estoy en la landing page, **When** me desplazo a la sección “Producto”, **Then** debería ver un video demostrativo de Bliss App.                                                             |
+| TBUS02   | Usuario   | Media    | EP05 | Visualización de historial de registros y alertas           | Como usuario quiero consultar un historial de mediciones y alertas para monitorear el estado de mis plantas a lo largo del tiempo.                           | **Given** que estoy en mi dashboard, **When** ingreso a la sección de historial, **Then** debería ver fechas, valores registrados y alertas asociadas a cada planta.                                         |
+| TBUS03   | Usuario   | Alta     | EP05 | Visualización de estadísticas de las plantas                | Como usuario quiero ver estadísticas sobre humedad, luz y temperatura para optimizar el cuidado de mis plantas.                                              | **Given** que estoy en mi dashboard, **When** ingreso a estadísticas, **Then** debería ver gráficos y métricas referentes al comportamiento de mis plantas.                                                 |
+| TBUS04   | Usuario   | Media    | EP04 | Añadir recordatorios personalizados                          | Como usuario quiero configurar recordatorios de riego y fertilización para asegurar un cuidado adecuado de mis plantas.                                      | **Given** que estoy en la configuración de una planta, **When** agrego recordatorios por fecha o intervalos, **Then** estos deben activarse como notificaciones en la app.                                   |
+| TBUS05   | Usuario   | Alta     | EP03 | Recomendaciones de cuidado                                   | Como usuario quiero recibir recomendaciones personalizadas según el estado e historial de mis plantas para cuidarlas mejor.                                 | **Given** que tengo plantas registradas, **When** se detectan valores anómalos, **Then** debo recibir recomendaciones específicas según el tipo de planta y su estado.                                        |
+| TBUS06   | Usuario   | Alta     | EP03 | Visualizar niveles estimados y sugerencias en tiempo real   | Como usuario quiero ver valores de humedad, luz y temperatura en tiempo real para tomar decisiones rápidas.                                                  | **Given** que selecciono una planta, **When** ingreso a su detalle, **Then** debo ver los valores actuales del sensor y sugerencias rápidas de acción.                                                      |
+| TBUS07   | Usuario   | Alta     | EP02 | Autenticación de seguridad                                   | Como usuario quiero registrarme e iniciar sesión de manera segura mediante métodos cifrados.                                                                 | **Given** que deseo registrarme en Bliss App, **When** valido mi correo o autentico con servicios seguros, **Then** el sistema debe completar la autenticación correctamente.                               |
+| TBUS08   | Developer | Media    | EP15 | Monitoreo de métricas de actividad                          | Como developer quiero monitorear métricas de usuarios y plantas para detectar comportamientos anómalos y asegurar estabilidad.                              | **Given** que ingreso al panel de métricas, **When** accedo a la sección correspondiente, **Then** debería visualizar métricas en tiempo real y exportar reportes del sistema.                               |
+
+
 
 <div id="8.3.3.2">
   <h3><b>8.3.3.2. Implemented To-Be Landing Page Evidence</b></h3>
