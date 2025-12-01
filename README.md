@@ -2697,6 +2697,29 @@ quality_gate:
   <h3><b>6.3.2. Registro de Entrevistas</b></h3>
 </div>
 
+### Entrevista 1: https://drive.google.com/drive/folders/1arzj1cuxP2zOGmwTyb6uJWcws5smoYzF
+
+Resumen:
+El usuario considera que brindar información más precisa dentro de una aplicación para el cuidado de plantas es fundamental, especialmente cuando se desea diagnosticar problemas en los cultivos. Señala que sería útil contar con un espacio o foro donde pueda subir fotos de sus plantas para recibir ayuda de otras personas con experiencia o que hayan pasado por situaciones similares. Además, destaca la importancia de que la aplicación sea intuitiva y visual, ya que colocar correctamente fotos complicadas puede resultar difícil. Finalmente, menciona que GeneXus es importante porque ayudaría en el desarrollo de interfaces y funcionalidades que faciliten la subida y análisis de imágenes dentro de la app.
+
+
+### Entrevista 2: https://drive.google.com/file/d/16OVTi9H70ehYXRoyM_GTTVy8oNJL0jzy/view
+
+Resumen:
+El usuario valora la posibilidad de intercambiar información con otros cuidadores de plantas, especialmente sobre especies que desconoce, ya que esto facilitaría mejorar su mantenimiento. Considera muy importante que la aplicación sea fácil de usar y rápida de entender debido a sus múltiples actividades diarias. Si la app fuera complicada o demandara demasiado tiempo, sería probable que dejara de usarla, lo que afectaría tanto su rutina como el cuidado de sus plantas. En resumen, necesita una aplicación intuitiva, simple y eficiente para poder atender sus plantas sin afectar sus responsabilidades diarias.
+
+### Entrevista 3:  https://drive.g
+
+### Entrevista 4: https://drive.google.com/file/d/1-8lUwNBGObQRfc3t49UJP0Raytdzk0gt/view
+
+Resumen:
+El usuario desea recordatorios automáticos y reconocimiento de plantas mediante fotos. Busca recibir recomendaciones inmediatas sobre el estado de sus plantas. Considera esencial que la aplicación sea simple y rápida de usar debido al limitado tiempo que puede dedicarle diariamente.
+
+
+
+
+
+
 <div id="6.3.3">
   <h3><b>6.3.3. Evaluaciones según heurísticas</b></h3>
 </div>
@@ -3683,6 +3706,25 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
 <div id="8.3.4.2">
   <h3><b>8.3.4.2. Registro de Entrevistas</b></h3>
 </div>
+
+### Entrevista 1: https://drive.google.com/drive/folders/1arzj1cuxP2zOGmwTyb6uJWcws5smoYzF
+
+Resumen:
+El usuario considera que brindar información más precisa dentro de una aplicación para el cuidado de plantas es fundamental, especialmente cuando se desea diagnosticar problemas en los cultivos. Señala que sería útil contar con un espacio o foro donde pueda subir fotos de sus plantas para recibir ayuda de otras personas con experiencia o que hayan pasado por situaciones similares. Además, destaca la importancia de que la aplicación sea intuitiva y visual, ya que colocar correctamente fotos complicadas puede resultar difícil. Finalmente, menciona que GeneXus es importante porque ayudaría en el desarrollo de interfaces y funcionalidades que faciliten la subida y análisis de imágenes dentro de la app.
+
+
+### Entrevista 2: https://drive.google.com/file/d/16OVTi9H70ehYXRoyM_GTTVy8oNJL0jzy/view
+
+Resumen:
+El usuario valora la posibilidad de intercambiar información con otros cuidadores de plantas, especialmente sobre especies que desconoce, ya que esto facilitaría mejorar su mantenimiento. Considera muy importante que la aplicación sea fácil de usar y rápida de entender debido a sus múltiples actividades diarias. Si la app fuera complicada o demandara demasiado tiempo, sería probable que dejara de usarla, lo que afectaría tanto su rutina como el cuidado de sus plantas. En resumen, necesita una aplicación intuitiva, simple y eficiente para poder atender sus plantas sin afectar sus responsabilidades diarias.
+
+### Entrevista 3:  https://drive.g
+
+### Entrevista 4: https://drive.google.com/file/d/1-8lUwNBGObQRfc3t49UJP0Raytdzk0gt/view
+
+Resumen:
+El usuario desea recordatorios automáticos y reconocimiento de plantas mediante fotos. Busca recibir recomendaciones inmediatas sobre el estado de sus plantas. Considera esencial que la aplicación sea simple y rápida de usar debido al limitado tiempo que puede dedicarle diariamente.
+
 
 <!-- ============================ -->
 <!--     8.4 Experiment Aftermath -->
