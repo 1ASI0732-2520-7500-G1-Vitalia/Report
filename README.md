@@ -89,7 +89,7 @@
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
   - [2.3. Needfinding](#23-needfinding)
-    - [2.3.1. User Personas](#231-user-personas)
+    - [2.3.1. ](#231-user-personas)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
@@ -3614,6 +3614,13 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
 
 <div id="8.3.3.4">
   <h3><b>8.3.3.4. Implemented To-Be Native-Mobile Application Evidence</b></h3>
+
+<img src="img/mobile1.jpeg" alt="Foto de uer " width="300px">
+<img src="img/mobile2.jpeg" alt="Foto de uer " width="300px">
+<img src="img/mobile3.jpeg" alt="Foto de uer " width="300px">
+<img src="img/mobile4.jpeg" alt="Foto de uer " width="300px">
+
+
 
 </div>
 
