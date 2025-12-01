@@ -3620,41 +3620,9 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
 
 </div>
 
-## **Hipótesis y User Stories Asociadas**
-
-### **Hipótesis**
-Mejorar la eficiencia de las recomendaciones y del monitoreo en tiempo real permitirá aumentar la satisfacción de los usuarios que cuidan plantas, al brindarles alertas y sugerencias más precisas.
 
 ---
-
-### **User Stories Asociadas**
-
-- **TBUS05:** Recomendaciones de cuidado  
-- **TBUS06:** Visualizar niveles estimados y sugerencias en tiempo real  
-
----
-
-## **Implementación "To-Be"**
-
-### **Componentes implementados en la versión To-Be:**
-
-1. **Sección de recomendaciones en la pantalla principal**  
-   - La app ahora muestra sugerencias personalizadas basadas en:
-     - Historial de la planta  
-     - Tipo de planta  
-     - Mediciones recientes del sensor (humedad, luz, temperatura)  
-     - Condiciones ambientales del entorno  
-
-2. **Visualización de niveles en tiempo real**  
-   - En el detalle de cada planta se integró:
      - Lectura actual del sen
-
-
-<div id="8.3.3.5">
-  <h3><b>8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence</b></h3>
-</div>
-
-
 
 <div id="8.3.3.6">
   <h3><b>8.3.3.6. Team Collaboration Insights</b></h3>
