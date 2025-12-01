@@ -1047,6 +1047,12 @@ https://www.figma.com/design/9P1UhGBP4ANiAl7ScpFSNj/wireflow?node-id=0-1&t=8fEes
 https://www.figma.com/design/FSdzGLrBhZPdrn6TDVch6n/prototipo?node-id=0-1&p=f&t=A680re8dypf6NtQz-0
 
 <div id='4.5.1'><h3><b>4.5.1. Android Mobile Applications Prototyping.</b></h3>
+
+<img src="img/mobile1.jpeg" alt="Foto de telefono " width="300px">
+<img src="img/mobile2.jpeg" alt="Foto de telefono " width="300px">
+<img src="img/mobile3.jpeg" alt="Foto de telefono " width="300px">
+<img src="img/mobile4.jpeg" alt="Foto de telefono " width="300px">
+
   
 <div id='4.5.2'><h3><b>4.5.2. iOS Mobile Applications Prototyping.</b></h3>
 
@@ -3615,10 +3621,10 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
 <div id="8.3.3.4">
   <h3><b>8.3.3.4. Implemented To-Be Native-Mobile Application Evidence</b></h3>
 
-<img src="img/mobile1.jpeg" alt="Foto de uer " width="300px">
-<img src="img/mobile2.jpeg" alt="Foto de uer " width="300px">
-<img src="img/mobile3.jpeg" alt="Foto de uer " width="300px">
-<img src="img/mobile4.jpeg" alt="Foto de uer " width="300px">
+<img src="img/mobile1.jpeg" alt="Foto de telefono " width="300px">
+<img src="img/mobile2.jpeg" alt="Foto de telefono " width="300px">
+<img src="img/mobile3.jpeg" alt="Foto de telefono " width="300px">
+<img src="img/mobile4.jpeg" alt="Foto de telefono " width="300px">
 
 
 
