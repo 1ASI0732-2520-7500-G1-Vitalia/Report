@@ -2358,20 +2358,19 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
   <h3><b>8.3.3.1. To-Be Sprint Backlogs</b></h3>
 </div>
 
-## **User Stories – Bliss App (Tabla Completa)**
-
-| Story ID | User      | Priority | Epic | Title                                                        | Description                                                                                                                                                   | Acceptance Criteria                                                                                                                                                                                         |
-|----------|-----------|----------|------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TBUS01   | Visitante | Media    | EP01 | Ver cómo funciona la app                                    | Como visitante quiero ver un video demostrativo del funcionamiento de la app para entender sus beneficios y motivarme a registrarme.                         | **Given** que estoy en la landing page, **When** me desplazo a la sección “Producto”, **Then** debería ver un video demostrativo de Bliss App.                                                             |
-| TBUS02   | Usuario   | Media    | EP05 | Visualización de historial de registros y alertas           | Como usuario quiero consultar un historial de mediciones y alertas para monitorear el estado de mis plantas a lo largo del tiempo.                           | **Given** que estoy en mi dashboard, **When** ingreso a la sección de historial, **Then** debería ver fechas, valores registrados y alertas asociadas a cada planta.                                         |
-| TBUS03   | Usuario   | Alta     | EP05 | Visualización de estadísticas de las plantas                | Como usuario quiero ver estadísticas sobre humedad, luz y temperatura para optimizar el cuidado de mis plantas.                                              | **Given** que estoy en mi dashboard, **When** ingreso a estadísticas, **Then** debería ver gráficos y métricas referentes al comportamiento de mis plantas.                                                 |
-| TBUS04   | Usuario   | Media    | EP04 | Añadir recordatorios personalizados                          | Como usuario quiero configurar recordatorios de riego y fertilización para asegurar un cuidado adecuado de mis plantas.                                      | **Given** que estoy en la configuración de una planta, **When** agrego recordatorios por fecha o intervalos, **Then** estos deben activarse como notificaciones en la app.                                   |
-| TBUS05   | Usuario   | Alta     | EP03 | Recomendaciones de cuidado                                   | Como usuario quiero recibir recomendaciones personalizadas según el estado e historial de mis plantas para cuidarlas mejor.                                 | **Given** que tengo plantas registradas, **When** se detectan valores anómalos, **Then** debo recibir recomendaciones específicas según el tipo de planta y su estado.                                        |
-| TBUS06   | Usuario   | Alta     | EP03 | Visualizar niveles estimados y sugerencias en tiempo real   | Como usuario quiero ver valores de humedad, luz y temperatura en tiempo real para tomar decisiones rápidas.                                                  | **Given** que selecciono una planta, **When** ingreso a su detalle, **Then** debo ver los valores actuales del sensor y sugerencias rápidas de acción.                                                      |
-| TBUS07   | Usuario   | Alta     | EP02 | Autenticación de seguridad                                   | Como usuario quiero registrarme e iniciar sesión de manera segura mediante métodos cifrados.                                                                 | **Given** que deseo registrarme en Bliss App, **When** valido mi correo o autentico con servicios seguros, **Then** el sistema debe completar la autenticación correctamente.                               |
-| TBUS08   | Developer | Media    | EP15 | Monitoreo de métricas de actividad                          | Como developer quiero monitorear métricas de usuarios y plantas para detectar comportamientos anómalos y asegurar estabilidad.                              | **Given** que ingreso al panel de métricas, **When** accedo a la sección correspondiente, **Then** debería visualizar métricas en tiempo real y exportar reportes del sistema.                               |
-
-
+| Task ID | Nombre Task                                               | Story Points | STATUS | Usuario   |
+|---------|------------------------------------------------------------|--------------|--------|-----------|
+| HUX-T01 | Implementar video demostrativo en la landing page          | 3            | Listo  | Visitante |
+| HUX-T02 | Crear vista de historial de registros y alertas            | 3            | Listo  | Usuario   |
+| HUX-T03 | Mostrar historial de variaciones de sensores (H/L/T)       | 2            | Listo  | Usuario   |
+| HUX-T04 | Generar estadísticas de humedad, luz y temperatura         | 4            | Listo  | Usuario   |
+| HUX-T05 | Generar reporte de evolución de plantas                    | 3            | Listo  | Usuario   |
+| HUX-T06 | Configurar recordatorios personalizados por planta         | 5            | Listo  | Usuario   |
+| HUX-T07 | Implementar recomendaciones basadas en historial y estado  | 3            | Listo  | Usuario   |
+| HUX-T08 | Mostrar niveles estimados y sugerencias en tiempo real     | 5            | Listo  | Usuario   |
+| HUX-T09 | Autenticación segura con cuenta registrada                 | 7            | Listo  | Usuario   |
+| HUX-T10 | Monitorear métricas de actividad de usuarios               | 4            | Listo  | Developer |
+| HUX-T11 | Monitorear métricas de actividad de plantas y alertas      | 3            | Listo  | Developer |
 
 <div id="8.3.3.2">
   <h3><b>8.3.3.2. Implemented To-Be Landing Page Evidence</b></h3>
@@ -2383,15 +2382,60 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
 
 <div id="8.3.3.4">
   <h3><b>8.3.3.4. Implemented To-Be Native-Mobile Application Evidence</b></h3>
+
 </div>
+
+## **Hipótesis y User Stories Asociadas**
+
+### **Hipótesis**
+Mejorar la eficiencia de las recomendaciones y del monitoreo en tiempo real permitirá aumentar la satisfacción de los usuarios que cuidan plantas, al brindarles alertas y sugerencias más precisas.
+
+---
+
+### **User Stories Asociadas**
+
+- **TBUS05:** Recomendaciones de cuidado  
+- **TBUS06:** Visualizar niveles estimados y sugerencias en tiempo real  
+
+---
+
+## **Implementación "To-Be"**
+
+### **Componentes implementados en la versión To-Be:**
+
+1. **Sección de recomendaciones en la pantalla principal**  
+   - La app ahora muestra sugerencias personalizadas basadas en:
+     - Historial de la planta  
+     - Tipo de planta  
+     - Mediciones recientes del sensor (humedad, luz, temperatura)  
+     - Condiciones ambientales del entorno  
+
+2. **Visualización de niveles en tiempo real**  
+   - En el detalle de cada planta se integró:
+     - Lectura actual del sen
+
 
 <div id="8.3.3.5">
   <h3><b>8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence</b></h3>
 </div>
 
+
+
 <div id="8.3.3.6">
   <h3><b>8.3.3.6. Team Collaboration Insights</b></h3>
 </div>
+
+
+| Categoría                          | Descripción                                                                                                      | Integrantes Involucrados                     |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
+| **Distribución de Roles**         | Asignación equilibrada según fortalezas: análisis, diseño, integración y organización del repositorio.          | Andrea, Irving, Hernan, Anderson             |
+| **Comunicación del Equipo**       | Coordinación constante mediante canales digitales para validar avances, resolver dudas y tomar decisiones.       | Todos                                         |
+| **Trabajo Iterativo**             | Revisión continua de prototipos, mejoras visuales y funcionales basadas en feedback en cada sprint.             | Todos                                         |
+| **Gestión del Repositorio**       | Organización de ramas, commits y PRs con estructura clara y reducción de conflictos.                             | Irving, Anderson                              |
+| **Validación y Pruebas**          | Participación activa en pruebas internas, evaluación de flujos críticos y ajuste de componentes.                | Andrea, Irving, Hernan, Anderson             |
+| **Responsabilidad Compartida**    | Compromiso con entregables, cumplimiento de tareas y apoyo cruzado entre miembros del equipo.                    | Todos                                         |
+
+
 
 <!-- ============================ -->
 <!--      8.3.4 Interviews        -->
@@ -2404,6 +2448,18 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
 <div id="8.3.4.1">
   <h3><b>8.3.4.1. Diseño de Entrevistas</b></h3>
 </div>
+
+## **Preguntas para Validación de la App – Entrevista con Usuarios**
+
+1. ¿La pantalla principal te parece clara para entender el estado general de tus plantas?
+2. ¿Tuviste alguna dificultad para registrar una nueva planta en la aplicación?
+3. ¿Los valores de los sensores (humedad, luz, temperatura) se entienden fácilmente?
+4. ¿Las alertas o notificaciones sobre el estado de tus plantas te resultan útiles y oportunas?
+5. ¿Las recomendaciones de cuidado son claras y te ayudan a tomar decisiones?
+6. ¿La navegación entre las secciones (Inicio, Plantas, Historial, Perfil) es intuitiva?
+7. ¿El diseño visual te parece agradable y fácil de usar en un dispositivo móvil?
+8. ¿Qué parte de la app te resultó más difícil de entender o utilizar?
+
 
 <div id="8.3.4.2">
   <h3><b>8.3.4.2. Registro de Entrevistas</b></h3>
@@ -2421,9 +2477,58 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
   <h3><b>8.4.1. Analysis and Interpretation of Results</b></h3>
 </div>
 
+El proceso de validación, que incluyó evaluación heurística, pruebas de usuario y entrevistas, permitió obtener una visión clara de cómo los usuarios interactúan con las funcionalidades principales de Bliss App. A continuación, se presentan los hallazgos clave y su interpretación respecto a la efectividad del producto y la satisfacción del usuario.
+
+### **1. Usabilidad y claridad de la interfaz**
+La mayoría de usuarios encontró la interfaz visualmente agradable y fácil de navegar. Sin embargo, se observaron dificultades en elementos con bajo contraste y en acciones que no mostraban retroalimentación clara (por ejemplo, al actualizar datos del sensor o eliminar una planta).  
+**Interpretación:** Mejorar la jerarquía visual y reforzar los mensajes de confirmación aumenta la confianza del usuario y reduce errores operacionales.
+
+### **2. Efectividad en la visualización de datos de sensores**
+Los usuarios comprendieron los indicadores de humedad, luz y temperatura, pero algunos expresaron dudas sobre los umbrales o niveles óptimos.  
+**Interpretación:** La incorporación de ayudas contextuales (iconos, escalas de color, tooltips) facilita la interpretación de los datos IoT, apoyando decisiones informadas.
+
+### **3. Valor percibido de las recomendaciones**
+Las recomendaciones personalizadas fueron consideradas muy útiles, especialmente cuando se activaban frente a valores anómalos del sensor.  
+**Interpretación:** Las sugerencias basadas en datos históricos y en tiempo real elevan el valor funcional de la aplicación y justifican el uso de sensores.
+
+### **4. Eficiencia en la navegación**
+La navegación general fue percibida como intuitiva. No obstante, el dashboard principal presentaba demasiadas opciones agrupadas, lo que generaba ligera sobrecarga cognitiva.  
+**Interpretación:** Simplificar la distribución de acciones mejora la fluidez de uso y facilita la incorporación de nuevos usuarios.
+
+### **5. Fiabilidad y confianza en las actualizaciones del sistema**
+La falta de mensajes claros al actualizar datos, editar información o recibir registros del sensor provocó incertidumbre en algunos usuarios.  
+**Interpretación:** En sistemas basados en IoT, la retroalimentación inmediata es clave para transmitir fiabilidad y asegurar la correcta interpretación de los datos recibidos.
+
+### **6. Alineación con las necesidades del usuario**
+Los usuarios destacaron que la aplicación mantiene el enfoque en tareas esenciales: monitoreo, alertas y recomendaciones.  
+**Interpretación:** El alcance actual del producto coincide adecuadamente con las necesidades reales de los usuarios que cuidan plantas, evitando complejidad innecesaria.
+
+---
+
+### **Conclusión General**
+Los resultados confirman que Bliss App cumple su propósito de facilitar el monitoreo de plantas mediante sensores y recomendaciones inteligentes. Con mejoras puntuales en accesibilidad, claridad visual y feedback del sistema, la aplicación puede ofrecer una experiencia altamente confiable, comprensible y centrada en el usuario.
+
+
+
 <div id="8.4.2">
   <h3><b>8.4.2. Re-scored and Re-prioritized Question Backlog</b></h3>
 </div>
+
+
+| ID | Pregunta / Área Evaluada                                            | Puntaje Inicial | Puntaje Recalculado | Prioridad Nueva | Justificación                                                                 |
+|----|---------------------------------------------------------------------|------------------|----------------------|------------------|-------------------------------------------------------------------------------|
+| Q01 | ¿Los usuarios entienden los valores de sensores (H/L/T)?           | 2                | 4                    | Alta             | Usuarios mostraron confusión con umbrales → afecta decisiones de cuidado.    |
+| Q02 | ¿La app muestra retroalimentación clara al actualizar datos?       | 3                | 5                    | Alta             | Problema recurrente → genera desconfianza en la lectura IoT.                 |
+| Q03 | ¿El registro de plantas es intuitivo?                              | 1                | 3                    | Media            | Algunos usuarios no identificaron campos obligatorios.                        |
+| Q04 | ¿Las recomendaciones son percibidas como útiles?                   | 3                | 5                    | Alta             | Funcionalidad clave que impacta satisfacción general.                         |
+| Q05 | ¿El dashboard tiene buena jerarquía visual?                        | 2                | 4                    | Alta             | Sobrecarga en la pantalla principal detectada repetidamente.                 |
+| Q06 | ¿Los usuarios encuentran fácilmente el historial de alertas?       | 1                | 2                    | Media            | Problema menor pero recurrente en pruebas.                                    |
+| Q07 | ¿La navegación entre secciones es intuitiva?                       | 2                | 4                    | Alta             | Flujo confuso para nuevos usuarios → afecta onboarding.                      |
+| Q08 | ¿Los textos cumplen estándares de accesibilidad (contraste)?       | 2                | 3                    | Media            | Algunos elementos no cumplen WCAG → afecta legibilidad.                      |
+| Q09 | ¿Los usuarios comprenden la integración IoT y su funcionamiento?   | 1                | 4                    | Alta             | Se identificó desconocimiento general → afecta confianza en el sistema.      |
+| Q10 | ¿El sistema alerta correctamente ante valores críticos?            | 3                | 5                    | Crítica          | Afecta directamente el propósito central de la app (cuidado de plantas).     |
+
+
 
 <!-- ============================ -->
 <!--     8.5 Continuous Learning  -->
@@ -2444,6 +2549,15 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
 <div id="8.6">
   <h2><b>8.6. To-Be Software Platform Pre-launch</b></h2>
 </div>
+
+| Sección                       | Detalle |
+|--------------------------------|--------|
+| **Objetivo**                   | Optimizar el cuidado de las plantas mediante monitoreo inteligente, recomendaciones personalizadas y alertas en tiempo real. |
+| **Funcionalidades Principales** | - Registro de plantas (especie, ubicación, necesidades) <br> - Monitoreo ambiental (temperatura, humedad, luz, suelo) <br> - Diagnóstico automático de problemas <br> - Recomendaciones de cuidado <br> - Historial y estadísticas de evolución <br> - Recordatorios inteligentes <br> - Integración con dispositivos IoT |
+| **Beneficios Esperados**        | - Incremento de la salud y supervivencia de las plantas <br> - Reducción de errores de cuidado <br> - Experiencia personalizada <br> - Datos en tiempo real para decisiones informadas <br> - Plataforma preparada para escalabilidad |
+| **UX/UI**                       | - Diseño intuitivo y minimalista <br> - Dashboard central con estado de plantas <br> - Alertas claras y accionables <br> - Secciones educativas sobre cuidado de plantas |
+| **Requisitos Técnicos**         | - **Frontend:** Flutter o React Native <br> - **Backend:** Microservicios Java Spring Boot o Node.js con MySQL/PostgreSQL <br> - **IoT:** Comunicación vía MQTT o HTTP <br> - **Seguridad:** Autenticación JWT, cifrado <br> - **Integración:** API REST para servicios externos |
+| **KPIs de Pre-lanzamiento**     | - Número de usuarios registrados <br> - Número de plantas registradas <br> - Frecuencia de uso de la app <br> - Tasa de alertas atendidas <br> - Satisfacción del usuario |
 
 <div id="8.6.1">
   <h3><b>8.6.1. About-the-Product Intro Video</b></h3>
