@@ -2785,10 +2785,7 @@ La auditoría realizada por el equipo PCC Team se desarrolló de acuerdo al sigu
 
 <div id="6.4.1.3">
   <h4><b>6.4.1.3. Contenido de auditoría realizada</b></h4>
-</div>
-
-
-## **Tabla de Problemas Identificados – Evaluación Heurística (Bliss App)**
+</div>*
 
 | #  | Problema identificado                                                                                      | Severidad | Heurística violada                                              |
 |----|-------------------------------------------------------------------------------------------------------------|-----------|------------------------------------------------------------------|
@@ -2831,7 +2828,7 @@ Diseño UX/UI, pruebas de rendimiento, accesibilidad web, arquitectura de inform
   <h4><b>6.4.2.2. Cronograma de auditoría recibida</b></h4>
 </div>
 
-## **6.4.2.2 Cronograma de Auditoría Recibida**
+
 
 | Fecha       | Actividad                                                                                                         | Responsable         |
 |-------------|---------------------------------------------------------------------------------------------------------------------|----------------------|
