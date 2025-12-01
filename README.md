@@ -1272,156 +1272,1610 @@ https://drive.google.com/file/d/1zIzRnSw4ZvaEzJqjAD4uf4PQLtNqEbjh/view?usp=shari
 ![alt text](img/tet.jpg)
 ![alt text](img/tet1.jpg)
   
-<div id='6.1.1'><h3><b>6.1.1. Core Entities Unit Tests.</b></h3>
+### 6.1.1.1. Entidad: AuthUser (Usuario)
 
-Entidades principales a probar:
+#### Casos de Prueba: Creación y Validación de Usuario
 
-Usuario
+**TC-USER-001: Creación de usuario con datos válidos**
+- **Precondiciones**: Ninguna
+- **Datos de entrada**: 
+  - Email: "usuario@ejemplo.com"
+  - Password: "Password123!"
+  - Name: "Juan"
+  - LastName: "Pérez"
+  - TimeZone: "America/Lima"
+  - PreferredLanguage: "es"
+  - Role: "User"
+- **Acción**: Instanciar `AuthUser` con constructor completo
+- **Resultado esperado**: 
+  - Usuario creado con `Id` generado automáticamente (Guid)
+  - `Email` = "usuario@ejemplo.com"
+  - `PasswordHash` no es igual al password en texto plano
+  - `RegisteredAt` = DateTime.UtcNow (aproximadamente)
+  - `Role` = "User"
+  - `RefreshTokens` es una lista vacía
 
-Creación de cuenta y validación de campos obligatorios.
-Manejo de contraseñas y validaciones de seguridad.
-Roles y permisos asignados.
+**TC-USER-002: Validación de email duplicado**
+- **Precondiciones**: Usuario con email "test@ejemplo.com" existe en repositorio
+- **Datos de entrada**: Email "test@ejemplo.com"
+- **Acción**: Llamar `userRepository.ExistsByEmail("test@ejemplo.com")`
+- **Resultado esperado**: Retorna `true`
 
-Planta
+**TC-USER-003: Hash de contraseña con BCrypt**
+- **Precondiciones**: Ninguna
+- **Datos de entrada**: Password "MiPassword123!"
+- **Acción**: Llamar `hashingService.HashPassword("MiPassword123!")`
+- **Resultado esperado**: 
+  - Retorna string hash diferente al password original
+  - Hash comienza con "$2a$" o "$2b$" (formato BCrypt)
+  - Longitud del hash >= 60 caracteres
 
-Registro de nuevas especies.
-Validación de atributos (nombre, tipo, condiciones de luz, humedad, riego).
-Asociación con usuario propietario.
+**TC-USER-004: Verificación de contraseña correcta**
+- **Precondiciones**: Password hash generado previamente
+- **Datos de entrada**: 
+  - Password: "MiPassword123!"
+  - PasswordHash: hash generado previamente
+- **Acción**: Llamar `hashingService.VerifyPassword("MiPassword123!", passwordHash)`
+- **Resultado esperado**: Retorna `true`
 
-Recordatorio
+**TC-USER-005: Verificación de contraseña incorrecta**
+- **Precondiciones**: Password hash generado para "Password123!"
+- **Datos de entrada**: 
+  - Password: "PasswordIncorrecto"
+  - PasswordHash: hash de "Password123!"
+- **Acción**: Llamar `hashingService.VerifyPassword("PasswordIncorrecto", passwordHash)`
+- **Resultado esperado**: Retorna `false`
 
-Creación y actualización de recordatorios de riego/fertilización.
-Validación de fecha, hora y notificaciones.
+**TC-USER-006: Actualización de email**
+- **Precondiciones**: Usuario existente con email "viejo@ejemplo.com"
+- **Datos de entrada**: Nuevo email "nuevo@ejemplo.com"
+- **Acción**: Llamar `authUser.updateEmail("nuevo@ejemplo.com")`
+- **Resultado esperado**: 
+  - `Email` = "nuevo@ejemplo.com"
+  - Método retorna la misma instancia de `AuthUser`
 
-Historial de Cuidado
+**TC-USER-007: Actualización de contraseña con SetPassword**
+- **Precondiciones**: Usuario existente
+- **Datos de entrada**: Nueva contraseña "NuevaPassword456!"
+- **Acción**: Llamar `authUser.SetPassword("NuevaPassword456!")`
+- **Resultado esperado**: 
+  - `PasswordHash` es diferente al hash anterior
+  - `PasswordHash` es un hash BCrypt válido
+  - `VerifyPassword("NuevaPassword456!", PasswordHash)` retorna `true`
 
-Registro automático de acciones realizadas por el usuario.
-Consulta de eventos pasados.
+**TC-USER-008: Asignación de roles**
+- **Precondiciones**: Ninguna
+- **Datos de entrada**: Role "Admin"
+- **Acción**: Crear usuario con `role = "Admin"`
+- **Resultado esperado**: 
+  - `Role` = "Admin"
+  - Usuario puede tener permisos diferentes según el rol
 
-Objetivo de estas pruebas:
+**TC-USER-009: Constructor por defecto**
+- **Precondiciones**: Ninguna
+- **Datos de entrada**: Ninguna
+- **Acción**: Instanciar `new AuthUser()`
+- **Resultado esperado**: 
+  - Todas las propiedades string son `string.Empty`
+  - `RegisteredAt` = DateTime.UtcNow
+  - `Role` = "User"
 
-Asegurar que cada entidad cumpla sus reglas de negocio.
-Validar la persistencia en base de datos.
-Garantizar que los atributos requeridos sean consistentes y completos.
 
-
-<div id='6.1.2'><h3><b>6.1.2. Core Integration Tests.</b></h3>
-
-Escenarios principales a probar:
-
-Registro de usuario + Planta:
-Verificar que al crear un usuario se puedan asociar correctamente plantas a su perfil.
-
-Recordatorios + Notificaciones:
-Validar que un recordatorio genere notificaciones en el dispositivo del usuario en el momento configurado.
-
-Historial + Acciones del usuario:
-Confirmar que cada acción realizada (riego, fertilización, diagnóstico) se registre automáticamente en el historial asociado a la planta.
-
-Diagnóstico + Base de datos de especies:
-Comprobar que el módulo de diagnóstico interactúe correctamente con la base de datos para identificar problemas comunes y recomendar soluciones.
-
-Objetivo de estas pruebas:
-
-Validar la comunicación entre módulos.
-Detectar errores de integración tempranamente.
-Asegurar que el flujo de usuario (end-to-end) sea consistente y sin interrupciones.
-  
-<div id='6.1.2'><h3><b>6.1.3. Core Behavior-Driven Development</b></h3>
-
-Escenarios principales:
-
-Registro de usuario
-
-Given un visitante accede a la aplicación,
-When completa el formulario de registro con datos válidos,
-Then se debe crear un nuevo usuario con un perfil activo.
-
-Asociación de planta
-
-Given un usuario autenticado,
-When registra una nueva planta en su perfil,
-Then la planta queda vinculada a su cuenta y visible en su dashboard.
-
-Recordatorios automáticos
-
-Given una planta con recordatorio de riego configurado,
-When llega la fecha/hora programada,
-Then el usuario recibe una notificación en su dispositivo.
-
-Diagnóstico de planta
-
-Given un usuario toma una foto de su planta,
-When el sistema procesa la imagen,
-Then se muestra la especie identificada y posibles problemas detectados.
-  
-<div id='6.1.4'><h3><b>6.1.4. Core System Tests.</b></h3>
-
-Áreas de validación:
-
--Funcionalidad completa: Verificar que todas las funciones (registro, recordatorios, diagnóstico, historial) funcionen de extremo a extremo.
--Compatibilidad: Asegurar que la aplicación funcione en distintos dispositivos (móviles, tablets, navegadores web).
--Performance: Medir tiempos de respuesta al registrar usuarios, crear recordatorios o procesar imágenes para diagnóstico.
--Seguridad: Validar protección de contraseñas, accesos no autorizados y seguridad en el manejo de datos personales.
--Usabilidad: Comprobar que la interfaz sea intuitiva y accesible para usuarios principiantes en el cuidado de plantas.
--Recuperación de fallos: Evaluar el sistema ante caídas de red o interrupciones del servidor.
-
-<div id="6.2">
-  <h2><b>6.2. Static Testing & Verification</b></h2>
-</div>
-
-<div id="6.2.1">
-  <h3><b>6.2.1. Static Code Analysis</b></h3>
-</div>
-
-<div id="6.2.1.1">
-  <h4><b>6.2.1.1. Coding Standard & Code Conventions</b></h4>
-</div>
-
-<div id="6.2.1.2">
-  <h4><b>6.2.1.2. Code Quality & Code Security</b></h4>
-</div>
-
-<div id="6.2.2">
-  <h3><b>6.2.2. Reviews</b></h3>
-
-# Tipos de Revisiones
-
- 1. Revisión por Pares
-Cada Pull Request (PR) es revisado por al menos un miembro del equipo para asegurar:
-
-- Alineación con la arquitectura definida.  
-- Cumplimiento de principios SOLID.  
-- Respeto por los patrones de diseño establecidos.  
-- Coherencia con las tareas del sprint.  
-- Uso correcto de nomenclatura y convenciones internas.
-
-Este proceso ayuda a detectar errores de forma temprana y a mantener uniformidad técnica.
 
 ---
 
- 2. Revisión Formal
-Al finalizar cada sprint se realiza una revisión grupal utilizando un checklist basado en el Style Guide interno.  
-Se evalúa:
+### 6.1.1.2. Entidad: Plant (Especie de Planta)
 
-- Nomenclatura correcta de clases, métodos y variables.  
-- Organización adecuada de paquetes, módulos y componentes.  
-- Inyección de dependencias según la arquitectura.  
-- Coherencia con diagramas UML, C4 y documentación técnica.  
-- Cumplimiento de buenas prácticas establecidas.
+#### Casos de Prueba: Registro y Validación de Especies
+
+**TC-PLANT-001: Creación de especie con datos completos**
+- **Precondiciones**: Ninguna
+- **Datos de entrada**:
+  - ScientificName: "Ficus benjamina"
+  - CommonName: "Ficus"
+  - Description: "Planta de interior popular..."
+  - Watering: "Average"
+  - Sunlight: "Full sun, Partial shade"
+  - WikiUrl: "https://en.wikipedia.org/wiki/Ficus_benjamina"
+  - ImageUrl: "https://example.com/ficus.jpg"
+- **Acción**: Crear instancia de `Plant` con todos los atributos
+- **Resultado esperado**:
+  - `PlantId` es un Guid generado
+  - Todos los atributos se asignan correctamente
+  - `CreatedAt` = DateTime.UtcNow
+  - `MyPlants` es una lista vacía
+
+**TC-PLANT-002: Validación de ScientificName requerido**
+- **Precondiciones**: Configuración de Entity Framework con `ScientificName.IsRequired()`
+- **Datos de entrada**: `ScientificName = null` o `string.Empty`
+- **Acción**: Intentar persistir `Plant` con `ScientificName` vacío
+- **Resultado esperado**: 
+  - Entity Framework lanza `DbUpdateException` o validación falla
+  - Mensaje de error indica que `ScientificName` es requerido
+
+**TC-PLANT-003: Validación de longitud máxima de ScientificName**
+- **Precondiciones**: Configuración con `HasMaxLength(255)`
+- **Datos de entrada**: `ScientificName` con 256 caracteres
+- **Acción**: Intentar persistir `Plant` con `ScientificName` excediendo límite
+- **Resultado esperado**: 
+  - Validación falla o truncamiento según configuración
+  - Error indica límite de 255 caracteres
+
+**TC-PLANT-004: Validación de longitud máxima de Description**
+- **Precondiciones**: Configuración con `HasMaxLength(2000)`
+- **Datos de entrada**: `Description` con 2001 caracteres
+- **Acción**: Intentar persistir `Plant` con `Description` excediendo límite
+- **Resultado esperado**: Validación falla o truncamiento
+
+**TC-PLANT-005: Asociación con MyPlant**
+- **Precondiciones**: `Plant` y `MyPlant` existentes
+- **Datos de entrada**: `MyPlant` con `PlantId` referenciando `Plant.PlantId`
+- **Acción**: Agregar `MyPlant` a la colección `Plant.MyPlants`
+- **Resultado esperado**: 
+  - `Plant.MyPlants` contiene el `MyPlant` agregado
+  - Relación bidireccional se mantiene
 
 ---
 
-Proceso de Revisión
+### 6.1.1.3. Entidad: MyPlant (Instancia de Planta del Usuario)
 
- Pull Requests (PR)
-Todo cambio debe realizarse mediante un PR que incluya:
+#### Casos de Prueba: Registro y Validación de Plantas del Usuario
 
-- Descripción clara del cambio realizado.  
-- Evidencias como capturas, fragmentos de código o enlaces.  
-- Pruebas unitarias o integradas necesarias.  
-- Documentación actualizada si aplica.
+**TC-MYPLANT-001: Creación de MyPlant con datos válidos**
+- **Precondiciones**: `AuthUser` y `Plant` existentes
+- **Datos de entrada**:
+  - UserId: Guid de usuario existente
+  - PlantId: Guid de especie existente
+  - CustomName: "Mi Ficus Favorito"
+  - AcquiredAt: DateTime.UtcNow.AddMonths(-2)
+  - Location: "Sala de estar"
+  - Note: "Regalo de cumpleaños"
+  - PhotoUrl: "https://example.com/my-plant.jpg"
+  - CurrentStatus: "Healthy"
+- **Acción**: Crear instancia de `MyPlant`
+- **Resultado esperado**:
+  - `MyPlantId` es un Guid generado
+  - Todos los atributos se asignan correctamente
+  - `HealthLogs`, `CareTasks`, `Alerts`, `IoTDevices` son listas vacías
 
+**TC-MYPLANT-002: Validación de UserId requerido**
+- **Precondiciones**: Configuración de Entity Framework
+- **Datos de entrada**: `UserId = Guid.Empty`
+- **Acción**: Intentar persistir `MyPlant` sin `UserId` válido
+- **Resultado esperado**: 
+  - Validación falla o Foreign Key constraint error
+  - Error indica que `UserId` debe referenciar un usuario existente
+
+**TC-MYPLANT-003: Validación de PlantId requerido**
+- **Precondiciones**: Configuración de Entity Framework
+- **Datos de entrada**: `PlantId = Guid.Empty`
+- **Acción**: Intentar persistir `MyPlant` sin `PlantId` válido
+- **Resultado esperado**: 
+  - Validación falla o Foreign Key constraint error
+  - Error indica que `PlantId` debe referenciar una especie existente
+
+**TC-MYPLANT-004: Asociación con PlantHealthLog**
+- **Precondiciones**: `MyPlant` existente
+- **Datos de entrada**: `PlantHealthLog` con `MyPlantId` referenciando `MyPlant`
+- **Acción**: Agregar `PlantHealthLog` a `MyPlant.HealthLogs`
+- **Resultado esperado**: 
+  - `MyPlant.HealthLogs` contiene el log agregado
+  - Relación se mantiene correctamente
+
+**TC-MYPLANT-005: Asociación con CareTask**
+- **Precondiciones**: `MyPlant` existente
+- **Datos de entrada**: `CareTask` con `MyPlantId` referenciando `MyPlant`
+- **Acción**: Agregar `CareTask` a `MyPlant.CareTasks`
+- **Resultado esperado**: 
+  - `MyPlant.CareTasks` contiene la tarea agregada
+  - Relación se mantiene correctamente
+
+**TC-MYPLANT-006: Asociación con Alert**
+- **Precondiciones**: `MyPlant` existente
+- **Datos de entrada**: `Alert` con `PlantInstanceId` referenciando `MyPlant`
+- **Acción**: Agregar `Alert` a `MyPlant.Alerts`
+- **Resultado esperado**: 
+  - `MyPlant.Alerts` contiene la alerta agregada
+  - `Alert.PlantInstance` referencia a `MyPlant`
+
+---
+
+### 6.1.1.4. Entidad: CareTask (Recordatorio/Tarea de Cuidado)
+
+#### Casos de Prueba: Creación y Actualización de Recordatorios
+
+**TC-CARETASK-001: Creación de CareTask con datos válidos**
+- **Precondiciones**: `MyPlant` existente
+- **Datos de entrada**:
+  - MyPlantId: Guid de `MyPlant` existente
+  - TaskType: "Riego"
+  - ScheduledFor: DateTime.UtcNow.AddDays(2)
+  - Status: "Pending"
+  - Notes: "Regar con agua filtrada"
+- **Acción**: Crear instancia de `CareTask`
+- **Resultado esperado**:
+  - `TaskId` es un Guid generado
+  - Todos los atributos se asignan correctamente
+  - `CompletedAt` es `null`
+  - `Status` = "Pending"
+
+**TC-CARETASK-002: Validación de fecha programada en el futuro**
+- **Precondiciones**: `MyPlant` existente
+- **Datos de entrada**: 
+  - ScheduledFor: DateTime.UtcNow.AddDays(-1) (fecha pasada)
+- **Acción**: Crear `CareTask` con fecha pasada
+- **Resultado esperado**: 
+  - Según regla de negocio: puede permitirse o rechazarse
+  - Si se rechaza: lanza excepción indicando que la fecha debe ser futura
+  - Si se permite: `CareTask` se crea pero puede marcarse como "Overdue"
+
+**TC-CARETASK-003: Validación de TaskType válido**
+- **Precondiciones**: `MyPlant` existente
+- **Datos de entrada**: 
+  - TaskType: "Riego", "Fertilizar", "Poda", "Trasplante"
+- **Acción**: Crear `CareTask` con diferentes tipos
+- **Resultado esperado**: 
+  - Todos los tipos válidos se aceptan
+  - Si hay validación de enum: solo tipos permitidos se aceptan
+
+**TC-CARETASK-004: Marcar tarea como completada**
+- **Precondiciones**: `CareTask` existente con `Status = "Pending"`
+- **Datos de entrada**: `TaskId` de tarea pendiente
+- **Acción**: Llamar `MarkCareTaskCompletedAsync(taskId)`
+- **Resultado esperado**: 
+  - `Status` = "Completed"
+  - `CompletedAt` = DateTime.UtcNow (aproximadamente)
+  - Cambios se persisten en base de datos
+
+**TC-CARETASK-005: Actualización de notas**
+- **Precondiciones**: `CareTask` existente
+- **Datos de entrada**: `Notes = "Actualización: usar fertilizante orgánico"`
+- **Acción**: Actualizar `CareTask.Notes`
+- **Resultado esperado**: 
+  - `Notes` se actualiza correctamente
+  - Cambios se persisten en base de datos
+
+**TC-CARETASK-006: Generación automática de tareas de cuidado**
+- **Precondiciones**: `MyPlant` existente asociado a `Plant` con datos de cuidado
+- **Datos de entrada**: `MyPlantId`
+- **Acción**: Llamar `GenerateCareTasksAsync(myPlantId)`
+- **Resultado esperado**: 
+  - Se crean múltiples `CareTask` (al menos "Riego" y "Fertilizar")
+  - Cada tarea tiene `ScheduledFor` calculado según tipo
+  - Todas las tareas tienen `Status = "Pending"`
+  - Tareas se persisten en base de datos
+
+**TC-CARETASK-007: Consulta de tareas pendientes por MyPlant**
+- **Precondiciones**: `MyPlant` con múltiples `CareTask` (algunas completadas, algunas pendientes)
+- **Datos de entrada**: `MyPlantId`
+- **Acción**: Llamar `GetPendingTasksAsync(myPlantId)`
+- **Resultado esperado**: 
+  - Retorna solo tareas con `Status.ToLower() == "pending"`
+  - No incluye tareas completadas
+  - Lista ordenada por `ScheduledFor` (ascendente)
+
+---
+
+### 6.1.1.5. Entidad: PlantHealthLog (Historial de Cuidado)
+
+#### Casos de Prueba: Registro Automático de Acciones
+
+**TC-HEALTHLOG-001: Creación de log con datos válidos**
+- **Precondiciones**: `MyPlant` existente
+- **Datos de entrada**:
+  - MyPlantId: Guid de `MyPlant` existente
+  - HealthStatus: "Healthy"
+  - Notes: "Planta en buen estado, hojas verdes"
+  - Source: "Manual"
+- **Acción**: Crear instancia de `PlantHealthLog`
+- **Resultado esperado**:
+  - `HealthLogId` es un Guid generado
+  - `Timestamp` = DateTime.UtcNow (aproximadamente)
+  - Todos los atributos se asignan correctamente
+
+**TC-HEALTHLOG-002: Registro automático de log al crear MyPlant**
+- **Precondiciones**: `AuthUser` y `Plant` existentes
+- **Datos de entrada**: Datos para crear `MyPlant`
+- **Acción**: Crear `MyPlant` y llamar `LogPlantHealthAsync(myPlantId, log)`
+- **Resultado esperado**: 
+  - Se crea `PlantHealthLog` asociado a `MyPlant`
+  - `Source` = "System" o "Manual" según origen
+  - Log se persiste en base de datos
+
+**TC-HEALTHLOG-003: Registro de log con diferentes HealthStatus**
+- **Precondiciones**: `MyPlant` existente
+- **Datos de entrada**: 
+  - HealthStatus: "Healthy", "Warning", "Critical", "Recovering"
+- **Acción**: Crear múltiples logs con diferentes estados
+- **Resultado esperado**: 
+  - Todos los estados se aceptan y persisten
+  - Logs se ordenan por `Timestamp` descendente
+
+**TC-HEALTHLOG-004: Consulta de historial por MyPlant**
+- **Precondiciones**: `MyPlant` con múltiples `PlantHealthLog`
+- **Datos de entrada**: `MyPlantId`
+- **Acción**: Consultar `MyPlant.HealthLogs` o repositorio
+- **Resultado esperado**: 
+  - Retorna todos los logs asociados a `MyPlant`
+  - Logs ordenados por `Timestamp` descendente (más recientes primero)
+  - Incluye `HealthStatus`, `Notes`, `Source`, `Timestamp`
+
+**TC-HEALTHLOG-005: Registro de log desde fuente IoT**
+- **Precondiciones**: `MyPlant` con `IoTDevice` asociado
+- **Datos de entrada**: 
+  - Source: "IoT"
+  - HealthStatus: Calculado desde datos de sensores
+- **Acción**: Crear `PlantHealthLog` desde sistema IoT
+- **Resultado esperado**: 
+  - Log se crea con `Source = "IoT"`
+  - `HealthStatus` refleja estado calculado desde sensores
+  - Log se asocia correctamente a `MyPlant`
+
+---
+
+### 6.1.1.6. Entidad: Notification (Notificaciones)
+
+#### Casos de Prueba: Sistema de Notificaciones
+
+**TC-NOTIFICATION-001: Creación de notificación con datos válidos**
+- **Precondiciones**: `AuthUser` existente
+- **Datos de entrada**:
+  - UserId: Guid de usuario existente
+  - Type: "task"
+  - Message: "Tienes una tarea de riego pendiente para 'Mi Ficus'"
+  - SentAt: DateTime.UtcNow
+- **Acción**: Crear instancia de `Notification`
+- **Resultado esperado**:
+  - `NotificationId` es un Guid generado
+  - `IsRead` = `false` por defecto
+  - Todos los atributos se asignan correctamente
+
+**TC-NOTIFICATION-002: Marcar notificación como leída**
+- **Precondiciones**: `Notification` existente con `IsRead = false`
+- **Datos de entrada**: `NotificationId`
+- **Acción**: Actualizar `IsRead = true`
+- **Resultado esperado**: 
+  - `IsRead` = `true`
+  - Cambios se persisten en base de datos
+
+**TC-NOTIFICATION-003: Diferentes tipos de notificaciones**
+- **Precondiciones**: `AuthUser` existente
+- **Datos de entrada**: 
+  - Type: "task", "alert", "forum", "diagnosis"
+- **Acción**: Crear notificaciones con diferentes tipos
+- **Resultado esperado**: 
+  - Todos los tipos se aceptan y persisten
+  - Tipo determina comportamiento de UI/UX
+
+**TC-NOTIFICATION-004: Consulta de notificaciones no leídas**
+- **Precondiciones**: Usuario con múltiples notificaciones (algunas leídas, algunas no)
+- **Datos de entrada**: `UserId`
+- **Acción**: Consultar notificaciones con `IsRead = false`
+- **Resultado esperado**: 
+  - Retorna solo notificaciones no leídas
+  - Ordenadas por `SentAt` descendente
+  - Incluye `Type`, `Message`, `SentAt`
+
+
+![Test](https://i.imgur.com/AlPtGYS.png)
+---
+
+## 6.1.2. Pruebas de Integración Core
+
+### 6.1.2.1. Escenario: Registro de Usuario + Asociación de Planta
+
+**TC-INT-001: Flujo completo de registro y primera planta**
+- **Precondiciones**: Base de datos limpia, API disponible
+- **Pasos**:
+  1. **Registro de usuario**: 
+     - POST `/api/auth/sign-up`
+     - Body: `{ "email": "nuevo@test.com", "password": "Password123!", "name": "Test", "lastName": "User", "timeZone": "America/Lima", "preferredLanguage": "es" }`
+     - **Validar**: Status 200, mensaje de éxito
+  2. **Autenticación**:
+     - POST `/api/auth/sign-in`
+     - Body: `{ "email": "nuevo@test.com", "password": "Password123!" }`
+     - **Validar**: Status 200, retorna JWT token
+  3. **Consulta de especies disponibles**:
+     - GET `/api/plants` (con token JWT)
+     - **Validar**: Status 200, lista de especies disponibles
+  4. **Registro de MyPlant**:
+     - POST `/api/my-plants` (con token JWT)
+     - Body: `{ "plantId": "<guid-especie>", "customName": "Mi Primera Planta", "location": "Sala", "acquiredAt": "2024-01-01T00:00:00Z" }`
+     - **Validar**: Status 201, retorna `MyPlant` creado con `MyPlantId`
+  5. **Verificación en base de datos**:
+     - Consultar `AuthUsers` → usuario existe con email correcto
+     - Consultar `MyPlants` → planta asociada con `UserId` correcto
+     - Consultar `PlantHealthLogs` → log inicial creado automáticamente
+- **Resultado esperado**: 
+  - Usuario creado y autenticado exitosamente
+  - Planta asociada correctamente al usuario
+  - Historial inicial generado automáticamente
+  - Relaciones en base de datos son consistentes
+
+**TC-INT-002: Múltiples plantas asociadas a un usuario**
+- **Precondiciones**: Usuario autenticado con token JWT válido
+- **Pasos**:
+  1. Registrar primera planta (PlantId: A)
+  2. Registrar segunda planta (PlantId: B)
+  3. Registrar tercera planta (PlantId: A, misma especie)
+  4. Consultar todas las plantas del usuario: GET `/api/my-plants`
+- **Resultado esperado**: 
+  - Status 200
+  - Retorna lista con 3 `MyPlant`
+  - Cada una tiene `UserId` correcto
+  - Cada una tiene `PlantId` correspondiente
+  - Todas tienen logs de salud iniciales
+
+**TC-INT-003: Validación de permisos: usuario solo puede ver sus propias plantas**
+- **Precondiciones**: Dos usuarios autenticados (UserA, UserB), UserA tiene plantas registradas
+- **Pasos**:
+  1. UserA consulta sus plantas: GET `/api/my-plants` (token UserA)
+  2. UserB intenta consultar plantas: GET `/api/my-plants` (token UserB)
+  3. UserB intenta acceder a planta de UserA: GET `/api/my-plants/{myPlantId-de-UserA}` (token UserB)
+- **Resultado esperado**: 
+  - UserA ve sus plantas correctamente
+  - UserB ve lista vacía o solo sus propias plantas
+  - UserB recibe 403 Forbidden o 404 Not Found al intentar acceder a planta de UserA
+
+---
+
+### 6.1.2.2. Escenario: Recordatorios + Notificaciones
+
+**TC-INT-004: Creación de CareTask y generación de notificación**
+- **Precondiciones**: `MyPlant` existente, sistema de notificaciones activo
+- **Pasos**:
+  1. **Crear CareTask**:
+     - POST `/api/care-tasks` (con token JWT)
+     - Body: `{ "myPlantId": "<guid>", "taskType": "Riego", "scheduledFor": "2024-12-25T08:00:00Z", "notes": "Regar con agua filtrada" }`
+     - **Validar**: Status 201, `CareTask` creado con `TaskId`
+  2. **Verificar en base de datos**:
+     - Consultar `CareTasks` → tarea existe con `Status = "Pending"`
+     - Consultar `Notifications` → notificación creada con `Type = "task"`
+  3. **Simular llegada de fecha programada**:
+     - Ejecutar job/proceso que verifica `CareTask` con `ScheduledFor <= DateTime.UtcNow`
+     - **Validar**: Notificación enviada al usuario
+- **Resultado esperado**: 
+  - `CareTask` se crea y persiste correctamente
+  - Notificación se genera automáticamente
+  - Notificación tiene `UserId` correcto
+  - Notificación tiene `Message` descriptivo con nombre de planta y tipo de tarea
+  - Notificación tiene `IsRead = false`
+
+**TC-INT-005: Notificación automática al llegar fecha/hora de CareTask**
+- **Precondiciones**: `CareTask` existente con `ScheduledFor` en el pasado, job de notificaciones configurado
+- **Pasos**:
+  1. Ejecutar job que consulta `CareTasks` con `ScheduledFor <= DateTime.UtcNow AND Status = "Pending"`
+  2. Para cada tarea encontrada:
+     - Crear `Notification` para el usuario propietario
+     - Opcionalmente: enviar push notification o email
+  3. Verificar en base de datos:
+     - `Notifications` contiene nueva notificación
+     - `Notification.UserId` = `MyPlant.UserId`
+     - `Notification.Type` = "task"
+- **Resultado esperado**: 
+  - Notificación se crea automáticamente
+  - Notificación contiene información de la tarea (tipo, planta, fecha)
+  - Si hay sistema de push: notificación se envía al dispositivo
+  - Job se ejecuta periódicamente sin errores
+
+**TC-INT-006: Marcar CareTask como completada y actualizar notificación**
+- **Precondiciones**: `CareTask` existente con notificación asociada
+- **Pasos**:
+  1. Marcar tarea como completada: PUT `/api/care-tasks/{taskId}/complete` (con token JWT)
+  2. Verificar en base de datos:
+     - `CareTasks.Status` = "Completed"
+     - `CareTasks.CompletedAt` = DateTime.UtcNow
+  3. Verificar que se crea log en historial:
+     - `PlantHealthLogs` contiene nuevo log con `Source = "Manual"` y `HealthStatus` apropiado
+- **Resultado esperado**: 
+  - Tarea se marca como completada
+  - Historial se actualiza automáticamente
+  - Notificaciones relacionadas se pueden marcar como "resueltas" o eliminarse
+
+---
+
+### 6.1.2.3. Escenario: Historial + Acciones del Usuario
+
+**TC-INT-007: Registro automático de acción de riego en historial**
+- **Precondiciones**: `MyPlant` existente, usuario autenticado
+- **Pasos**:
+  1. Usuario marca tarea de riego como completada: PUT `/api/care-tasks/{taskId}/complete`
+  2. Sistema automáticamente crea `PlantHealthLog`:
+     - `MyPlantId` = ID de la planta
+     - `HealthStatus` = "Healthy" (o calculado)
+     - `Notes` = "Riego completado"
+     - `Source` = "Manual"
+     - `Timestamp` = DateTime.UtcNow
+  3. Consultar historial: GET `/api/my-plants/{myPlantId}/health-logs`
+- **Resultado esperado**: 
+  - `PlantHealthLog` se crea automáticamente
+  - Historial contiene la acción registrada
+  - Log aparece en consulta de historial ordenado por fecha descendente
+
+**TC-INT-008: Registro de múltiples acciones en historial**
+- **Precondiciones**: `MyPlant` existente
+- **Pasos**:
+  1. Completar tarea de riego → log creado
+  2. Completar tarea de fertilización → log creado
+  3. Registrar diagnóstico manual → log creado
+  4. Consultar historial completo
+- **Resultado esperado**: 
+  - Historial contiene 3+ logs (incluyendo log inicial)
+  - Cada log tiene `Timestamp` único
+  - Logs ordenados por `Timestamp` descendente
+  - Cada log tiene `Source` apropiado ("Manual", "System", "IoT", "Diagnosis")
+
+**TC-INT-009: Consulta de historial con filtros**
+- **Precondiciones**: `MyPlant` con múltiples logs de diferentes fechas y fuentes
+- **Pasos**:
+  1. Consultar historial completo: GET `/api/my-plants/{myPlantId}/health-logs`
+  2. Consultar historial filtrado por fuente: GET `/api/my-plants/{myPlantId}/health-logs?source=Manual`
+  3. Consultar historial filtrado por rango de fechas: GET `/api/my-plants/{myPlantId}/health-logs?from=2024-01-01&to=2024-12-31`
+- **Resultado esperado**: 
+  - Filtros funcionan correctamente
+  - Resultados se ordenan por fecha descendente
+  - Paginación funciona si hay muchos registros
+
+---
+
+### 6.1.2.4. Escenario: Diagnóstico + Base de Datos de Especies
+
+**TC-INT-010: Procesamiento de imagen y diagnóstico de planta**
+- **Precondiciones**: `MyPlant` existente, servicio de diagnóstico configurado
+- **Pasos**:
+  1. **Subir imagen de planta**:
+     - POST `/api/diagnosis/analyze` (con token JWT)
+     - Body: FormData con archivo de imagen
+     - **Validar**: Status 200, retorna análisis
+  2. **Verificar identificación de especie**:
+     - Sistema consulta API externa (Plant.id) o base de datos local
+     - **Validar**: Especie identificada con confianza > 80%
+  3. **Verificar detección de problemas**:
+     - Sistema compara imagen con `ProblemPlants` en base de datos
+     - **Validar**: Problemas detectados (si existen) con nivel de confianza
+  4. **Verificar generación de recomendaciones**:
+     - Sistema consulta `Recommendations` asociadas a problemas detectados
+     - **Validar**: Lista de recomendaciones retornada
+  5. **Verificar registro en historial**:
+     - `PlantHealthLog` creado con `Source = "Diagnosis"`
+     - `HealthStatus` actualizado según problemas detectados
+- **Resultado esperado**: 
+  - Imagen se procesa correctamente
+  - Especie se identifica con alta confianza
+  - Problemas se detectan y categorizan
+  - Recomendaciones se generan y asocian
+  - Historial se actualiza automáticamente
+  - `MyPlant.CurrentStatus` se actualiza si es necesario
+
+**TC-INT-011: Diagnóstico con múltiples problemas detectados**
+- **Precondiciones**: Base de datos con `ProblemPlants` y `Recommendations` configurados
+- **Pasos**:
+  1. Subir imagen que muestra múltiples síntomas (hojas amarillas, manchas, etc.)
+  2. Sistema detecta múltiples problemas
+  3. Sistema genera recomendaciones para cada problema
+  4. Verificar respuesta del diagnóstico
+- **Resultado esperado**: 
+  - Múltiples problemas se detectan correctamente
+  - Cada problema tiene `Recommendation` asociada
+  - Recomendaciones se priorizan por severidad
+  - Usuario recibe lista ordenada de problemas y soluciones
+
+**TC-INT-012: Actualización de CurrentStatus basado en diagnóstico**
+- **Precondiciones**: `MyPlant` con `CurrentStatus = "Healthy"`
+- **Pasos**:
+  1. Ejecutar diagnóstico que detecta problema crítico
+  2. Sistema actualiza `MyPlant.CurrentStatus` = "Critical"
+  3. Sistema genera `Alert` con `Level = AlertLevel.crítica`
+  4. Sistema crea `Notification` para el usuario
+- **Resultado esperado**: 
+  - `CurrentStatus` se actualiza correctamente
+  - `Alert` se crea y asocia a `MyPlant`
+  - `Notification` se envía al usuario
+  - Historial registra el cambio de estado
+
+
+![Test1](https://i.imgur.com/NftyRj6.png)
+
+
+---
+
+ ## 6.1.3. Pruebas BDD (Behavior-Driven Development)
+
+### 6.1.3.1. Escenario: Registro de Usuario
+
+**Feature**: Registro de nuevos usuarios
+```gherkin
+Feature: Registro de usuario
+  Como visitante
+  Quiero registrarme en la aplicación
+  Para poder gestionar mis plantas
+
+  Scenario: Registro exitoso con datos válidos
+    Given un visitante accede al endpoint de registro
+    When completa el formulario con:
+      | Campo              | Valor                |
+      | email              | nuevo@ejemplo.com    |
+      | password           | Password123!         |
+      | name               | Juan                 |
+      | lastName           | Pérez                |
+      | timeZone           | America/Lima         |
+      | preferredLanguage  | es                   |
+    And envía la solicitud POST a /api/auth/sign-up
+    Then el sistema responde con status 200
+    And el mensaje indica "Usuario creado exitosamente"
+    And un nuevo usuario se crea en la base de datos con:
+      | Campo              | Valor                |
+      | Email              | nuevo@ejemplo.com    |
+      | Name               | Juan                 |
+      | LastName           | Pérez                |
+      | Role               | User                 |
+      | RegisteredAt       | DateTime.UtcNow      |
+    And el PasswordHash es diferente al password en texto plano
+    And el PasswordHash es un hash BCrypt válido
+    And el usuario puede autenticarse con sus credenciales
+
+  Scenario: Registro fallido por email duplicado
+    Given un usuario con email "test@ejemplo.com" ya existe
+    When un visitante intenta registrarse con email "test@ejemplo.com"
+    Then el sistema responde con status 400
+    And el mensaje indica "El usuario ya existe" o "Email is already taken"
+    And no se crea un nuevo usuario en la base de datos
+
+  Scenario: Registro fallido por contraseña inválida
+    Given un visitante accede al endpoint de registro
+    When intenta registrarse con contraseña "123" (muy corta)
+    Then el sistema responde con status 400
+    And el mensaje indica error de validación de contraseña
+    And no se crea un nuevo usuario en la base de datos
+
+  Scenario: Registro con campos opcionales
+    Given un visitante accede al endpoint de registro
+    When completa solo los campos obligatorios (email, password, name, lastName)
+    And deja timeZone y preferredLanguage con valores por defecto
+    Then el sistema crea el usuario exitosamente
+    And timeZone tiene un valor por defecto
+    And preferredLanguage tiene un valor por defecto
+```
+
+---
+
+### 6.1.3.2. Escenario: Asociación de Planta
+
+**Feature**: Registro de plantas del usuario
+```gherkin
+Feature: Asociación de planta a usuario
+  Como usuario autenticado
+  Quiero registrar una nueva planta en mi perfil
+  Para poder gestionar su cuidado
+
+  Scenario: Registro exitoso de planta
+    Given un usuario autenticado con token JWT válido
+    And existe una especie de planta en la base de datos con PlantId = "<guid>"
+    When envía POST a /api/my-plants con:
+      | Campo       | Valor                    |
+      | plantId     | <guid-especie>           |
+      | customName  | Mi Ficus Favorito        |
+      | location    | Sala de estar           |
+      | acquiredAt  | 2024-01-01T00:00:00Z    |
+      | note        | Regalo de cumpleaños     |
+    Then el sistema responde con status 201
+    And retorna MyPlant con:
+      | Campo        | Validación                    |
+      | MyPlantId    | Guid generado                 |
+      | UserId       | Id del usuario autenticado    |
+      | PlantId      | Guid de especie correcto      |
+      | CustomName   | "Mi Ficus Favorito"          |
+      | Location     | "Sala de estar"              |
+      | AcquiredAt   | Fecha correcta               |
+    And la planta queda vinculada a la cuenta del usuario
+    And la planta es visible en GET /api/my-plants
+    And se crea un PlantHealthLog inicial automáticamente con Source = "System"
+    And se generan CareTasks iniciales (Riego, Fertilizar) automáticamente
+
+  Scenario: Registro fallido por especie inexistente
+    Given un usuario autenticado
+    And NO existe una especie con PlantId = "<guid-inexistente>"
+    When intenta registrar una planta con ese PlantId
+    Then el sistema responde con status 404 o 400
+    And el mensaje indica que la especie no existe
+    And no se crea MyPlant en la base de datos
+
+  Scenario: Registro con datos mínimos
+    Given un usuario autenticado
+    And existe una especie de planta
+    When registra una planta solo con plantId y customName (campos requeridos)
+    Then el sistema crea la planta exitosamente
+    And location, note, photoUrl tienen valores por defecto o null
+    And CurrentStatus = "Healthy" por defecto
+```
+
+---
+
+### 6.1.3.3. Escenario: Recordatorios Automáticos
+
+**Feature**: Sistema de recordatorios y notificaciones
+```gherkin
+Feature: Recordatorios automáticos de cuidado
+  Como usuario con plantas registradas
+  Quiero recibir notificaciones cuando llegue el momento de cuidar mis plantas
+  Para no olvidar las tareas de mantenimiento
+
+  Scenario: Notificación automática al llegar fecha de riego
+    Given una MyPlant con id = "<guid-planta>"
+    And existe un CareTask con:
+      | Campo         | Valor                    |
+      | TaskType      | Riego                    |
+      | ScheduledFor  | 2024-12-25T08:00:00Z    |
+      | Status        | Pending                  |
+      | MyPlantId     | <guid-planta>            |
+    And el usuario propietario tiene UserId = "<guid-usuario>"
+    And el sistema de jobs está configurado para ejecutarse cada hora
+    When la fecha y hora actual alcanza o supera 2024-12-25T08:00:00Z
+    And el job de notificaciones se ejecuta
+    Then el sistema crea una Notification con:
+      | Campo      | Valor                                    |
+      | UserId     | <guid-usuario>                          |
+      | Type       | task                                     |
+      | Message    | Contiene nombre de planta y tipo de tarea |
+      | SentAt     | DateTime.UtcNow                         |
+      | IsRead     | false                                    |
+    And la notificación es visible en GET /api/notifications
+    And si hay sistema de push: se envía notificación al dispositivo del usuario
+
+  Scenario: Múltiples recordatorios para la misma planta
+    Given una MyPlant con múltiples CareTasks pendientes
+    When llega la fecha programada de todas las tareas
+    Then se crean múltiples Notification (una por tarea)
+    And cada notificación tiene información específica de su tarea
+    And el usuario puede ver todas las notificaciones agrupadas
+
+  Scenario: Recordatorio completado antes de la fecha
+    Given un CareTask programado para 2024-12-25T08:00:00Z
+    And la fecha actual es 2024-12-24T10:00:00Z
+    When el usuario marca la tarea como completada
+    Then el CareTask.Status = "Completed"
+    And el CareTask.CompletedAt = DateTime.UtcNow
+    And cuando llegue la fecha programada, NO se genera notificación
+    And se crea un PlantHealthLog registrando la acción
+```
+
+---
+
+### 6.1.3.4. Escenario: Diagnóstico de Planta
+
+**Feature**: Diagnóstico automático mediante imagen
+```gherkin
+Feature: Diagnóstico de planta mediante imagen
+  Como usuario
+  Quiero tomar una foto de mi planta y obtener un diagnóstico
+  Para identificar problemas y recibir recomendaciones
+
+  Scenario: Diagnóstico exitoso con identificación de especie
+    Given un usuario autenticado
+    And una MyPlant registrada con id = "<guid-planta>"
+    When el usuario sube una imagen de su planta mediante POST /api/diagnosis/analyze
+    And la imagen es válida (formato JPG/PNG, tamaño < 10MB)
+    Then el sistema procesa la imagen
+    And el sistema identifica la especie con confianza > 80%
+    And el sistema muestra:
+      | Información        | Detalle                                    |
+      | Especie            | Nombre científico y común                  |
+      | Confianza          | Porcentaje de certeza                      |
+      | Imagen referencia  | URL de imagen de la especie                |
+    And si la especie identificada difiere de la registrada:
+      Then el sistema sugiere actualizar PlantId de MyPlant
+    And se crea un PlantHealthLog con Source = "Diagnosis"
+
+  Scenario: Diagnóstico con detección de problemas
+    Given un usuario sube una imagen de planta con síntomas visibles
+    When el sistema procesa la imagen
+    Then el sistema compara con ProblemPlants en base de datos
+    And detecta problemas con:
+      | Problema           | Severidad    | Confianza |
+      | Hojas amarillas     | Warning      | 85%       |
+      | Manchas en hojas    | Critical     | 72%       |
+    And para cada problema detectado:
+      Then el sistema consulta Recommendations asociadas
+      And muestra recomendaciones con:
+        | Recomendación     | Tipo         | Prioridad |
+        | Ajustar riego     | Watering     | Alta      |
+        | Tratar hongos     | Treatment    | Crítica   |
+    And se actualiza MyPlant.CurrentStatus según severidad del problema más crítico
+    And se crea un Alert si el problema es crítico
+    And se crea una Notification para el usuario
+
+  Scenario: Diagnóstico sin problemas detectados
+    Given un usuario sube una imagen de planta saludable
+    When el sistema procesa la imagen
+    Then el sistema identifica la especie correctamente
+    And NO detecta problemas significativos
+    And el sistema muestra mensaje: "Tu planta parece estar en buen estado"
+    And MyPlant.CurrentStatus se mantiene o se actualiza a "Healthy"
+    And se crea PlantHealthLog con HealthStatus = "Healthy"
+
+  Scenario: Diagnóstico fallido por imagen inválida
+    Given un usuario intenta subir una imagen
+    When la imagen es inválida (formato incorrecto, corrupta, o muy grande)
+    Then el sistema responde con status 400
+    And el mensaje indica el error específico
+    And no se procesa ningún diagnóstico
+    And no se crean registros en base de datos
+```
+
+---
+
+## 6.1.4. Pruebas de Sistema (System Tests)
+
+### 6.1.4.1. Funcionalidad Completa End-to-End
+
+**TC-SYS-001: Flujo completo de usuario nuevo**
+- **Objetivo**: Validar que un usuario nuevo puede usar todas las funcionalidades principales
+- **Precondiciones**: Sistema desplegado, base de datos limpia
+- **Pasos**:
+  1. **Registro**: Crear cuenta nueva
+  2. **Autenticación**: Iniciar sesión y obtener token
+  3. **Explorar especies**: Consultar catálogo de plantas disponibles
+  4. **Registrar planta**: Agregar primera planta a perfil
+  5. **Ver dashboard**: Consultar plantas del usuario
+  6. **Crear recordatorio**: Programar tarea de riego
+  7. **Completar tarea**: Marcar recordatorio como completado
+  8. **Ver historial**: Consultar logs de cuidado
+  9. **Diagnóstico**: Subir imagen y obtener análisis
+  10. **Ver notificaciones**: Consultar notificaciones recibidas
+- **Resultado esperado**: 
+  - Todos los pasos se completan sin errores
+  - Datos se persisten correctamente
+  - Relaciones entre entidades se mantienen
+  - Tiempo total de ejecución < 2 minutos
+
+**TC-SYS-002: Flujo de mantenimiento diario**
+- **Objetivo**: Simular uso diario típico del sistema
+- **Precondiciones**: Usuario con 5 plantas registradas, múltiples recordatorios activos
+- **Pasos**:
+  1. Usuario inicia sesión
+  2. Consulta dashboard con resumen de plantas
+  3. Ve notificaciones de tareas pendientes
+  4. Completa 3 tareas de cuidado
+  5. Consulta historial de una planta específica
+  6. Actualiza información de una planta
+  7. Cierra sesión
+- **Resultado esperado**: 
+  - Todas las operaciones se completan exitosamente
+  - Performance aceptable (< 500ms por operación promedio)
+  - Datos se actualizan en tiempo real
+
+---
+
+### 6.1.4.2. Compatibilidad Multi-Dispositivo
+
+**TC-SYS-003: Compatibilidad con navegadores web**
+- **Objetivo**: Validar funcionamiento en diferentes navegadores
+- **Navegadores a probar**: Chrome, Firefox, Safari, Edge (últimas 2 versiones)
+- **Funcionalidades a probar**:
+  - Registro e inicio de sesión
+  - Navegación del dashboard
+  - Subida de imágenes para diagnóstico
+  - Visualización de gráficos y estadísticas
+- **Resultado esperado**: 
+  - Todas las funcionalidades funcionan en todos los navegadores
+  - UI se renderiza correctamente
+  - No hay errores de JavaScript en consola
+  - Responsive design funciona en diferentes tamaños de pantalla
+
+**TC-SYS-004: Compatibilidad móvil (iOS y Android)**
+- **Objetivo**: Validar funcionamiento en dispositivos móviles
+- **Dispositivos**: iPhone (iOS 15+), Android (Android 10+)
+- **Funcionalidades críticas**:
+  - Autenticación con biometría (si está implementada)
+  - Notificaciones push
+  - Cámara para diagnóstico
+  - Navegación táctil
+- **Resultado esperado**: 
+  - App funciona correctamente en ambos sistemas operativos
+  - Notificaciones push se reciben
+  - Cámara se integra correctamente
+  - UI es usable en pantallas pequeñas
+
+**TC-SYS-005: Compatibilidad con tablets**
+- **Objetivo**: Validar experiencia en tablets
+- **Dispositivos**: iPad, Android tablets
+- **Resultado esperado**: 
+  - UI se adapta a pantallas más grandes
+  - Funcionalidades de escritorio disponibles
+  - Navegación optimizada para tablets
+
+---
+
+### 6.1.4.3. Performance y Escalabilidad
+
+**TC-SYS-006: Tiempos de respuesta de endpoints críticos**
+- **Objetivo**: Medir performance de operaciones principales
+- **Métricas a medir**:
+  - POST `/api/auth/sign-up`: < 500ms
+  - POST `/api/auth/sign-in`: < 300ms
+  - GET `/api/my-plants`: < 200ms
+  - POST `/api/my-plants`: < 400ms
+  - POST `/api/care-tasks`: < 300ms
+  - GET `/api/my-plants/{id}/health-logs`: < 250ms
+  - POST `/api/diagnosis/analyze`: < 5000ms (procesamiento de imagen)
+- **Condiciones**: 
+  - Base de datos con 1000 usuarios, 5000 plantas, 10000 tareas
+  - Carga normal del sistema
+- **Resultado esperado**: 
+  - Todos los endpoints cumplen con los tiempos objetivo
+  - P95 (percentil 95) también cumple con los objetivos
+  - No hay degradación significativa bajo carga
+
+**TC-SYS-007: Carga concurrente de usuarios**
+- **Objetivo**: Validar comportamiento bajo carga
+- **Escenario**: 
+  - 100 usuarios concurrentes realizando operaciones simultáneas
+  - Operaciones: registro, consulta, creación de plantas, completar tareas
+- **Resultado esperado**: 
+  - Sistema maneja la carga sin errores
+  - Tiempos de respuesta se mantienen aceptables
+  - No hay memory leaks
+  - Base de datos no se bloquea
+
+**TC-SYS-008: Procesamiento de imágenes en lote**
+- **Objetivo**: Validar performance del módulo de diagnóstico
+- **Escenario**: 
+  - 10 usuarios suben imágenes simultáneamente para diagnóstico
+  - Imágenes de diferentes tamaños (500KB - 5MB)
+- **Resultado esperado**: 
+  - Todas las imágenes se procesan correctamente
+  - Tiempo promedio de procesamiento < 5 segundos por imagen
+  - Sistema no se satura
+  - Resultados se retornan correctamente
+
+**TC-SYS-009: Consultas con grandes volúmenes de datos**
+- **Objetivo**: Validar performance de consultas con muchos registros
+- **Escenario**: 
+  - Usuario con 100 plantas registradas
+  - Cada planta con 50+ logs de historial
+  - Consultar historial completo de todas las plantas
+- **Resultado esperado**: 
+  - Consulta se completa en < 2 segundos
+  - Paginación funciona correctamente
+  - Datos se ordenan correctamente
+  - No hay timeouts
+
+---
+
+### 6.1.4.4. Seguridad
+
+**TC-SYS-010: Protección de contraseñas**
+- **Objetivo**: Validar que las contraseñas están protegidas
+- **Pruebas**:
+  1. **Hash BCrypt**: Verificar que contraseñas se hashean con BCrypt
+  2. **No almacenamiento en texto plano**: Verificar que `PasswordHash` nunca contiene el password original
+  3. **Salt único**: Verificar que cada hash tiene salt único (mismo password genera hash diferente)
+  4. **Verificación correcta**: Verificar que `VerifyPassword` funciona correctamente
+- **Resultado esperado**: 
+  - Contraseñas nunca se almacenan en texto plano
+  - Hashes son únicos incluso para contraseñas idénticas
+  - Verificación funciona correctamente
+
+**TC-SYS-011: Autenticación y autorización**
+- **Objetivo**: Validar que solo usuarios autenticados pueden acceder a recursos
+- **Pruebas**:
+  1. **Sin token**: Intentar acceder a endpoints protegidos sin token → 401 Unauthorized
+  2. **Token inválido**: Intentar con token malformado → 401 Unauthorized
+  3. **Token expirado**: Intentar con token expirado → 401 Unauthorized
+  4. **Token válido**: Acceder con token válido → 200 OK
+  5. **Autorización**: Usuario A no puede acceder a recursos de Usuario B → 403 Forbidden
+- **Resultado esperado**: 
+  - Todos los endpoints protegidos requieren autenticación
+  - Tokens JWT se validan correctamente
+  - Autorización funciona según roles y ownership
+
+**TC-SYS-012: Protección contra inyección SQL**
+- **Objetivo**: Validar que Entity Framework protege contra SQL injection
+- **Pruebas**:
+  1. Intentar inyección SQL en parámetros de búsqueda
+  2. Intentar inyección en campos de texto
+  3. Verificar logs de base de datos para queries parametrizadas
+- **Resultado esperado**: 
+  - No se ejecuta código SQL malicioso
+  - Entity Framework usa parámetros en todas las queries
+  - Sistema rechaza inputs maliciosos
+
+**TC-SYS-013: Validación de inputs**
+- **Objetivo**: Validar que todos los inputs se validan correctamente
+- **Pruebas**:
+  1. Email inválido → 400 Bad Request
+  2. Contraseña muy corta → 400 Bad Request
+  3. Campos requeridos faltantes → 400 Bad Request
+  4. Tipos de datos incorrectos → 400 Bad Request
+  5. Valores fuera de rango → 400 Bad Request
+- **Resultado esperado**: 
+  - Todos los inputs se validan antes de procesarse
+  - Mensajes de error son descriptivos pero no exponen información sensible
+  - Validación ocurre tanto en cliente como en servidor
+
+**TC-SYS-014: Protección de datos personales**
+- **Objetivo**: Validar que datos sensibles no se exponen
+- **Pruebas**:
+  1. Verificar que `PasswordHash` nunca se retorna en respuestas API
+  2. Verificar que tokens de refresh no se exponen en logs
+  3. Verificar que emails no se exponen en errores públicos
+- **Resultado esperado**: 
+  - Datos sensibles nunca se exponen
+  - Logs no contienen información sensible
+  - Respuestas API solo incluyen datos necesarios
+
+---
+
+### 6.1.4.5. Usabilidad
+
+**TC-SYS-015: Interfaz intuitiva para usuarios principiantes**
+- **Objetivo**: Validar que la UI es fácil de usar
+- **Criterios**:
+  1. **Navegación clara**: Usuarios pueden encontrar funcionalidades principales sin ayuda
+  2. **Mensajes descriptivos**: Errores y confirmaciones son claros y accionables
+  3. **Feedback visual**: Acciones muestran indicadores de progreso
+  4. **Ayuda contextual**: Tooltips y ayuda disponible donde sea necesario
+- **Resultado esperado**: 
+  - Usuarios nuevos pueden completar flujo básico sin documentación
+  - Tiempo para primera planta registrada < 3 minutos
+  - Tasa de abandono en registro < 10%
+
+**TC-SYS-016: Accesibilidad básica**
+- **Objetivo**: Validar accesibilidad para usuarios con discapacidades
+- **Criterios**:
+  1. **Contraste de colores**: Cumple con WCAG AA (ratio 4.5:1)
+  2. **Navegación por teclado**: Todas las funcionalidades accesibles sin mouse
+  3. **Screen readers**: Elementos tienen labels apropiados
+  4. **Tamaño de texto**: Texto es legible y escalable
+- **Resultado esperado**: 
+  - Aplicación es usable con tecnologías de asistencia
+  - Cumple con estándares básicos de accesibilidad
+
+**TC-SYS-017: Mensajes de error claros**
+- **Objetivo**: Validar que errores son comprensibles
+- **Escenarios**:
+  1. Usuario intenta registrarse con email existente
+  2. Usuario intenta acceder a recurso no autorizado
+  3. Usuario sube imagen inválida
+  4. Conexión a internet se pierde durante operación
+- **Resultado esperado**: 
+  - Mensajes de error son claros y específicos
+  - Mensajes sugieren acciones correctivas
+  - Mensajes están en el idioma preferido del usuario
+
+---
+
+### 6.1.4.6. Recuperación de Fallos
+
+**TC-SYS-018: Manejo de caídas de red**
+- **Objetivo**: Validar comportamiento cuando se pierde conexión
+- **Escenarios**:
+  1. Usuario está completando formulario y se pierde conexión
+  2. Usuario está subiendo imagen y se pierde conexión
+  3. Usuario está consultando datos y se pierde conexión
+- **Resultado esperado**: 
+  - Sistema detecta pérdida de conexión
+  - Mensajes informan al usuario
+  - Datos locales se preservan si es posible
+  - Sistema se recupera automáticamente cuando conexión se restaura
+
+**TC-SYS-019: Manejo de errores del servidor**
+- **Objetivo**: Validar comportamiento ante errores del servidor
+- **Escenarios**:
+  1. Servidor retorna 500 Internal Server Error
+  2. Base de datos no está disponible
+  3. Servicio externo (diagnóstico) no está disponible
+- **Resultado esperado**: 
+  - Usuario recibe mensaje de error apropiado
+  - Sistema no se corrompe
+  - Logs registran el error para debugging
+  - Sistema se recupera cuando el problema se resuelve
+
+**TC-SYS-020: Timeouts y operaciones largas**
+- **Objetivo**: Validar manejo de operaciones que toman mucho tiempo
+- **Escenarios**:
+  1. Procesamiento de imagen muy grande (> 10MB)
+  2. Consulta de historial con muchos registros
+  3. Generación de reporte completo
+- **Resultado esperado**: 
+  - Operaciones muestran indicadores de progreso
+  - Timeouts son apropiados (no muy cortos, no muy largos)
+  - Usuario puede cancelar operaciones largas
+  - Sistema maneja timeouts gracefully
+
+**TC-SYS-021: Recuperación después de interrupción**
+- **Objetivo**: Validar que el sistema se recupera correctamente
+- **Escenario**: 
+  1. Sistema se detiene durante operación crítica
+  2. Sistema se reinicia
+  3. Verificar integridad de datos
+- **Resultado esperado**: 
+  - Datos no se corrompen
+  - Transacciones incompletas se revierten
+  - Sistema vuelve a estado consistente
+  - Usuarios pueden continuar trabajando normalmente
+
+**TC-SYS-022: Backup y restauración**
+- **Objetivo**: Validar que backups funcionan y se pueden restaurar
+- **Pruebas**:
+  1. Ejecutar backup de base de datos
+  2. Simular pérdida de datos
+  3. Restaurar desde backup
+  4. Verificar integridad de datos restaurados
+- **Resultado esperado**: 
+  - Backups se ejecutan automáticamente
+  - Backups contienen todos los datos necesarios
+  - Restauración funciona correctamente
+  - Datos restaurados son consistentes
+
+---
+
+## 6.1.5. Criterios de Aceptación
+
+### Cobertura de Pruebas
+- **Cobertura de código**: Mínimo 80% de cobertura en entidades core
+- **Cobertura de funcionalidades**: 100% de funcionalidades críticas probadas
+- **Cobertura de integración**: Todos los flujos principales probados
+
+### Métricas de Calidad
+- **Tasa de errores**: < 1% de requests resultan en errores 5xx
+- **Tiempo de respuesta**: P95 < 1 segundo para operaciones normales
+- **Disponibilidad**: > 99.5% uptime
+- **Tasa de éxito de pruebas**: > 95% de tests pasan en CI/CD
+
+### Criterios de Aprobación
+- Todas las pruebas unitarias pasan
+- Todas las pruebas de integración pasan
+- Todas las pruebas BDD pasan
+- Todas las pruebas de sistema pasan (excepto casos conocidos documentados)
+- No hay vulnerabilidades de seguridad críticas
+- Performance cumple con objetivos
+- Documentación de pruebas está completa y actualizada
+
+---
+
+## 6.2. Pruebas Estáticas y Verificación
+
+### Descripción
+
+Las pruebas estáticas son técnicas de análisis que se realizan sin ejecutar el código. Estas pruebas examinan el código fuente, la documentación y otros artefactos del proyecto para detectar problemas potenciales, violaciones de estándares, vulnerabilidades de seguridad y oportunidades de mejora antes de que el código llegue a producción.
+
+A diferencia de las pruebas dinámicas (unitarias, integración, sistema), las pruebas estáticas no requieren compilar o ejecutar el código, lo que permite detectar problemas en etapas muy tempranas del desarrollo.
+
+### Propósito
+
+1. **Detección Temprana de Problemas**: Identificar errores, vulnerabilidades y problemas de calidad antes de que el código se ejecute
+2. **Cumplimiento de Estándares**: Asegurar que el código sigue convenciones y estándares establecidos
+3. **Mejora de Mantenibilidad**: Identificar código complejo, duplicado o difícil de mantener
+4. **Prevención de Vulnerabilidades**: Detectar patrones de código inseguro y vulnerabilidades conocidas
+5. **Consistencia del Código**: Garantizar que todo el equipo sigue las mismas convenciones de codificación
+
+---
+
+## 6.2.1. Análisis Estático de Código
+
+### 6.2.1.1. Estándares de Codificación y Convenciones
+
+#### Objetivo
+
+Establecer y validar que el código sigue estándares de codificación consistentes, convenciones de nomenclatura, formato y estructura que facilitan la lectura, mantenimiento y colaboración en el proyecto.
+
+#### Herramientas Recomendadas
+
+1. **EditorConfig** (.editorconfig)
+   - Configuración de formato de código
+   - Indentación, espacios, finales de línea
+   - Charset y encoding
+
+2. **StyleCop Analyzers** o **Roslyn Analyzers**
+   - Análisis de estilo de código C#
+   - Convenciones de nomenclatura
+   - Organización de código
+
+3. **SonarLint / SonarQube**
+   - Análisis continuo de calidad de código
+   - Detección de code smells
+   - Métricas de complejidad
+
+#### Estándares y Convenciones a Validar
+
+**TC-STATIC-001: Convenciones de Nomenclatura**
+- **Clases y Tipos**: PascalCase
+  - ✅ Correcto: `AuthUser`, `MyPlant`, `CareTaskRepository`
+  - ❌ Incorrecto: `authUser`, `my_plant`, `careTaskRepository`
+- **Métodos y Propiedades**: PascalCase
+  - ✅ Correcto: `GetUserById()`, `CreatePlant()`, `IsCompleted`
+  - ❌ Incorrecto: `getUserById()`, `create_plant()`, `isCompleted`
+- **Campos privados**: camelCase con prefijo `_` (opcional)
+  - ✅ Correcto: `_context`, `_repository`, `_unitOfWork`
+  - ❌ Incorrecto: `Context`, `repository`, `unitOfWork`
+- **Constantes**: PascalCase
+  - ✅ Correcto: `MaxRetryAttempts`, `DefaultTimeout`
+  - ❌ Incorrecto: `MAX_RETRY_ATTEMPTS`, `defaultTimeout`
+- **Interfaces**: PascalCase con prefijo `I`
+  - ✅ Correcto: `IAuthUserRepository`, `IMyPlantService`
+  - ❌ Incorrecto: `AuthUserRepository`, `MyPlantServiceInterface`
+
+**TC-STATIC-002: Organización de Archivos y Namespaces**
+- **Estructura de Namespaces**: Debe seguir la estructura de carpetas
+  - ✅ Correcto: `plantita.User.Domain.Model.Aggregates`
+  - ❌ Incorrecto: `Plantita.User`, `User.Domain`
+- **Un archivo por clase**: Cada archivo debe contener una sola clase pública
+- **Nombres de archivos**: Deben coincidir con el nombre de la clase
+  - ✅ `AuthUser.cs` contiene `class AuthUser`
+  - ❌ `User.cs` contiene `class AuthUser`
+
+**TC-STATIC-003: Formato y Espaciado**
+- **Indentación**: 4 espacios (no tabs)
+- **Líneas en blanco**: 
+  - Una línea en blanco entre métodos
+  - Dos líneas en blanco entre secciones lógicas
+- **Longitud de línea**: Máximo 120 caracteres (recomendado)
+- **Espaciado alrededor de operadores**: `x + y` no `x+y`
+- **Espaciado en parámetros**: `Method(param1, param2)` no `Method( param1,param2 )`
+
+**TC-STATIC-004: Comentarios y Documentación**
+- **Documentación XML**: Todas las clases públicas, métodos públicos y propiedades públicas deben tener documentación XML
+  ```csharp
+  /// <summary>
+  /// Servicio para gestión de usuarios autenticados
+  /// </summary>
+  public class AuthUserCommandService
+  {
+      /// <summary>
+      /// Maneja el comando de registro de usuario
+      /// </summary>
+      /// <param name="command">Comando de registro</param>
+      /// <returns>Resultado de la operación</returns>
+      public async Task Handle(SignUpCommand command) { }
+  }
+  ```
+- **Comentarios inline**: Solo cuando el código no es autoexplicativo
+- **Evitar comentarios obsoletos**: Eliminar código comentado
+
+**TC-STATIC-005: Estructura de Clases y Métodos**
+- **Orden de miembros en clases**:
+  1. Constantes
+  2. Campos privados
+  3. Propiedades públicas
+  4. Constructores
+  5. Métodos públicos
+  6. Métodos privados
+- **Tamaño de métodos**: Máximo 50 líneas (recomendado)
+- **Tamaño de clases**: Máximo 500 líneas (recomendado)
+- **Complejidad ciclomática**: Máximo 10 por método
+
+**TC-STATIC-006: Manejo de Nullable Reference Types**
+- **Nullable habilitado**: El proyecto tiene `<Nullable>enable</Nullable>`
+- **Anotaciones correctas**: Usar `?` para tipos nullable
+  - ✅ `string? email` para valores que pueden ser null
+  - ✅ `string name` para valores que no pueden ser null
+- **Null checks**: Validar valores nullable antes de usarlos
+  ```csharp
+  if (user == null)
+      throw new ArgumentNullException(nameof(user));
+  ```
+
+**TC-STATIC-007: Uso de Async/Await**
+- **Nombres de métodos asíncronos**: Terminan en `Async`
+  - ✅ `GetUserByIdAsync()`, `CreatePlantAsync()`
+  - ❌ `GetUserById()`, `CreatePlant()`
+- **Evitar `async void`**: Solo usar en event handlers
+- **Usar `ConfigureAwait(false)`**: En librerías (opcional en aplicaciones)
+
+**TC-STATIC-008: Manejo de Excepciones**
+- **Tipos específicos de excepciones**: Usar excepciones apropiadas
+  - `ArgumentNullException` para parámetros null
+  - `ArgumentException` para argumentos inválidos
+  - `KeyNotFoundException` para entidades no encontradas
+  - `UnauthorizedAccessException` para accesos no autorizados
+- **Evitar `catch (Exception ex)`**: Capturar excepciones específicas
+- **Logging de excepciones**: Registrar excepciones antes de relanzarlas
+
+**TC-STATIC-009: Entity Framework Best Practices**
+- **Usar `async/await`**: Todos los métodos de repositorio deben ser async
+- **Evitar `ToList()` innecesario**: Usar `IQueryable` cuando sea posible
+- **Usar `FindAsync()` para búsquedas por clave**: Más eficiente que `FirstOrDefaultAsync()`
+- **Dispose de contextos**: Asegurar que `DbContext` se dispone correctamente
+
+**TC-STATIC-010: Seguridad en Código**
+- **No hardcodear secretos**: Usar `IConfiguration` o Azure Key Vault
+- **Validar inputs**: Validar todos los inputs del usuario
+- **Sanitizar inputs**: Prevenir SQL injection, XSS
+- **Usar parámetros**: Siempre usar parámetros en queries (EF Core lo hace automáticamente)
+
+#### Criterios de Validación
+
+- **0 errores de StyleCop**: Todos los errores de StyleCop deben resolverse
+- **Máximo 5 warnings de StyleCop**: Warnings menores pueden mantenerse si están justificados
+- **100% de clases públicas documentadas**: Todas las clases públicas deben tener documentación XML
+- **Complejidad ciclomática promedio < 5**: Métodos no deben ser excesivamente complejos
+- **Cobertura de convenciones > 95%**: 95% del código debe seguir las convenciones establecidas
+
+#### Integración en CI/CD
+
+- Ejecutar análisis estático en cada Pull Request
+- Bloquear merge si hay errores críticos de convenciones
+- Generar reporte de calidad de código en cada build
+- Mantener dashboard de métricas de calidad
+
+---
+
+### 6.2.1.2. Calidad y Seguridad del Código
+
+#### Objetivo
+
+Identificar problemas de calidad de código, vulnerabilidades de seguridad, code smells, bugs potenciales y áreas de mejora mediante análisis estático automatizado.
+
+#### Herramientas Recomendadas
+
+1. **SonarQube / SonarCloud**
+   - Análisis completo de calidad y seguridad
+   - Detección de vulnerabilidades OWASP Top 10
+   - Code smells y bugs
+   - Duplicación de código
+   - Cobertura de código
+
+2. **Security Code Scan**
+   - Análisis específico de seguridad para .NET
+   - Detección de vulnerabilidades conocidas
+
+3. **OWASP Dependency Check**
+   - Análisis de dependencias vulnerables
+   - Base de datos CVE
+
+4. **Roslyn Security Analyzers**
+   - Analizadores de seguridad integrados en el compilador
+
+#### Áreas de Análisis
+
+**TC-STATIC-011: Vulnerabilidades de Seguridad**
+
+**SQL Injection**
+- ✅ Correcto: Usar Entity Framework Core (parametrizado automáticamente)
+  ```csharp
+  var user = await _context.AuthUsers
+      .FirstOrDefaultAsync(u => u.Email == email);
+  ```
+- ❌ Incorrecto: Concatenación de strings en queries
+  ```csharp
+  var query = $"SELECT * FROM Users WHERE Email = '{email}'";
+  ```
+
+**Cross-Site Scripting (XSS)**
+- Validar y sanitizar todos los inputs del usuario
+- Usar encoding apropiado al retornar datos al cliente
+- Validar que `PhotoUrl`, `CustomName`, `Notes` no contengan scripts maliciosos
+
+**Insecure Deserialization**
+- No deserializar datos no confiables
+- Validar tipos al deserializar JSON
+- Usar `JsonSerializer` con opciones seguras
+
+**Sensitive Data Exposure**
+- ✅ Correcto: `[JsonIgnore]` en `PasswordHash`
+  ```csharp
+  [JsonIgnore] 
+  public string PasswordHash { get; private set; }
+  ```
+- ❌ Incorrecto: Exponer `PasswordHash` en respuestas API
+- No loguear información sensible (passwords, tokens)
+
+**Broken Authentication**
+- Validar tokens JWT correctamente
+- Implementar expiración de tokens
+- Usar HTTPS en producción
+- Validar refresh tokens antes de generar nuevos access tokens
+
+**TC-STATIC-012: Code Smells y Problemas de Calidad**
+
+**Duplicación de Código**
+- **Umbral**: Máximo 3% de duplicación de código
+- Detectar métodos duplicados y extraer a métodos comunes
+- Detectar lógica duplicada y crear servicios compartidos
+
+**Complejidad Excesiva**
+- **Complejidad ciclomática**: Máximo 10 por método
+- **Profundidad de anidación**: Máximo 4 niveles
+- Refactorizar métodos complejos en métodos más pequeños
+
+**Código Muerto**
+- Eliminar código no utilizado (métodos, clases, variables)
+- Eliminar comentarios obsoletos
+- Eliminar imports no utilizados
+
+**Magic Numbers y Strings**
+- ✅ Correcto: Usar constantes con nombre descriptivo
+  ```csharp
+  private const int MaxRetryAttempts = 3;
+  private const string DefaultRole = "User";
+  ```
+- ❌ Incorrecto: Valores hardcodeados sin explicación
+  ```csharp
+  if (retries > 3) { }
+  if (role == "User") { }
+  ```
+
+**Long Parameter Lists**
+- Máximo 5 parámetros por método
+- Usar objetos DTO o Command/Query objects para múltiples parámetros
+
+**Large Classes**
+- Máximo 500 líneas por clase
+- Dividir clases grandes en clases más pequeñas con responsabilidades únicas
+
+**TC-STATIC-013: Problemas de Performance**
+
+**N+1 Query Problem**
+- ✅ Correcto: Usar `Include()` para cargar relaciones
+  ```csharp
+  var plants = await _context.MyPlants
+      .Include(p => p.HealthLogs)
+      .Include(p => p.CareTasks)
+      .ToListAsync();
+  ```
+- ❌ Incorrecto: Cargar relaciones en loops
+  ```csharp
+  foreach (var plant in plants)
+  {
+      plant.HealthLogs = await _context.PlantHealthLogs
+          .Where(h => h.MyPlantId == plant.MyPlantId)
+          .ToListAsync();
+  }
+  ```
+
+**Inefficient Database Queries**
+- Usar proyecciones para seleccionar solo campos necesarios
+- Evitar `ToList()` antes de filtrar
+- Usar índices en campos de búsqueda frecuente
+
+**Memory Leaks**
+- Dispose de recursos (DbContext, FileStreams, etc.)
+- Evitar capturas de closures innecesarias
+- Usar `using` statements para recursos IDisposable
+
+**TC-STATIC-014: Problemas de Mantenibilidad**
+
+**Inconsistencias en el Código**
+- Mismo patrón para operaciones similares
+- Nombres consistentes en todo el proyecto
+- Estructura de carpetas consistente
+
+**Falta de Abstracción**
+- Usar interfaces para dependencias
+- Implementar Repository Pattern correctamente
+- Usar Dependency Injection
+
+**Acoplamiento Alto**
+- Clases no deben depender de implementaciones concretas
+- Usar interfaces y abstracciones
+- Evitar referencias circulares
+
+**TC-STATIC-015: Análisis de Dependencias**
+
+**Dependencias Vulnerables**
+- Escanear dependencias NuGet con OWASP Dependency Check
+- Mantener dependencias actualizadas
+- Revisar y actualizar regularmente:
+  - `BCrypt.Net-Next`
+  - `Microsoft.EntityFrameworkCore`
+  - `System.IdentityModel.Tokens.Jwt`
+  - Todas las dependencias de Microsoft.AspNetCore.*
+
+**Dependencias Obsoletas**
+- Identificar paquetes con versiones antiguas
+- Planificar actualizaciones regulares
+- Verificar compatibilidad antes de actualizar
+
+**Dependencias No Utilizadas**
+- Eliminar paquetes NuGet no utilizados
+- Reducir tamaño de la aplicación
+- Mejorar tiempos de build
+
+#### Métricas de Calidad
+
+**SonarQube Quality Gate**
+- **Reliability Rating**: A (0 bugs)
+- **Security Rating**: A (0 vulnerabilidades)
+- **Maintainability Rating**: A (code smells < 5% del código)
+- **Coverage**: > 80% en código core
+- **Duplications**: < 3%
+
+**Métricas Específicas**
+- **Bugs**: 0 bugs críticos o mayores
+- **Vulnerabilities**: 0 vulnerabilidades críticas o altas
+- **Code Smells**: < 50 code smells por 1000 líneas
+- **Technical Debt**: < 5% del tiempo de desarrollo
+- **Duplicación**: < 3% de código duplicado
+
+#### Criterios de Validación
+
+- **0 vulnerabilidades críticas o altas**: Todas las vulnerabilidades críticas y altas deben resolverse antes de merge
+- **0 bugs críticos**: Bugs críticos deben resolverse inmediatamente
+- **Code smells < 50 por 1000 LOC**: Mantener bajo número de code smells
+- **Duplicación < 3%**: Código duplicado debe refactorizarse
+- **Dependencias actualizadas**: Sin dependencias con vulnerabilidades conocidas (CVSS > 7.0)
+
+#### Integración en CI/CD
+
+**Pipeline de Análisis Estático**
+1. **Pre-commit Hooks** (opcional):
+   - Ejecutar analizadores básicos antes de commit
+   - Validar formato básico
+
+2. **Pull Request**:
+   - Ejecutar SonarQube analysis
+   - Ejecutar OWASP Dependency Check
+   - Generar reporte de calidad
+   - Bloquear merge si hay vulnerabilidades críticas
+
+3. **Build Principal**:
+   - Análisis completo de calidad
+   - Generar dashboard de métricas
+   - Notificar si métricas empeoran
+
+4. **Reportes**:
+   - Dashboard de SonarQube actualizado
+   - Reporte de dependencias vulnerables
+   - Métricas de calidad históricas
+
+#### Ejemplos de Configuración
+
+**SonarQube Quality Gate (Ejemplo)**
+```yaml
+quality_gate:
+  reliability:
+    bugs: 0
+    rating: A
+  security:
+    vulnerabilities: 0
+    rating: A
+  maintainability:
+    code_smells: < 50 per 1000 LOC
+    rating: A
+  coverage:
+    minimum: 80%
+  duplications:
+    maximum: 3%
+```
+
+**OWASP Dependency Check Threshold**
+- **Critical**: 0 vulnerabilidades
+- **High**: Máximo 2 vulnerabilidades (con plan de remediación)
+- **Medium**: Máximo 10 vulnerabilidades
+- **Low**: Información solamente
+
+---
+
+### 6.2.2. Verificación de Documentación
+
+**TC-STATIC-016: Documentación de Código**
+- Todas las clases públicas tienen documentación XML
+- Todos los métodos públicos tienen documentación XML
+- Parámetros y valores de retorno documentados
+- Ejemplos de uso en documentación compleja
+
+**TC-STATIC-017: Documentación de API**
+- Swagger/OpenAPI actualizado
+- Todos los endpoints documentados
+- Ejemplos de requests/responses
+- Códigos de error documentados
+
+**TC-STATIC-018: Documentación de Arquitectura**
+- Diagramas de arquitectura actualizados
+- Documentación de decisiones de diseño (ADRs)
+- Guías de desarrollo para nuevos miembros del equipo
+
+---
+
+### 6.2.3. Criterios de Aceptación para Pruebas Estáticas
+
+- **0 errores de análisis estático críticos**: Todos los errores críticos deben resolverse
+- **Quality Gate de SonarQube pasa**: Todas las métricas cumplen con los umbrales
+- **0 vulnerabilidades críticas o altas**: Todas las vulnerabilidades deben resolverse o tener plan de remediación
+- **Dependencias actualizadas**: Sin dependencias con vulnerabilidades conocidas sin parches disponibles
+- **Código sigue convenciones**: 95%+ del código cumple con las convenciones establecidas
+- **Documentación completa**: Todas las APIs públicas y clases públicas documentadas
 
   
 
