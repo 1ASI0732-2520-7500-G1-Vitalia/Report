@@ -3616,6 +3616,12 @@ Monitorear el comportamiento de los usuarios dentro de la aplicación, identific
 
 <div id="8.3.3.3">
   <h3><b>8.3.3.3. Implemented To-Be Frontend-Web Application Evidence</b></h3>
+<img src="img/web1.jpeg" alt="Foto de web " width="700px">
+<img src="img/web2.jpeg" alt="Foto de web " width="700px">
+<img src="img/web3.jpeg" alt="Foto de web " width="700px">
+<img src="img/web4.jpeg" alt="Foto de web " width="700px">
+
+  
 </div>
 
 <div id="8.3.3.4">
